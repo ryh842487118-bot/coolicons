@@ -43,4 +43,20 @@ void main() {
     expect(picture.width, 36);
     expect(picture.height, 36);
   });
+  test('generated catalog contains every style and radius for every icon', () {
+    expect(CoolIcons.all.keys.toSet(), CoolIcons.names.toSet());
+    expect(CoolIcons.all, isNotEmpty);
+
+    for (final entry in CoolIcons.all.entries) {
+      expect(entry.value.name, entry.key);
+      for (final style in CoolIconStyle.values) {
+        for (final radius in CoolIconRadius.values) {
+          final svg = entry.value.svgFor(style, radius);
+          expect(svg, startsWith('<svg'));
+          expect(svg, contains('</svg>'));
+        }
+      }
+    }
+  });
+
 }
