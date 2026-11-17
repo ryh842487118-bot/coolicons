@@ -91,7 +91,7 @@ const fields = icons.map((icon) => {
   const identifier = dartIdentifier(icon.name);
   const target = dartIdentifier(icon.aliasOf ?? icon.name);
   return `  /// Upstream icon name: ${icon.name}.
-  static const CoolIconData ${identifier} = _${target}.${target};`;
+  static const CoolIconData ${identifier} = icon_${dartFileName(icon.aliasOf ?? icon.name)}.${target};`;
 }).join("\n\n");
 
 const allEntries = icons.map((icon) =>
