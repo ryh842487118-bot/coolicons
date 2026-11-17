@@ -36,6 +36,12 @@ jobs:
         with:
           node-version-file: .nvmrc
 
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
       - name: Merge upstream into a dedicated sync branch
         id: merge
         run: |
@@ -51,6 +57,12 @@ jobs:
 
           git merge --no-edit upstream/main
           node scripts/sync-flutter-release.mjs
+          node scripts/build-flutter.mjs
+          dart format packages/flutter/lib packages/flutter/test packages/flutter/example/lib
+          git add packages/flutter/lib packages/flutter/test packages/flutter/example packages/flutter/analysis_options.yaml packages/flutter/pubspec.yaml packages/flutter/CHANGELOG.md
+          if ! git diff --cached --quiet; then
+            git commit -m "build(flutter): sync generated catalog with upstream"
+          fi
           git push --force-with-lease origin sync/upstream
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
