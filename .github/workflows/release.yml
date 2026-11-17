@@ -81,7 +81,7 @@ jobs:
   check-flutter-pubdev:
     runs-on: ubuntu-latest
     outputs:
-      version-exists: ${{ steps.check.outputs.version_exists }}
+      version_exists: ${{ steps.check.outputs.version_exists }}
     steps:
       - name: Check whether this Flutter version is already published
         id: check
@@ -101,7 +101,7 @@ jobs:
 
   publish-flutter:
     needs: [publish, check-flutter-pubdev]
-    if: needs.check-flutter-pubdev.outputs.version-exists != 'true'
+    if: needs.check-flutter-pubdev.outputs.version_exists != 'true'
     permissions:
       contents: read
       id-token: write
