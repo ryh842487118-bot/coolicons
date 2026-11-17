@@ -121,7 +121,7 @@ String _resolveSvg(
       path = path.replaceFirst('currentColor', _toSvgRgb(secondaryColor));
     }
 
-    final alpha = secondaryColor?.opacity ?? 1;
+    final alpha = secondaryColor == null ? 1.0 : _colorOpacity(secondaryColor);
     if (secondaryOpacity != null || alpha < 1) {
       final originalOpacity =
           double.tryParse(opacityMatch.group(2)!) ?? 1;
@@ -139,5 +139,14 @@ String _resolveSvg(
 }
 
 String _toSvgRgb(Color color) {
-  return 'rgb(${color.red},${color.green},${color.blue})';
+  final argb = color.toARGB32();
+  final red = (argb >> 16) & 0xFF;
+  final green = (argb >> 8) & 0xFF;
+  final blue = argb & 0xFF;
+  return 'rgb($red,$green,$blue)';
+}
+
+double _colorOpacity(Color color) {
+  final alpha = (color.toARGB32() >> 24) & 0xFF;
+  return alpha / 255;
 }
