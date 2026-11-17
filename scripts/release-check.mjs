@@ -13,8 +13,9 @@ for (const name of PACKAGES) {
 
 const flutterPubspec = readFileSync(flutterPackageFile, "utf8");
 const flutterVersion = /^version:\s*([^\n]+)/m.exec(flutterPubspec)?.[1]?.trim();
-if (flutterVersion !== version) {
-  throw new Error(`coolicons_flutter has version ${flutterVersion}, expected ${version}`);
+const flutterBaseVersion = flutterVersion?.split("+", 1)[0];
+if (!flutterVersion || flutterBaseVersion !== version || !/^\d+\.\d+\.\d+(?:-beta\.\d+)?(?:\+\d+)?$/.test(flutterVersion)) {
+  throw new Error(`coolicons_flutter has version ${flutterVersion}, expected ${version} or ${version}+N`);
 }
 const server = JSON.parse(readFileSync(serverFile, "utf8"));
 const { mcpName } = JSON.parse(readFileSync(path.join(root, "packages/mcp/package.json"), "utf8"));
@@ -27,5 +28,7 @@ const notes = changelogSection(version);
 if (!notes) throw new Error(`CHANGELOG.md has no entry for ${version}`);
 writeFileSync(notesFile, notes.replace(/^## .*\n+/, ""));
 const prerelease = version.includes("-");
-if (process.env.GITHUB_OUTPUT) appendFileSync(process.env.GITHUB_OUTPUT, `version=${version}\nprerelease=${prerelease}\n`);
-console.log(`${tag} is ready: ${PACKAGES.map((name) => `@coolicons/${name}@${version}`).join(", ")}, coolicons_flutter@${version}${prerelease ? ", prerelease" : ""}`);
+if (process.env.GITHUB_OUTPUT) {
+  appendFileSync(process.env.GITHUB_OUTPUT, `version=${version}\nprerelease=${prerelease}\nflutter_version=${flutterVersion}\n`);
+}
+console.log(`${tag} is ready: ${PACKAGES.map((name) => `@coolicons/${name}@${version}`).join(", ")}, coolicons_flutter@${flutterVersion}${prerelease ? ", prerelease" : ""}`);
