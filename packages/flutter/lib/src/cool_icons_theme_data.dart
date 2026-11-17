@@ -7,8 +7,8 @@ import 'cool_icon_style.dart';
 
 /// Global default configuration for Coolicons widgets.
 ///
-/// Add this extension to both [ThemeData.extensions] and
-/// [ThemeData.darkTheme.extensions] to define light and dark defaults.
+/// Add this extension to [MaterialApp.theme] and [MaterialApp.darkTheme]
+/// to define light and dark defaults.
 /// A null [color] inherits from [IconTheme] and then [ColorScheme.onSurface].
 @immutable
 class CoolIconsThemeData extends ThemeExtension<CoolIconsThemeData> {
