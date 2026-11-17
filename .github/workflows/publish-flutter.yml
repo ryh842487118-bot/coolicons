@@ -1,0 +1,17 @@
+name: Publish Flutter maintenance release
+
+on:
+  push:
+    tags:
+      - "flutter-v*"
+
+permissions: {}
+
+jobs:
+  publish-flutter:
+    permissions:
+      contents: read
+      id-token: write
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    with:
+      working-directory: packages/flutter
