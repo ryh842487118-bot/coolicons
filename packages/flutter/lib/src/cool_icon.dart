@@ -22,7 +22,8 @@ class CoolIcon extends StatelessWidget {
     this.secondaryColor,
     this.secondaryOpacity,
     this.semanticLabel,
-  });
+  }) : assert(corners == null || radius == null),
+       corners = corners ?? radius;
 
   /// The icon artwork to render.
   final CoolIconData icon;
