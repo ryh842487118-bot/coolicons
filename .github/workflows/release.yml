@@ -38,6 +38,21 @@ jobs:
       - run: pnpm build
       - run: pnpm test
       - run: pnpm lint:packages
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - name: Verify generated Flutter catalog is committed
+        run: |
+          node scripts/build-flutter.mjs
+          git diff --exit-code -- packages/flutter/lib/src/generated
+      - name: Test Flutter package
+        working-directory: packages/flutter
+        run: |
+          flutter pub get
+          dart format --output=none --set-exit-if-changed lib test example/lib
+          flutter analyze
+          flutter test
+          flutter pub publish --dry-run
       - name: Publish to npm
         env:
           VERSION: ${{ steps.release.outputs.version }}
@@ -60,6 +75,16 @@ jobs:
           flags=()
           if [ "$PRERELEASE" = "true" ]; then flags+=(--prerelease); fi
           gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1 || gh release create "$GITHUB_REF_NAME" "coolicons-$VERSION.zip" --title "coolicons $VERSION" --notes-file notes.md "${flags[@]}"
+
+
+  publish-flutter:
+    needs: publish
+    permissions:
+      contents: read
+      id-token: write
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    with:
+      working-directory: packages/flutter
 
   mcp-registry:
     needs: publish
