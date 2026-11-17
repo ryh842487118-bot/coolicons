@@ -1,6 +1,6 @@
 import 'dart:ui' show lerpDouble;
 
-import 'package:material_ui/material_ui.dart';
+import 'package:flutter/material.dart';
 
 import 'cool_icon_radius.dart';
 import 'cool_icon_style.dart';
