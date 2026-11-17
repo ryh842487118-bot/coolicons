@@ -41,7 +41,7 @@
       "name": "coolicons_flutter",
       "rootUri": "../../",
       "packageUri": "lib/",
-      "languageVersion": "3.13"
+      "languageVersion": "3.11"
     },
     {
       "name": "cupertino_ui",
@@ -75,9 +75,9 @@
     },
     {
       "name": "flutter_svg",
-      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/flutter_svg-2.4.0",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/flutter_svg-2.3.4",
       "packageUri": "lib/",
-      "languageVersion": "3.12"
+      "languageVersion": "3.11"
     },
     {
       "name": "http",
@@ -141,9 +141,9 @@
     },
     {
       "name": "petitparser",
-      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/petitparser-7.1.0",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/petitparser-7.0.2",
       "packageUri": "lib/",
-      "languageVersion": "3.13"
+      "languageVersion": "3.8"
     },
     {
       "name": "sky_engine",
@@ -201,9 +201,9 @@
     },
     {
       "name": "web",
-      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/web-1.1.2",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/web-1.1.1",
       "packageUri": "lib/",
-      "languageVersion": "3.13"
+      "languageVersion": "3.4"
     },
     {
       "name": "xml",
