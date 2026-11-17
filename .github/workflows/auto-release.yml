@@ -90,5 +90,6 @@ jobs:
             fi
             git tag "$tag" "$CURRENT_SHA"
             git push origin "$tag"
-            echo "Pushed $tag for the Flutter-only maintenance release."
+            gh workflow run publish-flutter.yml --repo "$GITHUB_REPOSITORY" --ref "$tag"
+            echo "Pushed $tag and dispatched the Flutter-only publisher."
           fi
