@@ -154,9 +154,15 @@ pub.dev Admin page with:
 - GitHub repository: `ryh842487118-bot/coolicons`
 - Tag pattern: `v{{version}}`
 
-Subsequent matching release tags are published by the
-`publish-flutter` GitHub Actions job using OIDC. No long-lived pub.dev token
-is stored in GitHub secrets.
+After the first publication and Trusted Publisher setup, a change to the shared
+monorepo version on `main` automatically creates the matching `vX.Y.Z` tag
+and dispatches the release workflow. The `publish-flutter` job publishes this
+package to pub.dev using OIDC. No long-lived pub.dev token is stored in GitHub
+secrets.
+
+This fork publishes only `coolicons_flutter` to pub.dev; it does not republish
+the upstream React, Vue, SVG, CLI or MCP npm packages, and does not publish the
+upstream MCP registry entry.
 
 The Flutter package shares the monorepo release number (for example, 5.4.0),
 but remains a separate package on pub.dev.
