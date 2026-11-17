@@ -1,0 +1,65 @@
+name: Tag Flutter release after successful CI
+
+on:
+  workflow_run:
+    workflows: ["Flutter package"]
+    types: [completed]
+    branches: [main]
+
+permissions: {}
+
+jobs:
+  tag:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout current main
+        uses: actions/checkout@v7.0.1
+        with:
+          ref: main
+          token: ${{ secrets.RELEASE_TOKEN }}
+          fetch-depth: 0
+      - name: Create the Flutter version tag
+        env:
+          GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+          RUN_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          version="$(awk '/^version:/{print $2; exit}' packages/flutter/pubspec.yaml)"
+          if ! [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[A-Za-z0-9.]+)?(\+[0-9]+)?$ ]]; then
+            echo "Invalid Flutter version: $version"
+            exit 1
+          fi
+
+          # Only tag the current main version after its Flutter CI passed.
+          latest_main="$(git rev-parse HEAD)"
+          if [ "$latest_main" != "$RUN_SHA" ]; then
+            parent="$(git rev-parse HEAD^ 2>/dev/null || true)"
+            subject="$(git log -1 --pretty=%s)"
+            if [ "$parent" != "$RUN_SHA" ] || [ "$subject" != "build(flutter): generate catalog and format sources" ]; then
+              echo "Successful CI run is stale; a newer main commit exists."
+              exit 0
+            fi
+          fi
+
+          encoded_version="$(printf '%s' "$version" | jq -sRr @uri)"
+          status="$(curl --silent --show-error --output /dev/null --write-out "%{http_code}" "https://pub.dev/api/packages/coolicons_flutter/versions/$encoded_version")"
+          if [ "$status" = "200" ]; then
+            echo "coolicons_flutter $version is already published."
+            exit 0
+          elif [ "$status" != "404" ]; then
+            echo "Unexpected pub.dev response: HTTP $status"
+            exit 1
+          fi
+
+          tag="flutter-v$version"
+          git fetch origin --tags
+          if git rev-parse -q --verify "refs/tags/$tag" >/dev/null; then
+            echo "Tag $tag already exists. Use the tag ref to retry its publisher."
+            exit 0
+          fi
+
+          git tag "$tag" "$latest_main"
+          git push origin "$tag"
+          echo "Pushed $tag. The tag push starts the pub.dev publisher."
