@@ -83,8 +83,8 @@ for (const icon of icons) {
 }
 
 const imports = [...importTargets].map((name) => {
-  const identifier = dartIdentifier(name);
-  return `import 'icons/${dartFileName(name)}.dart' as _${identifier};`;
+  const prefix = `icon_${dartFileName(name)}`;
+  return `import 'icons/${dartFileName(name)}.dart' as ${prefix};`;
 }).join("\n");
 
 const fields = icons.map((icon) => {
