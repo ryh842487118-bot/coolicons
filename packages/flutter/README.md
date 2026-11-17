@@ -122,9 +122,14 @@ Fill and Bulk artwork has no stroke, so `strokeWidth` does not affect those styl
 
 ## Upstream updates
 
-The icon catalog is generated from `icons/manifest.json` and `icons/svg/`.
-After syncing the upstream repository, run `node scripts/build-flutter.mjs`
-to regenerate the Dart catalog.
+The fork checks the upstream Coolicons repository daily and opens a pull request
+when new commits are available. The sync workflow also aligns the Flutter
+pubspec version and changelog with the upstream monorepo release.
+
+After merging an upstream sync pull request, the Flutter package workflow
+regenerates the Dart catalog from `icons/manifest.json` and `icons/svg/`,
+then runs formatting, analysis and tests. To generate locally, run
+`node scripts/build-flutter.mjs` from the repository root.
 
 ## License
 
