@@ -13,6 +13,8 @@ concurrency:
 
 jobs:
   publish:
+    outputs:
+      flutter_version: ${{ steps.release.outputs.flutter_version }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
     permissions:
@@ -64,6 +66,7 @@ jobs:
 
 
   check-flutter-pubdev:
+    needs: [publish]
     runs-on: ubuntu-latest
     outputs:
       package_exists: ${{ steps.check.outputs.package_exists }}
@@ -87,7 +90,8 @@ jobs:
           fi
 
           echo "package_exists=true" >> "$GITHUB_OUTPUT"
-          version_status="$(curl --silent --show-error --output /dev/null --write-out "%{http_code}" "https://pub.dev/api/packages/coolicons_flutter/versions/$(printf \"%s\" \"$version\" | jq -sRr @uri)")"
+          encoded_version="$(printf '%s' "$version" | jq -sRr @uri)"
+          version_status="$(curl --silent --show-error --output /dev/null --write-out "%{http_code}" "https://pub.dev/api/packages/coolicons_flutter/versions/$encoded_version")"
           if [ "$version_status" = "200" ]; then
             echo "version_exists=true" >> "$GITHUB_OUTPUT"
           elif [ "$version_status" = "404" ]; then
