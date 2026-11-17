@@ -12,6 +12,7 @@ dependencies:
   coolicons_flutter:
     path: ../
   material_ui: ^1.11.1
+  material_ui: ^1.11.1
 
 dev_dependencies:
   flutter_lints: ^5.0.0
