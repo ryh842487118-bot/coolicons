@@ -8,8 +8,7 @@ on:
       - "packages/flutter/pubspec.yaml"
 
 permissions:
-  contents: write
-  actions: write
+  contents: read
 
 concurrency:
   group: auto-release-${{ github.ref }}
@@ -25,13 +24,19 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: true
+          token: ${{ secrets.RELEASE_TOKEN }}
 
       - name: Create release tag and dispatch release workflow
         env:
-          GH_TOKEN: ${{ github.token }}
+          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
           BEFORE_SHA: ${{ github.event.before }}
           CURRENT_SHA: ${{ github.sha }}
         run: |
+          if [ -z "$RELEASE_TOKEN" ]; then
+            echo "Repository secret RELEASE_TOKEN is required to push a tag that triggers the release workflow."
+            exit 1
+          fi
+
           if [ "$BEFORE_SHA" = "0000000000000000000000000000000000000000" ]; then
             echo "Initial branch creation; no previous version to compare."
             exit 0
@@ -76,5 +81,4 @@ jobs:
             git push origin "$tag"
           fi
 
-          gh workflow run release.yml --repo "$GITHUB_REPOSITORY" --ref "$tag"
-          echo "Dispatched release workflow for $tag."
+          echo "Pushed $tag. The tag push triggers .github/workflows/release.yml."
