@@ -8,11 +8,7 @@ import 'cool_icons_theme_data.dart';
 /// from the app-wide [CoolIconsThemeData].
 class CoolIconTheme extends InheritedTheme {
   /// Creates a local Coolicons theme.
-  const CoolIconTheme({
-    super.key,
-    required this.data,
-    required super.child,
-  });
+  const CoolIconTheme({super.key, required this.data, required super.child});
 
   /// The configuration inherited by descendant [CoolIcon] widgets.
   final CoolIconsThemeData data;

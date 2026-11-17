@@ -74,10 +74,7 @@ class CoolIconsThemeData extends ThemeExtension<CoolIconsThemeData> {
   }
 
   @override
-  CoolIconsThemeData lerp(
-    covariant CoolIconsThemeData? other,
-    double t,
-  ) {
+  CoolIconsThemeData lerp(covariant CoolIconsThemeData? other, double t) {
     if (other == null) return this;
     return CoolIconsThemeData(
       style: t < 0.5 ? style : other.style,
@@ -113,12 +110,12 @@ class CoolIconsThemeData extends ThemeExtension<CoolIconsThemeData> {
 
   @override
   int get hashCode => Object.hash(
-        style,
-        radius,
-        size,
-        color,
-        strokeWidth,
-        secondaryColor,
-        secondaryOpacity,
-      );
+    style,
+    radius,
+    size,
+    color,
+    strokeWidth,
+    secondaryColor,
+    secondaryOpacity,
+  );
 }

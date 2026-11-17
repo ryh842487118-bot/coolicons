@@ -1,0 +1,28 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND.
+// Source: icons/svg/<style>/<radius>/letter-a.svg
+// Upstream: https://github.com/krystonschwarze/coolicons
+// Regenerate with: node scripts/build-flutter.mjs
+
+import '../../cool_icon_data.dart';
+
+/// Icon data for the upstream letter-a glyph.
+const CoolIconData letterA = CoolIconData(
+  name: "letter-a",
+  variants: <String, String>{
+    "line/sharp": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M7 20V8C7 5.23858 9.23858 3 12 3C14.76142 3 17 5.23858 17 8V20M7 14H17\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "line/regular": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M7 20V8C7 5.23858 9.23858 3 12 3C14.76142 3 17 5.23858 17 8V20M7 14H17\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "line/round": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M7 20V8C7 5.23858 9.23858 3 12 3C14.76142 3 17 5.23858 17 8V20M7 14H17\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duocolor/sharp": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M7 20V8C7 5.23858 9.23858 3 12 3C14.76142 3 17 5.23858 17 8V20M7 14H17\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duocolor/regular": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M7 20V8C7 5.23858 9.23858 3 12 3C14.76142 3 17 5.23858 17 8V20M7 14H17\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duocolor/round": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M7 20V8C7 5.23858 9.23858 3 12 3C14.76142 3 17 5.23858 17 8V20M7 14H17\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duotone/sharp": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M7 20V8C7 5.23858 9.23858 3 12 3C14.76142 3 17 5.23858 17 8V20M7 14H17\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duotone/regular": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M7 20V8C7 5.23858 9.23858 3 12 3C14.76142 3 17 5.23858 17 8V20M7 14H17\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duotone/round": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M7 20V8C7 5.23858 9.23858 3 12 3C14.76142 3 17 5.23858 17 8V20M7 14H17\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "fill/sharp": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 14V8C6 4.686 8.686 2 12 2C15.314 2 18 4.686 18 8V20C18 20.552 17.552 21 17 21C16.448 21 16 20.552 16 20V15H8V20C8 20.552 7.552 21 7 21C6.448 21 6 20.552 6 20ZM8 13H16V8C16 5.791 14.209 4 12 4C9.791 4 8 5.791 8 8Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "fill/regular": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 14V8C6 4.686 8.686 2 12 2C15.314 2 18 4.686 18 8V20C18 20.552 17.552 21 17 21C16.448 21 16 20.552 16 20V15H8V20C8 20.552 7.552 21 7 21C6.448 21 6 20.552 6 20ZM8 13H16V8C16 5.791 14.209 4 12 4C9.791 4 8 5.791 8 8Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "fill/round": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 14V8C6 4.686 8.686 2 12 2C15.314 2 18 4.686 18 8V20C18 20.552 17.552 21 17 21C16.448 21 16 20.552 16 20V15H8V20C8 20.552 7.552 21 7 21C6.448 21 6 20.552 6 20ZM8 13H16V8C16 5.791 14.209 4 12 4C9.791 4 8 5.791 8 8Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "bulk/sharp": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 14V8C6 4.686 8.686 2 12 2C15.314 2 18 4.686 18 8V20C18 20.552 17.552 21 17 21C16.448 21 16 20.552 16 20V15H8V20C8 20.552 7.552 21 7 21C6.448 21 6 20.552 6 20ZM8 13H16V8C16 5.791 14.209 4 12 4C9.791 4 8 5.791 8 8Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "bulk/regular": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 14V8C6 4.686 8.686 2 12 2C15.314 2 18 4.686 18 8V20C18 20.552 17.552 21 17 21C16.448 21 16 20.552 16 20V15H8V20C8 20.552 7.552 21 7 21C6.448 21 6 20.552 6 20ZM8 13H16V8C16 5.791 14.209 4 12 4C9.791 4 8 5.791 8 8Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "bulk/round": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 14V8C6 4.686 8.686 2 12 2C15.314 2 18 4.686 18 8V20C18 20.552 17.552 21 17 21C16.448 21 16 20.552 16 20V15H8V20C8 20.552 7.552 21 7 21C6.448 21 6 20.552 6 20ZM8 13H16V8C16 5.791 14.209 4 12 4C9.791 4 8 5.791 8 8Z\" fill=\"currentColor\"/>\n</svg>\n",
+  },
+);

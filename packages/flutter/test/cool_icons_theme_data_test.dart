@@ -42,14 +42,8 @@ void main() {
     });
 
     test('lerp interpolates dimensions and colors', () {
-      const a = CoolIconsThemeData(
-        size: 20,
-        color: Colors.black,
-      );
-      const b = CoolIconsThemeData(
-        size: 28,
-        color: Colors.white,
-      );
+      const a = CoolIconsThemeData(size: 20, color: Colors.black);
+      const b = CoolIconsThemeData(size: 28, color: Colors.white);
 
       final middle = a.lerp(b, 0.5);
 

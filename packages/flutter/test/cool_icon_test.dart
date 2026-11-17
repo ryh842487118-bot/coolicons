@@ -6,17 +6,16 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   testWidgets('renders an icon from its default variant', (tester) async {
     await tester.pumpWidget(
-      const MaterialApp(
-        home: Center(
-          child: CoolIcon(CoolIcons.house),
-        ),
-      ),
+      const MaterialApp(home: Center(child: CoolIcon(CoolIcons.house))),
     );
 
     await tester.pumpAndSettle();
 
     expect(find.byType(CoolIcon), findsOneWidget);
-    expect(find.byWidgetPredicate((widget) => widget is SvgPicture), findsOneWidget);
+    expect(
+      find.byWidgetPredicate((widget) => widget is SvgPicture),
+      findsOneWidget,
+    );
   });
 
   testWidgets('uses the nearest Coolicons theme', (tester) async {

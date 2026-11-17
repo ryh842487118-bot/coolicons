@@ -60,10 +60,11 @@ class _IconGalleryPageState extends State<IconGalleryPage> {
 
   @override
   Widget build(BuildContext context) {
-    final icons = CoolIcons.all.entries
-        .where((entry) => entry.key.contains(_query.toLowerCase()))
-        .toList()
-      ..sort((a, b) => a.key.compareTo(b.key));
+    final icons =
+        CoolIcons.all.entries
+            .where((entry) => entry.key.contains(_query.toLowerCase()))
+            .toList()
+          ..sort((a, b) => a.key.compareTo(b.key));
 
     return Scaffold(
       appBar: AppBar(title: const Text('Coolicons')),

@@ -53,13 +53,15 @@ class CoolIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final config = CoolIconTheme.maybeOf(context) ??
+    final config =
+        CoolIconTheme.maybeOf(context) ??
         theme.extension<CoolIconsThemeData>() ??
         const CoolIconsThemeData();
     final inheritedIconTheme = IconTheme.of(context);
 
     final resolvedSize = size ?? config.size;
-    final resolvedColor = color ??
+    final resolvedColor =
+        color ??
         config.color ??
         inheritedIconTheme.color ??
         theme.colorScheme.onSurface;
@@ -123,14 +125,12 @@ String _resolveSvg(
 
     final alpha = secondaryColor == null ? 1.0 : _colorOpacity(secondaryColor);
     if (secondaryOpacity != null || alpha < 1) {
-      final originalOpacity =
-          double.tryParse(opacityMatch.group(2)!) ?? 1;
+      final originalOpacity = double.tryParse(opacityMatch.group(2)!) ?? 1;
       final baseOpacity = secondaryOpacity ?? originalOpacity;
       final nextOpacity = (baseOpacity * alpha).clamp(0.0, 1.0);
       path = path.replaceFirstMapped(
         opacityPattern,
-        (opacity) =>
-            '${opacity.group(1)}$nextOpacity${opacity.group(3)}',
+        (opacity) => '${opacity.group(1)}$nextOpacity${opacity.group(3)}',
       );
     }
 

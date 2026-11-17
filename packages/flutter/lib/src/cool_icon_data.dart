@@ -6,10 +6,7 @@ class CoolIconData {
   /// Creates data for a Coolicons glyph.
   ///
   /// [variants] is keyed by `"<style>/<radius>"`, for example "line/round".
-  const CoolIconData({
-    required this.name,
-    required this.variants,
-  });
+  const CoolIconData({required this.name, required this.variants});
 
   /// The upstream kebab-case icon name.
   final String name;
