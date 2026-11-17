@@ -12,7 +12,7 @@ for (const name of PACKAGES) {
 }
 
 const flutterPubspec = readFileSync(flutterPackageFile, "utf8");
-const flutterVersion = /^version:\\s*([^\\n]+)/m.exec(flutterPubspec)?.[1]?.trim();
+const flutterVersion = /^version:\s*([^\n]+)/m.exec(flutterPubspec)?.[1]?.trim();
 if (flutterVersion !== version) {
   throw new Error(`coolicons_flutter has version ${flutterVersion}, expected ${version}`);
 }
