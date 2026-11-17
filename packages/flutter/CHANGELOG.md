@@ -1,10 +1,14 @@
 # Changelog
 
+## 5.4.0+1
+
+- Uses the upstream website's `corners` terminology in the Flutter API.
+- Removes the unused standalone Material UI dependency.
+- Supports Flutter 3.41+ and Dart 3.11+.
+- Simplifies the pub.dev README to Flutter usage and original author attribution.
+
 ## 5.4.0
 
 - Initial community-maintained Flutter adapter release.
 - Includes the Coolicons 5.4.0 icon artwork and catalog.
-- Supports Flutter 3.41+ and Dart 3.11+.
-- Uses Flutter's built-in Material library without a standalone Material UI dependency.
-- Provides five icon styles and three corner options using the upstream SVG assets.
 - Adds Flutter widgets, global and local theme support, and SVG rendering options.
