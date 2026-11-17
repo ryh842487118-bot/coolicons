@@ -1,0 +1,76 @@
+name: Sync upstream Coolicons
+
+on:
+  schedule:
+    - cron: "23 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-upstream
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout fork main
+        uses: actions/checkout@v7.0.1
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Fetch upstream
+        run: |
+          git remote add upstream https://github.com/krystonschwarze/coolicons.git
+          git fetch upstream main
+          git fetch origin main
+
+      - name: Merge upstream into a dedicated sync branch
+        id: merge
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B sync/upstream origin/main
+
+          if git merge-base --is-ancestor upstream/main HEAD; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Fork main already contains upstream main."
+            exit 0
+          fi
+
+          git merge --no-edit upstream/main
+          git push --force-with-lease origin sync/upstream
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Create or update upstream sync pull request
+        if: steps.merge.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          body="$(cat <<'EOF'
+          This pull request synchronizes this fork with the upstream Coolicons repository.
+
+          - Upstream: https://github.com/krystonschwarze/coolicons
+          - Source branch: upstream/main
+          - Target branch: main
+
+          Review the merge and run the Flutter catalog generation and tests before merging.
+          EOF
+          )"
+
+          pr_number="$(gh pr list --base main --head sync/upstream --state open --json number --jq '.[0].number // empty')"
+          if [ -z "$pr_number" ]; then
+            gh pr create \
+              --base main \
+              --head sync/upstream \
+              --title "chore: sync upstream Coolicons" \
+              --body "$body"
+          else
+            gh pr edit "$pr_number" --title "chore: sync upstream Coolicons" --body "$body"
+          fi
