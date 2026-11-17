@@ -9,3 +9,7 @@ enum CoolIconCorners {
   /// Rounded corners.
   round,
 }
+
+/// Backwards-compatible alias. Prefer [CoolIconCorners] in new code.
+@Deprecated('Use CoolIconCorners instead.')
+typedef CoolIconRadius = CoolIconCorners;
