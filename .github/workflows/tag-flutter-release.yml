@@ -56,10 +56,16 @@ jobs:
           tag="flutter-v$version"
           git fetch origin --tags
           if git rev-parse -q --verify "refs/tags/$tag" >/dev/null; then
-            echo "Tag $tag already exists. Use the tag ref to retry its publisher."
-            exit 0
+            existing="$(git rev-parse "refs/tags/$tag")"
+            if [ "$existing" = "$latest_main" ]; then
+              echo "Tag $tag already points to the tested main commit."
+              exit 0
+            fi
+            echo "Refreshing existing tag $tag to the tested main commit so its push event starts pub.dev publishing."
+            git tag -f "$tag" "$latest_main"
+            git push --force origin "refs/tags/$tag"
+          else
+            git tag "$tag" "$latest_main"
+            git push origin "$tag"
           fi
-
-          git tag "$tag" "$latest_main"
-          git push origin "$tag"
           echo "Pushed $tag. The tag push starts the pub.dev publisher."
