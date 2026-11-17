@@ -38,6 +38,7 @@ jobs:
       - name: Verify generated Flutter catalog is committed
         run: |
           node scripts/build-flutter.mjs
+          dart format packages/flutter/lib test example/lib
           git diff --exit-code -- packages/flutter/lib/src/generated
       - name: Test Flutter package
         working-directory: packages/flutter
