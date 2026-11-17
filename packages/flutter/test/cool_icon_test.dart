@@ -16,7 +16,7 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.byType(CoolIcon), findsOneWidget);
-    expect(find.byType(SvgPicture), findsOneWidget);
+    expect(find.byWidgetPredicate((widget) => widget is SvgPicture), findsOneWidget);
   });
 
   testWidgets('uses the nearest Coolicons theme', (tester) async {
@@ -38,7 +38,9 @@ void main() {
 
     await tester.pumpAndSettle();
 
-    final picture = tester.widget<SvgPicture>(find.byType(SvgPicture));
+    final picture = tester.widget<SvgPicture>(
+      find.byWidgetPredicate((widget) => widget is SvgPicture),
+    );
     expect(picture.width, 36);
     expect(picture.height, 36);
   });
