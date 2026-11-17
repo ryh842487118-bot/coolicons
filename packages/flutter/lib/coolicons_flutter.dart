@@ -1,8 +1,8 @@
 // Flutter widgets and theming for the Coolicons icon set.
-///
+//
 // Icon artwork is sourced from the upstream Coolicons project:
 // https://github.com/krystonschwarze/coolicons
-///
+//
 // This package is a community-maintained Flutter adapter and is not an
 // official package published by the upstream author.
 export 'src/cool_icon.dart';
