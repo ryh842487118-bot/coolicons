@@ -7,7 +7,7 @@
 // official package published by the upstream author.
 export 'src/cool_icon.dart';
 export 'src/cool_icon_data.dart';
-export 'src/cool_icon_radius.dart';
+export 'src/cool_icon_corners.dart';
 export 'src/cool_icon_style.dart';
 export 'src/cool_icons_theme_data.dart';
 export 'src/cool_icon_theme.dart';

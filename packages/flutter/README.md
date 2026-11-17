@@ -23,9 +23,19 @@ CoolIcon(CoolIcons.heart, style: CoolIconStyle.fill);
 
 ## Icon styles and corners
 
-Every icon is available in five visual styles: `line`, `duocolor`, `duotone`, `fill` and `bulk`.
+Every icon is available in five visual styles:
 
-Each style supports three corner treatments: `sharp`, `regular` and `round`.
+- `line`
+- `duocolor`
+- `duotone`
+- `fill`
+- `bulk`
+
+Each style supports three corner treatments:
+
+- `sharp`
+- `regular`
+- `round`
 
 ```dart
 CoolIcon(

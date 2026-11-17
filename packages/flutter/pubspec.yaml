@@ -1,6 +1,6 @@
 name: coolicons_flutter
 description: A Flutter widget library for the Coolicons icon set.
-version: 5.4.0
+version: 5.4.0+1
 homepage: https://coolicons.cool/
 repository: https://github.com/ryh842487118-bot/coolicons
 issue_tracker: https://github.com/ryh842487118-bot/coolicons/issues
@@ -11,14 +11,13 @@ topics:
   - coolicons
 
 environment:
-  sdk: ">=3.13.0 <4.0.0"
-  flutter: ">=3.47.0"
+  sdk: ">=3.11.0 <4.0.0"
+  flutter: ">=3.41.0"
 
 dependencies:
   flutter:
     sdk: flutter
   flutter_svg: ^2.1.0
-  material_ui: ^1.11.1
 
 dev_dependencies:
   flutter_lints: ^5.0.0

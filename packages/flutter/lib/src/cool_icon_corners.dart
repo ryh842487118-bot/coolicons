@@ -1,5 +1,5 @@
 /// Corner treatments provided as separate SVG artwork by Coolicons.
-enum CoolIconRadius {
+enum CoolIconCorners {
   /// Sharp corners.
   sharp,
 
