@@ -5,8 +5,6 @@
 ///
 /// This package is a community-maintained Flutter adapter and is not an
 /// official package published by the upstream author.
-library coolicons_flutter;
-
 export 'src/cool_icon.dart';
 export 'src/cool_icon_data.dart';
 export 'src/cool_icon_radius.dart';
