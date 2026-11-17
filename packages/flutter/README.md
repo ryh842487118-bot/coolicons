@@ -1,5 +1,7 @@
 # Coolicons for Flutter
 
+**Requirements:** Flutter 3.47+ and Dart 3.13+. The package uses Flutter's standalone `material_ui` package for `ThemeExtension` integration.
+
 A community-maintained Flutter adapter for the [Coolicons](https://coolicons.cool/) icon set.
 
 > This package is not an official Flutter package published by the upstream Coolicons author.
@@ -23,6 +25,7 @@ flutter pub add coolicons_flutter
 
 ```dart
 import 'package:coolicons_flutter/coolicons_flutter.dart';
+import 'package:material_ui/material_ui.dart';
 
 CoolIcon(CoolIcons.house);
 CoolIcon(CoolIcons.heart, style: CoolIconStyle.fill);
