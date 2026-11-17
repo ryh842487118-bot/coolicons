@@ -3,6 +3,7 @@ name: Release
 on:
   push:
     tags: ["v*"]
+  workflow_dispatch:
 
 permissions: {}
 
@@ -12,6 +13,8 @@ concurrency:
 
 jobs:
   publish:
+    outputs:
+      flutter_version: ${{ steps.release.outputs.flutter_version }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
     permissions:
@@ -63,6 +66,7 @@ jobs:
 
 
   check-flutter-pubdev:
+    needs: [publish]
     runs-on: ubuntu-latest
     outputs:
       package_exists: ${{ steps.check.outputs.package_exists }}
@@ -71,9 +75,9 @@ jobs:
       - name: Check whether the Flutter package and version exist
         id: check
         env:
-          VERSION_TAG: ${{ github.ref_name }}
+          FLUTTER_VERSION: ${{ needs.publish.outputs.flutter_version }}
         run: |
-          version="${VERSION_TAG#v}"
+          version="$FLUTTER_VERSION"
           package_status="$(curl --silent --show-error --output /dev/null --write-out "%{http_code}" "https://pub.dev/api/packages/coolicons_flutter")"
           if [ "$package_status" = "404" ]; then
             echo "package_exists=false" >> "$GITHUB_OUTPUT"
@@ -86,7 +90,8 @@ jobs:
           fi
 
           echo "package_exists=true" >> "$GITHUB_OUTPUT"
-          version_status="$(curl --silent --show-error --output /dev/null --write-out "%{http_code}" "https://pub.dev/api/packages/coolicons_flutter/versions/${version}")"
+          encoded_version="$(printf '%s' "$version" | jq -sRr @uri)"
+          version_status="$(curl --silent --show-error --output /dev/null --write-out "%{http_code}" "https://pub.dev/api/packages/coolicons_flutter/versions/$encoded_version")"
           if [ "$version_status" = "200" ]; then
             echo "version_exists=true" >> "$GITHUB_OUTPUT"
           elif [ "$version_status" = "404" ]; then
