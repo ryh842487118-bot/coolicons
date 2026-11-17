@@ -62,29 +62,7 @@ class _IconGalleryPageState extends State<IconGalleryPage> {
       ..sort((a, b) => a.key.compareTo(b.key));
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Coolicons'),
-        actions: [
-          IconButton(
-            tooltip: 'Toggle theme',
-            onPressed: () {
-              final brightness = Theme.of(context).brightness;
-              // The example follows the system by default; this button is
-              // intentionally just a visual placeholder for app theme demos.
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text(
-                    brightness == Brightness.dark
-                        ? 'Dark theme is active'
-                        : 'Light theme is active',
-                  ),
-                ),
-              );
-            },
-            icon: const Icon(Icons.brightness_6_outlined),
-          ),
-        ],
-      ),
+      appBar: AppBar(title: const Text('Coolicons')),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
