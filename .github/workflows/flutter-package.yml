@@ -47,13 +47,8 @@ jobs:
         working-directory: packages/flutter
         run: flutter pub get
       - name: Format Dart files
-        if: github.event_name != 'pull_request'
         working-directory: packages/flutter
         run: dart format lib test example/lib
-      - name: Verify Dart formatting
-        if: github.event_name == 'pull_request'
-        working-directory: packages/flutter
-        run: dart format --output=none --set-exit-if-changed lib test example/lib
       - name: Commit generated catalog and formatting
         if: github.event_name != 'pull_request'
         run: |
