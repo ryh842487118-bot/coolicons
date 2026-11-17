@@ -1,4 +1,5 @@
 import 'package:coolicons_flutter/coolicons_flutter.dart';
+// ignore: deprecated_member_use
 import 'package:flutter/material.dart';
 
 void main() => runApp(const CooliconsExampleApp());
