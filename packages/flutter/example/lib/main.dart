@@ -80,7 +80,7 @@ class _IconGalleryPageState extends State<IconGalleryPage> {
               children: [
                 Expanded(
                   child: DropdownButtonFormField<CoolIconStyle>(
-                    value: _style,
+                    initialValue: _style,
                     decoration: const InputDecoration(labelText: 'Style'),
                     items: CoolIconStyle.values
                         .map(
@@ -98,7 +98,7 @@ class _IconGalleryPageState extends State<IconGalleryPage> {
                 const SizedBox(width: 12),
                 Expanded(
                   child: DropdownButtonFormField<CoolIconRadius>(
-                    value: _radius,
+                    initialValue: _radius,
                     decoration: const InputDecoration(labelText: 'Corners'),
                     items: CoolIconRadius.values
                         .map(
