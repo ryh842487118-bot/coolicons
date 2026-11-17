@@ -1,0 +1,80 @@
+name: Tag and publish Flutter release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "package.json"
+      - "packages/flutter/pubspec.yaml"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: auto-release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout main with tags
+        uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Create release tag and dispatch release workflow
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BEFORE_SHA: ${{ github.event.before }}
+          CURRENT_SHA: ${{ github.sha }}
+        run: |
+          if [ "$BEFORE_SHA" = "0000000000000000000000000000000000000000" ]; then
+            echo "Initial branch creation; no previous version to compare."
+            exit 0
+          fi
+
+          old_version="$(git show "$BEFORE_SHA:package.json" | jq -r .version)"
+          version="$(jq -r .version package.json)"
+          if [ "$old_version" = "$version" ]; then
+            echo "Version unchanged ($version); no release needed."
+            exit 0
+          fi
+
+          if ! [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-beta\.[0-9]+)?$ ]]; then
+            echo "Invalid release version: $version"
+            exit 1
+          fi
+
+          flutter_version="$(awk '/^version:/{print $2; exit}' packages/flutter/pubspec.yaml)"
+          if [ "$flutter_version" != "$version" ]; then
+            echo "Flutter version $flutter_version does not match monorepo version $version."
+            exit 1
+          fi
+
+          package_status="$(curl --silent --show-error --output /dev/null --write-out "%{http_code}" "https://pub.dev/api/packages/coolicons_flutter/versions/${version}")"
+          if [ "$package_status" = "200" ]; then
+            echo "coolicons_flutter $version is already published."
+            exit 0
+          elif [ "$package_status" != "404" ]; then
+            echo "Unexpected pub.dev response: HTTP $package_status"
+            exit 1
+          fi
+
+          tag="v${version}"
+          git fetch origin --tags
+          if git rev-parse -q --verify "refs/tags/$tag" >/dev/null; then
+            if ! git merge-base --is-ancestor "$tag" "$CURRENT_SHA"; then
+              echo "Tag $tag exists but is not an ancestor of the current main commit."
+              exit 1
+            fi
+          else
+            git tag "$tag" "$CURRENT_SHA"
+            git push origin "$tag"
+          fi
+
+          gh workflow run release.yml --repo "$GITHUB_REPOSITORY" --ref "$tag"
+          echo "Dispatched release workflow for $tag."
