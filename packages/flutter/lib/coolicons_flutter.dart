@@ -1,10 +1,10 @@
-/// Flutter widgets and theming for the Coolicons icon set.
+// Flutter widgets and theming for the Coolicons icon set.
 ///
-/// Icon artwork is sourced from the upstream Coolicons project:
-/// https://github.com/krystonschwarze/coolicons
+// Icon artwork is sourced from the upstream Coolicons project:
+// https://github.com/krystonschwarze/coolicons
 ///
-/// This package is a community-maintained Flutter adapter and is not an
-/// official package published by the upstream author.
+// This package is a community-maintained Flutter adapter and is not an
+// official package published by the upstream author.
 export 'src/cool_icon.dart';
 export 'src/cool_icon_data.dart';
 export 'src/cool_icon_radius.dart';
