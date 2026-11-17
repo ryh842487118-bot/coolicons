@@ -2,7 +2,7 @@ name: Flutter package
 
 on:
   push:
-    branches: [main, feat/flutter-package]
+    branches: [main]
     paths:
       - "icons/**"
       - "scripts/build-flutter.mjs"
