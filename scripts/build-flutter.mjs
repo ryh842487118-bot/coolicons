@@ -14,7 +14,7 @@ const dartKeywords = new Set([
   "async", "await", "covariant", "deferred", "dynamic", "export", "extension",
   "external", "factory", "Function", "get", "implements", "import", "interface",
   "late", "library", "mixin", "operator", "part", "required", "set", "static",
-  "typedef", "yield", "all", "names",
+  "typedef", "yield", "all", "names", "base", "interface", "macro", "sealed", "when", "augment", "of", "show", "hide", "on",
 ]);
 
 function dartIdentifier(name) {
@@ -26,7 +26,7 @@ function dartIdentifier(name) {
   return identifier;
 }
 
-function dartString(value) {
+function dartFileName(name) {\n  return name.replace(/-/g, "_");\n}\n\nfunction dartString(value) {
   return JSON.stringify(value)
     .replace(/\u2028/g, "\\u2028")
     .replace(/\u2029/g, "\\u2029");
@@ -69,7 +69,7 @@ ${variants}
   },
 );
 `;
-  writeFileSync(path.join(iconOutput, `${icon.name}.dart`), source);
+  writeFileSync(path.join(iconOutput, `${dartFileName(icon.name)}.dart`), source);
 }
 
 const importTargets = new Set();
@@ -79,7 +79,7 @@ for (const icon of icons) {
 
 const imports = [...importTargets].map((name) => {
   const identifier = dartIdentifier(name);
-  return `import 'icons/${name}.dart' as _${identifier};`;
+  return `import 'icons/${dartFileName(name)}.dart' as _${identifier};`;
 }).join("\n");
 
 const fields = icons.map((icon) => {
