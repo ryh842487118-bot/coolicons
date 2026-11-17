@@ -1,6 +1,6 @@
 import { mkdirSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { componentName, loadIcons, root, serializeSvg, VARIANTS } from "./icons.mjs";
+import { loadIcons, root, serializeSvg, VARIANTS } from "./icons.mjs";
 
 const packageRoot = path.join(root, "packages", "flutter");
 const generatedRoot = path.join(packageRoot, "lib", "src", "generated");
@@ -14,7 +14,7 @@ const dartKeywords = new Set([
   "async", "await", "covariant", "deferred", "dynamic", "export", "extension",
   "external", "factory", "Function", "get", "implements", "import", "interface",
   "late", "library", "mixin", "operator", "part", "required", "set", "static",
-  "typedef", "yield",
+  "typedef", "yield", "all", "names",
 ]);
 
 function dartIdentifier(name) {
@@ -98,7 +98,7 @@ const names = icons.map((icon) => `    ${dartString(icon.name)},`).join("\n");
 const indexSource = `// GENERATED CODE - DO NOT MODIFY BY HAND.
 // Source: icons/manifest.json and icons/svg/
 // Upstream: https://github.com/krystonschwarze/coolicons
-// Upstream manifest version: ${manifest.format}; manifest hash: ${manifest.hash}
+// Upstream manifest version: ${manifest.format}; source commit: ${manifest.source.commit}; manifest hash: ${manifest.hash}
 // Regenerate with: node scripts/build-flutter.mjs
 
 import '../cool_icon_data.dart';
@@ -111,8 +111,7 @@ ${fields}
 
   /// All icons keyed by their original upstream kebab-case names.
   ///
-  /// Referencing this map includes the full catalog. Prefer [CoolIcons.house]
-  /// style constants when only a few icons are needed.
+  /// Referencing this map exposes the full catalog for icon browsers and search.
   static const Map<String, CoolIconData> all = <String, CoolIconData>{
 ${allEntries}
   };
