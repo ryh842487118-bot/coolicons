@@ -1,3 +1,6 @@
+import 'cool_icon_radius.dart';
+import 'cool_icon_style.dart';
+
 /// Data for one Coolicons glyph and its available SVG variants.
 class CoolIconData {
   /// Creates data for a Coolicons glyph.
