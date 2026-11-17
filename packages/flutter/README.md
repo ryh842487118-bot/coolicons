@@ -127,3 +127,28 @@ to regenerate the Dart catalog.
 
 The icon artwork and this Flutter adapter are distributed under the MIT License.
 See the repository's [LICENSE](../../LICENSE) and [NOTICE.md](NOTICE.md).
+
+## Versioning and releases
+
+The Flutter adapter follows the same version and Git tag as the upstream Coolicons
+monorepo packages. The version is updated by `scripts/release.mjs` and checked
+by `scripts/release-check.mjs`; it is not versioned independently.
+
+The release workflow runs the Flutter generator, analyzer, tests and
+`flutter pub publish --dry-run` alongside the existing monorepo checks.
+
+### First pub.dev publication
+
+pub.dev requires the first version of a package to be published manually.
+After publishing the first version, enable automated publishing on the package's
+pub.dev Admin page with:
+
+- GitHub repository: `ryh842487118-bot/coolicons`
+- Tag pattern: `v{{version}}`
+
+Subsequent matching release tags are published by the
+`publish-flutter` GitHub Actions job using OIDC. No long-lived pub.dev token
+is stored in GitHub secrets.
+
+The Flutter package shares the monorepo release number (for example, 5.4.0),
+but remains a separate package on pub.dev.
