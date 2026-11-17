@@ -1,5 +1,11 @@
 # Changelog
 
+## 5.4.1
+
+- Aligns the corner-selection API with the upstream website's `Corners` terminology (`corners` and `CoolIconCorners`).
+- Keeps `radius` and `CoolIconRadius` as deprecated compatibility aliases.
+- Simplifies the Flutter package documentation for end users.
+
 ## 5.4.0
 
 - Adds the community-maintained Flutter adapter and generated icon catalog.
