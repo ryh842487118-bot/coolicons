@@ -3,7 +3,9 @@ import 'package:material_ui/material_ui.dart';
 
 void main() => runApp(const CooliconsExampleApp());
 
+/// Demonstrates Coolicons styles, corner variants and theme inheritance.
 class CooliconsExampleApp extends StatelessWidget {
+  /// Creates the example application.
   const CooliconsExampleApp({super.key});
 
   @override
@@ -42,7 +44,9 @@ class CooliconsExampleApp extends StatelessWidget {
   }
 }
 
+/// Searchable gallery for the generated Coolicons catalog.
 class IconGalleryPage extends StatefulWidget {
+  /// Creates the icon gallery page.
   const IconGalleryPage({super.key});
 
   @override
