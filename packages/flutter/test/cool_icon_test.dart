@@ -27,7 +27,7 @@ void main() {
             CoolIconsThemeData(
               size: 36,
               style: CoolIconStyle.line,
-              radius: CoolIconRadius.round,
+              corners: CoolIconCorners.round,
               color: Colors.purple,
             ),
           ],
@@ -44,15 +44,15 @@ void main() {
     expect(picture.width, 36);
     expect(picture.height, 36);
   });
-  test('generated catalog contains every style and radius for every icon', () {
+  test('generated catalog contains every style and corners for every icon', () {
     expect(CoolIcons.all.keys.toSet(), CoolIcons.names.toSet());
     expect(CoolIcons.all, isNotEmpty);
 
     for (final entry in CoolIcons.all.entries) {
       expect(CoolIcons.all.containsKey(entry.value.name), isTrue);
       for (final style in CoolIconStyle.values) {
-        for (final radius in CoolIconRadius.values) {
-          final svg = entry.value.svgFor(style, radius);
+        for (final corners in CoolIconCorners.values) {
+          final svg = entry.value.svgFor(style, corners);
           expect(svg, startsWith('<svg'));
           expect(svg, contains('</svg>'));
         }
