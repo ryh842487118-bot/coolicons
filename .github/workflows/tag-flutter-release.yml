@@ -15,7 +15,8 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
+      actions: write
     steps:
       - name: Checkout current main
         uses: actions/checkout@v7.0.1
