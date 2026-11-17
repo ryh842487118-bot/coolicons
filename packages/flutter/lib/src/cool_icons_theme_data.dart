@@ -16,19 +16,25 @@ class CoolIconsThemeData extends ThemeExtension<CoolIconsThemeData> {
   /// Creates the default Coolicons configuration.
   const CoolIconsThemeData({
     this.style = CoolIconStyle.line,
-    this.corners = CoolIconCorners.round,
+    CoolIconCorners corners = CoolIconCorners.round,
+    @Deprecated('Use corners instead.') CoolIconCorners? radius,
     this.size = 24,
     this.color,
     this.strokeWidth = 2,
     this.secondaryColor,
     this.secondaryOpacity,
-  });
+  }) : assert(radius == null || corners == CoolIconCorners.round),
+       corners = radius ?? corners;
 
   /// Default artwork style.
   final CoolIconStyle style;
 
   /// Default artwork corner treatment.
   final CoolIconCorners corners;
+
+  /// Legacy alias for [corners].
+  @Deprecated('Use corners instead.')
+  CoolIconCorners get radius => corners;
 
   /// Default icon width and height in logical pixels.
   final double size;
@@ -50,6 +56,7 @@ class CoolIconsThemeData extends ThemeExtension<CoolIconsThemeData> {
   CoolIconsThemeData copyWith({
     CoolIconStyle? style,
     CoolIconCorners? corners,
+    @Deprecated('Use corners instead.') CoolIconCorners? radius,
     double? size,
     Color? color,
     bool clearColor = false,
@@ -61,7 +68,7 @@ class CoolIconsThemeData extends ThemeExtension<CoolIconsThemeData> {
   }) {
     return CoolIconsThemeData(
       style: style ?? this.style,
-      corners: corners ?? this.corners,
+      corners: corners ?? radius ?? this.corners,
       size: size ?? this.size,
       color: clearColor ? null : (color ?? this.color),
       strokeWidth: strokeWidth ?? this.strokeWidth,
