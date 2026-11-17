@@ -77,8 +77,31 @@ jobs:
           gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1 || gh release create "$GITHUB_REF_NAME" "coolicons-$VERSION.zip" --title "coolicons $VERSION" --notes-file notes.md "${flags[@]}"
 
 
+
+  check-flutter-pubdev:
+    runs-on: ubuntu-latest
+    outputs:
+      version-exists: ${{ steps.check.outputs.version_exists }}
+    steps:
+      - name: Check whether this Flutter version is already published
+        id: check
+        env:
+          VERSION_TAG: ${{ github.ref_name }}
+        run: |
+          version="${VERSION_TAG#v}"
+          status="$(curl --silent --show-error --output /dev/null --write-out "%{http_code}" "https://pub.dev/api/packages/coolicons_flutter/versions/${version}")"
+          if [ "$status" = "200" ]; then
+            echo "version_exists=true" >> "$GITHUB_OUTPUT"
+          elif [ "$status" = "404" ]; then
+            echo "version_exists=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Unexpected pub.dev response: HTTP $status"
+            exit 1
+          fi
+
   publish-flutter:
-    needs: publish
+    needs: [publish, check-flutter-pubdev]
+    if: needs.check-flutter-pubdev.outputs.version-exists != 'true'
     permissions:
       contents: read
       id-token: write
