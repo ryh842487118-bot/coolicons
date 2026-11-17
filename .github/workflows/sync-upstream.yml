@@ -31,6 +31,11 @@ jobs:
           git fetch upstream main
           git fetch origin main
 
+      - name: Set up Node
+        uses: actions/setup-node@v7.0.0
+        with:
+          node-version-file: .nvmrc
+
       - name: Merge upstream into a dedicated sync branch
         id: merge
         run: |
@@ -45,6 +50,7 @@ jobs:
           fi
 
           git merge --no-edit upstream/main
+          node scripts/sync-flutter-release.mjs
           git push --force-with-lease origin sync/upstream
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
