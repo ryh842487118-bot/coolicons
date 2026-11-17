@@ -26,7 +26,11 @@ function dartIdentifier(name) {
   return identifier;
 }
 
-function dartFileName(name) {\n  return name.replace(/-/g, "_");\n}\n\nfunction dartString(value) {
+function dartFileName(name) {
+  return name.replace(/-/g, "_");
+}
+
+function dartString(value) {
   return JSON.stringify(value)
     .replace(/\u2028/g, "\\u2028")
     .replace(/\u2029/g, "\\u2029");
@@ -62,6 +66,7 @@ for (const icon of canonicalIcons) {
 
 import '../../cool_icon_data.dart';
 
+/// Icon data for the upstream ${icon.name} glyph.
 const CoolIconData ${identifier} = CoolIconData(
   name: ${dartString(icon.name)},
   variants: <String, String>{
