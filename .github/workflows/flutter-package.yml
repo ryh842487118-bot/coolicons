@@ -62,7 +62,7 @@ jobs:
         working-directory: packages/flutter/example
         run: flutter pub get && flutter analyze
       - name: Commit generated icon catalog and formatting
-        if: github.event_name == 'push'
+        if: github.event_name != 'pull_request'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
