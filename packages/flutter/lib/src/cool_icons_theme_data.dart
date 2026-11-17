@@ -1,8 +1,9 @@
 import 'dart:ui' show lerpDouble;
 
-import 'package:material_ui/material_ui.dart';
+// ignore: deprecated_member_use
+import 'package:flutter/material.dart';
 
-import 'cool_icon_radius.dart';
+import 'cool_icon_corners.dart';
 import 'cool_icon_style.dart';
 
 /// Global default configuration for Coolicons widgets.
@@ -15,7 +16,7 @@ class CoolIconsThemeData extends ThemeExtension<CoolIconsThemeData> {
   /// Creates the default Coolicons configuration.
   const CoolIconsThemeData({
     this.style = CoolIconStyle.line,
-    this.radius = CoolIconRadius.round,
+    this.corners = CoolIconCorners.round,
     this.size = 24,
     this.color,
     this.strokeWidth = 2,
@@ -26,8 +27,8 @@ class CoolIconsThemeData extends ThemeExtension<CoolIconsThemeData> {
   /// Default artwork style.
   final CoolIconStyle style;
 
-  /// Default artwork corner treatment.
-  final CoolIconRadius radius;
+  /// Default artwork corners.
+  final CoolIconCorners corners;
 
   /// Default icon width and height in logical pixels.
   final double size;
@@ -35,7 +36,7 @@ class CoolIconsThemeData extends ThemeExtension<CoolIconsThemeData> {
   /// Default primary color. Null inherits from [IconTheme] or [ColorScheme].
   final Color? color;
 
-  /// Default stroke width for stroked styles. Fill and Bulk have no stroke.
+  /// Default stroke width for stroked styles. Fill and Bulk have no strokes.
   final double strokeWidth;
 
   /// Optional color for the lower-opacity layer in Duocolor, Duotone and Bulk.
@@ -48,7 +49,7 @@ class CoolIconsThemeData extends ThemeExtension<CoolIconsThemeData> {
   @override
   CoolIconsThemeData copyWith({
     CoolIconStyle? style,
-    CoolIconRadius? radius,
+    CoolIconCorners? corners,
     double? size,
     Color? color,
     bool clearColor = false,
@@ -60,7 +61,7 @@ class CoolIconsThemeData extends ThemeExtension<CoolIconsThemeData> {
   }) {
     return CoolIconsThemeData(
       style: style ?? this.style,
-      radius: radius ?? this.radius,
+      corners: corners ?? this.corners,
       size: size ?? this.size,
       color: clearColor ? null : (color ?? this.color),
       strokeWidth: strokeWidth ?? this.strokeWidth,
@@ -78,7 +79,7 @@ class CoolIconsThemeData extends ThemeExtension<CoolIconsThemeData> {
     if (other == null) return this;
     return CoolIconsThemeData(
       style: t < 0.5 ? style : other.style,
-      radius: t < 0.5 ? radius : other.radius,
+      corners: t < 0.5 ? corners : other.corners,
       size: lerpDouble(size, other.size, t)!,
       color: Color.lerp(color, other.color, t),
       strokeWidth: lerpDouble(strokeWidth, other.strokeWidth, t)!,
@@ -100,7 +101,7 @@ class CoolIconsThemeData extends ThemeExtension<CoolIconsThemeData> {
   bool operator ==(Object other) {
     return other is CoolIconsThemeData &&
         other.style == style &&
-        other.radius == radius &&
+        other.corners == corners &&
         other.size == size &&
         other.color == color &&
         other.strokeWidth == strokeWidth &&
@@ -111,7 +112,7 @@ class CoolIconsThemeData extends ThemeExtension<CoolIconsThemeData> {
   @override
   int get hashCode => Object.hash(
     style,
-    radius,
+    corners,
     size,
     color,
     strokeWidth,
