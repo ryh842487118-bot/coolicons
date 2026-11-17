@@ -1,0 +1,44 @@
+import 'package:coolicons_flutter/coolicons_flutter.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
+
+void main() {
+  testWidgets('renders an icon from its default variant', (tester) async {
+    await tester.pumpWidget(
+      const MaterialApp(
+        home: Center(
+          child: CoolIcon(CoolIcons.house),
+        ),
+      ),
+    );
+
+    await tester.pumpAndSettle();
+
+    expect(find.byType(CoolIcon), findsOneWidget);
+    expect(find.byType(SvgPicture), findsOneWidget);
+  });
+
+  testWidgets('uses the nearest Coolicons theme', (tester) async {
+    await tester.pumpWidget(
+      MaterialApp(
+        theme: ThemeData(
+          extensions: const [
+            CoolIconsThemeData(
+              size: 36,
+              style: CoolIconStyle.line,
+              radius: CoolIconRadius.round,
+              color: Colors.purple,
+            ),
+          ],
+        ),
+        home: const Center(child: CoolIcon(CoolIcons.heart)),
+      ),
+    );
+
+    await tester.pumpAndSettle();
+
+    final picture = tester.widget<SvgPicture>(find.byType(SvgPicture));
+    expect(picture.width, 36);
+    expect(picture.height, 36);
+  });
+}
