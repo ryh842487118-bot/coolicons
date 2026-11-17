@@ -45,6 +45,7 @@ class CoolIconsThemeData extends ThemeExtension<CoolIconsThemeData> {
   final double? secondaryOpacity;
 
   /// Creates a copy with the provided values replaced.
+  @override
   CoolIconsThemeData copyWith({
     CoolIconStyle? style,
     CoolIconRadius? radius,
