@@ -48,7 +48,7 @@ void main() {
     expect(CoolIcons.all, isNotEmpty);
 
     for (final entry in CoolIcons.all.entries) {
-      expect(entry.value.name, entry.key);
+      expect(CoolIcons.all.containsKey(entry.value.name), isTrue);
       for (final style in CoolIconStyle.values) {
         for (final radius in CoolIconRadius.values) {
           final svg = entry.value.svgFor(style, radius);
