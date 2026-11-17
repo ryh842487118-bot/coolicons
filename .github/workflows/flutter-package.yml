@@ -1,0 +1,68 @@
+name: Flutter package
+
+on:
+  push:
+    branches: [feat/flutter-package]
+    paths:
+      - "icons/**"
+      - "scripts/build-flutter.mjs"
+      - "scripts/icons.mjs"
+      - "packages/flutter/**"
+      - ".github/workflows/flutter-package.yml"
+  pull_request:
+    paths:
+      - "icons/**"
+      - "scripts/build-flutter.mjs"
+      - "scripts/icons.mjs"
+      - "packages/flutter/**"
+      - ".github/workflows/flutter-package.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: flutter-package-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version-file: .nvmrc
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - name: Generate complete Coolicons catalog
+        run: node scripts/build-flutter.mjs
+      - name: Install Flutter package dependencies
+        working-directory: packages/flutter
+        run: flutter pub get
+      - name: Format
+        working-directory: packages/flutter
+        run: dart format --output=none --set-exit-if-changed lib test example/lib
+      - name: Analyze
+        working-directory: packages/flutter
+        run: flutter analyze
+      - name: Test
+        working-directory: packages/flutter
+        run: flutter test
+      - name: Commit generated icon catalog
+        if: github.event_name == 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add packages/flutter/lib/src/generated
+          if git diff --cached --quiet; then
+            echo "Generated catalog is already up to date."
+          else
+            git commit -m "build(flutter): generate complete Coolicons catalog"
+            git push
+          fi
