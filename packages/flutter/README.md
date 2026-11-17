@@ -155,10 +155,15 @@ pub.dev Admin page with:
 - Tag pattern: `v{{version}}`
 
 After the first publication and Trusted Publisher setup, a change to the shared
-monorepo version on `main` automatically creates the matching `vX.Y.Z` tag
-and dispatches the release workflow. The `publish-flutter` job publishes this
-package to pub.dev using OIDC. No long-lived pub.dev token is stored in GitHub
-secrets.
+monorepo version on `main` automatically creates the matching `vX.Y.Z` tag.
+The tag push triggers the release workflow, and the `publish-flutter` job
+publishes this package to pub.dev using OIDC.
+
+For automatic tag creation, add a GitHub Actions repository secret named
+`RELEASE_TOKEN`. Use a fine-grained token scoped to this repository with
+Contents: Read and write permission. This token only pushes the version tag;
+pub.dev publishing itself uses short-lived OIDC credentials, not a pub.dev
+token stored in GitHub secrets.
 
 This fork publishes only `coolicons_flutter` to pub.dev; it does not republish
 the upstream React, Vue, SVG, CLI or MCP npm packages, and does not publish the
