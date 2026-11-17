@@ -17,12 +17,14 @@ class CoolIcon extends StatelessWidget {
     this.size,
     this.color,
     this.style,
-    this.corners,
+    CoolIconCorners? corners,
+    @Deprecated('Use corners instead.') CoolIconCorners? radius,
     this.strokeWidth,
     this.secondaryColor,
     this.secondaryOpacity,
     this.semanticLabel,
-  });
+  }) : assert(corners == null || radius == null),
+       corners = corners ?? radius;
 
   /// The icon artwork to render.
   final CoolIconData icon;
@@ -38,6 +40,10 @@ class CoolIcon extends StatelessWidget {
 
   /// SVG corner treatment. Defaults to the nearest Coolicons theme.
   final CoolIconCorners? corners;
+
+  /// Legacy alias for [corners].
+  @Deprecated('Use corners instead.')
+  CoolIconCorners? get radius => corners;
 
   /// Stroke width for Line, Duocolor and Duotone variants.
   final double? strokeWidth;
