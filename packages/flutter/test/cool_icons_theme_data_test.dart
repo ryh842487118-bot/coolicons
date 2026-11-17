@@ -9,7 +9,7 @@ void main() {
       const theme = CoolIconsThemeData();
 
       expect(theme.style, CoolIconStyle.line);
-      expect(theme.radius, CoolIconRadius.round);
+      expect(theme.corners, CoolIconCorners.round);
       expect(theme.size, 24);
       expect(theme.color, isNull);
       expect(theme.strokeWidth, 2);
@@ -20,7 +20,7 @@ void main() {
     test('copyWith changes only requested values', () {
       const theme = CoolIconsThemeData(
         style: CoolIconStyle.line,
-        radius: CoolIconRadius.round,
+        corners: CoolIconCorners.round,
         size: 24,
       );
 
@@ -31,7 +31,7 @@ void main() {
       );
 
       expect(updated.style, CoolIconStyle.fill);
-      expect(updated.radius, CoolIconRadius.round);
+      expect(updated.corners, CoolIconCorners.round);
       expect(updated.size, 32);
       expect(updated.color, Colors.red);
     });
