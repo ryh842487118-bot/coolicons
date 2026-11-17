@@ -81,27 +81,40 @@ jobs:
   check-flutter-pubdev:
     runs-on: ubuntu-latest
     outputs:
+      package_exists: ${{ steps.check.outputs.package_exists }}
       version_exists: ${{ steps.check.outputs.version_exists }}
     steps:
-      - name: Check whether this Flutter version is already published
+      - name: Check whether the Flutter package and version exist
         id: check
         env:
           VERSION_TAG: ${{ github.ref_name }}
         run: |
           version="${VERSION_TAG#v}"
-          status="$(curl --silent --show-error --output /dev/null --write-out "%{http_code}" "https://pub.dev/api/packages/coolicons_flutter/versions/${version}")"
-          if [ "$status" = "200" ]; then
+          package_status="$(curl --silent --show-error --output /dev/null --write-out "%{http_code}" "https://pub.dev/api/packages/coolicons_flutter")"
+          if [ "$package_status" = "404" ]; then
+            echo "package_exists=false" >> "$GITHUB_OUTPUT"
+            echo "version_exists=false" >> "$GITHUB_OUTPUT"
+            echo "coolicons_flutter has not had its first manual pub.dev publication yet; skipping automated publish."
+            exit 0
+          elif [ "$package_status" != "200" ]; then
+            echo "Unexpected pub.dev package response: HTTP $package_status"
+            exit 1
+          fi
+
+          echo "package_exists=true" >> "$GITHUB_OUTPUT"
+          version_status="$(curl --silent --show-error --output /dev/null --write-out "%{http_code}" "https://pub.dev/api/packages/coolicons_flutter/versions/${version}")"
+          if [ "$version_status" = "200" ]; then
             echo "version_exists=true" >> "$GITHUB_OUTPUT"
-          elif [ "$status" = "404" ]; then
+          elif [ "$version_status" = "404" ]; then
             echo "version_exists=false" >> "$GITHUB_OUTPUT"
           else
-            echo "Unexpected pub.dev response: HTTP $status"
+            echo "Unexpected pub.dev version response: HTTP $version_status"
             exit 1
           fi
 
   publish-flutter:
     needs: [publish, check-flutter-pubdev]
-    if: needs.check-flutter-pubdev.outputs.version_exists != 'true'
+    if: needs.check-flutter-pubdev.outputs.package_exists == 'true' && needs.check-flutter-pubdev.outputs.version_exists != 'true'
     permissions:
       contents: read
       id-token: write
