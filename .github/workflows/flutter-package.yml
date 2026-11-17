@@ -30,7 +30,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        flutter-version: ['3.41.0', 'stable']
+        flutter-version: ['3.41.0', '3.50.0']
     runs-on: ubuntu-latest
     timeout-minutes: 30
     permissions:
