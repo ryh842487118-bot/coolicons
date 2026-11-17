@@ -41,7 +41,7 @@ Each style supports three corner treatments:
 CoolIcon(
   CoolIcons.heart,
   style: CoolIconStyle.fill,
-  radius: CoolIconRadius.round,
+  corners: CoolIconCorners.round,
   size: 32,
   color: Colors.red,
 )
@@ -57,7 +57,7 @@ MaterialApp(
     extensions: const [
       CoolIconsThemeData(
         style: CoolIconStyle.line,
-        radius: CoolIconRadius.round,
+        corners: CoolIconCorners.round,
         size: 24,
         color: Color(0xFF333333),
         strokeWidth: 2,
@@ -78,7 +78,7 @@ Use `CoolIconTheme` to apply different defaults to part of the widget tree.
 CoolIconTheme(
   data: const CoolIconsThemeData(
     style: CoolIconStyle.fill,
-    radius: CoolIconRadius.round,
+    corners: CoolIconCorners.round,
     size: 28,
     color: Color(0xFF222222),
   ),
@@ -96,7 +96,7 @@ CoolIconTheme(
 | Property | Description |
 | --- | --- |
 | `style` | Selects Line, Duocolor, Duotone, Fill or Bulk artwork. |
-| `radius` | Selects Sharp, Regular or Round corners. |
+| `corners` | Selects Sharp, Regular or Round corners. |
 | `size` | Icon width and height in logical pixels. |
 | `color` | Primary icon color. |
 | `strokeWidth` | Stroke width for Line, Duocolor and Duotone. |
