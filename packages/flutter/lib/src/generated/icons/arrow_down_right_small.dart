@@ -1,0 +1,28 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND.
+// Source: icons/svg/<style>/<radius>/arrow-down-right-small.svg
+// Upstream: https://github.com/krystonschwarze/coolicons
+// Regenerate with: node scripts/build-flutter.mjs
+
+import '../../cool_icon_data.dart';
+
+/// Icon data for the upstream arrow-down-right-small glyph.
+const CoolIconData arrowDownRightSmall = CoolIconData(
+  name: "arrow-down-right-small",
+  variants: <String, String>{
+    "line/sharp": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10 16H16V10M16 16L8 8\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "line/regular": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10 16H16V10M16 16L8 8\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "line/round": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10 16H16V10M16 16L8 8\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duocolor/sharp": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10 16H16V10M16 16L8 8\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duocolor/regular": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10 16H16V10M16 16L8 8\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duocolor/round": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10 16H16V10M16 16L8 8\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duotone/sharp": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10 16H16V10M16 16L8 8\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duotone/regular": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10 16H16V10M16 16L8 8\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duotone/round": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10 16H16V10M16 16L8 8\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "fill/sharp": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M16 17H10C9.448 17 9 16.552 9 16C9 15.448 9.448 15 10 15H13.586L7.293 8.707C6.902 8.317 6.902 7.683 7.293 7.293C7.683 6.902 8.317 6.902 8.707 7.293L15 13.586V10C15 9.448 15.448 9 16 9C16.552 9 17 9.448 17 10V16C17 16.265 16.895 16.52 16.707 16.707C16.52 16.895 16.265 17 16 17Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "fill/regular": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M16 17H10C9.448 17 9 16.552 9 16C9 15.448 9.448 15 10 15H13.586L7.293 8.707C6.902 8.317 6.902 7.683 7.293 7.293C7.683 6.902 8.317 6.902 8.707 7.293L15 13.586V10C15 9.448 15.448 9 16 9C16.552 9 17 9.448 17 10V16C17 16.265 16.895 16.52 16.707 16.707C16.52 16.895 16.265 17 16 17Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "fill/round": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M16 17H10C9.448 17 9 16.552 9 16C9 15.448 9.448 15 10 15H13.586L7.293 8.707C6.902 8.317 6.902 7.683 7.293 7.293C7.683 6.902 8.317 6.902 8.707 7.293L15 13.586V10C15 9.448 15.448 9 16 9C16.552 9 17 9.448 17 10V16C17 16.265 16.895 16.52 16.707 16.707C16.52 16.895 16.265 17 16 17Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "bulk/sharp": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M16 17H10C9.448 17 9 16.552 9 16C9 15.448 9.448 15 10 15H13.586L7.293 8.707C6.902 8.317 6.902 7.683 7.293 7.293C7.683 6.902 8.317 6.902 8.707 7.293L15 13.586V10C15 9.448 15.448 9 16 9C16.552 9 17 9.448 17 10V16C17 16.265 16.895 16.52 16.707 16.707C16.52 16.895 16.265 17 16 17Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "bulk/regular": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M16 17H10C9.448 17 9 16.552 9 16C9 15.448 9.448 15 10 15H13.586L7.293 8.707C6.902 8.317 6.902 7.683 7.293 7.293C7.683 6.902 8.317 6.902 8.707 7.293L15 13.586V10C15 9.448 15.448 9 16 9C16.552 9 17 9.448 17 10V16C17 16.265 16.895 16.52 16.707 16.707C16.52 16.895 16.265 17 16 17Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "bulk/round": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M16 17H10C9.448 17 9 16.552 9 16C9 15.448 9.448 15 10 15H13.586L7.293 8.707C6.902 8.317 6.902 7.683 7.293 7.293C7.683 6.902 8.317 6.902 8.707 7.293L15 13.586V10C15 9.448 15.448 9 16 9C16.552 9 17 9.448 17 10V16C17 16.265 16.895 16.52 16.707 16.707C16.52 16.895 16.265 17 16 17Z\" fill=\"currentColor\"/>\n</svg>\n",
+  },
+);

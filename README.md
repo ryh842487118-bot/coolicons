@@ -6,7 +6,7 @@
 
 <p align="center">
   1,700+ free icons in five styles, with sharp, regular or round corners,<br>
-  for React, Vue, shadcn/ui, SVG and Figma.
+  for React, Vue, shadcn/ui, SVG and Figma. This fork also includes a community-maintained Flutter adapter.
 </p>
 
 <p align="center">
@@ -58,6 +58,7 @@ The [coolicons file on Figma Community](https://www.figma.com/community/file/800
 | [`@coolicons/svg`](packages/svg) | SVG files and a manifest for everything else |
 | [`@coolicons/cli`](packages/cli) | Search and copy icons from the terminal |
 | [`@coolicons/mcp`](packages/mcp) | MCP server for coding agents |
+| [`coolicons_flutter`](packages/flutter) | Community-maintained Flutter adapter in this fork; not an official upstream package |
 
 ## React
 

@@ -5,6 +5,8 @@ import { loadIcons, root, STYLES } from "./icons.mjs";
 import { referenceFile, skillReference } from "./skill.mjs";
 
 export const PACKAGES = ["svg", "react", "vue", "cli", "mcp"];
+export const flutterPackageFile = path.join(root, "packages/flutter/pubspec.yaml");
+export const flutterChangelogFile = path.join(root, "packages/flutter/CHANGELOG.md");
 const VERSION = /^(\d+)\.(\d+)\.(\d+)(?:-beta\.(\d+))?$/;
 const changelogFile = path.join(root, "CHANGELOG.md");
 const notesFile = (version) => path.join(root, "release-notes", `${version}.md`);
@@ -119,14 +121,23 @@ if (import.meta.filename === path.resolve(process.argv[1] ?? "")) {
     writeFileSync(file, `${JSON.stringify(pkg, null, 2)}\n`);
   }
 
+  const flutterPubspec = readFileSync(flutterPackageFile, "utf8");
+  if (!/^version:\s*[^\n]+/m.test(flutterPubspec)) {
+    throw new Error("packages/flutter/pubspec.yaml has no version field");
+  }
+  writeFileSync(
+    flutterPackageFile,
+    flutterPubspec.replace(/^version:\s*[^\n]+/m, "version: " + version),
+  );
+
   const server = readJson(serverFile);
   server.version = version;
   for (const entry of server.packages) entry.version = version;
-  writeFileSync(serverFile, `${JSON.stringify(server, null, 2)}\n`);
+  writeFileSync(serverFile, JSON.stringify(server, null, 2) + "\n");
 
   for (const file of [path.join(root, "README.md"), ...PACKAGES.map((name) => path.join(root, "packages", name, "README.md"))]) {
     const readme = readFileSync(file, "utf8");
-    writeFileSync(file, readme.replace(/\b\d{1,3}(?:,\d{3})* icons in five styles/g, `${manifest.icons.length.toLocaleString("en-US")} icons in five styles`));
+    writeFileSync(file, readme.replace(/\b\d{1,3}(?:,\d{3})* icons in five styles/g, manifest.icons.length.toLocaleString("en-US") + " icons in five styles"));
   }
 
   writeFileSync(referenceFile, skillReference());
@@ -136,9 +147,23 @@ if (import.meta.filename === path.resolve(process.argv[1] ?? "")) {
   const entry = section(version, manifest, changes, !previousVersion);
   const old = changelogSection(version, text);
   const first = text.indexOf("\n## ");
-  const next = old ? text.replace(old, entry) : first < 0 ? `${text}\n${entry}` : `${text.slice(0, first + 1)}${entry}\n${text.slice(first + 1)}`;
-  writeFileSync(changelogFile, `${next.replace(/\n{3,}/g, "\n\n").trimEnd()}\n`);
+  const next = old ? text.replace(old, entry) : first < 0 ? text + "\n" + entry : text.slice(0, first + 1) + entry + "\n" + text.slice(first + 1);
+  writeFileSync(changelogFile, next.replace(/\n{3,}/g, "\n\n").trimEnd() + "\n");
+
+  const flutterText = readFileSync(flutterChangelogFile, "utf8");
+  const flutterHeader = "# Changelog\n";
+  if (!flutterText.startsWith(flutterHeader)) {
+    throw new Error("packages/flutter/CHANGELOG.md must start with # Changelog");
+  }
+  const existingFlutterEntry = changelogSection(version, flutterText);
+  const flutterFirst = flutterText.indexOf("\n## ");
+  const flutterNext = existingFlutterEntry
+    ? flutterText.replace(existingFlutterEntry, entry)
+    : flutterFirst < 0
+      ? flutterText.trimEnd() + "\n\n" + entry
+      : flutterText.slice(0, flutterFirst + 1) + entry + "\n" + flutterText.slice(flutterFirst + 1);
+  writeFileSync(flutterChangelogFile, flutterNext.replace(/\n{3,}/g, "\n\n").trimEnd() + "\n");
 
   console.log(`${version} since ${previousVersion ? `v${previousVersion}` : "the start"}: new ${changes.added.length}, renamed ${changes.renamed.length}, removed ${changes.removed.length}, redrawn ${changes.redrawn.length}, category changed ${changes.recategorized.length}`);
-  console.log("Wrote the version into every package.json and the MCP server.json, and the entry into CHANGELOG.md.");
+  console.log("Wrote the shared version into every npm package, the Flutter pubspec, the MCP server, and both changelogs.");
 }

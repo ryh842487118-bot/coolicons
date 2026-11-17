@@ -1,0 +1,75 @@
+name: Flutter package
+
+on:
+  push:
+    branches: [main, feat/flutter-package]
+    paths:
+      - "icons/**"
+      - "scripts/build-flutter.mjs"
+      - "scripts/icons.mjs"
+      - "packages/flutter/**"
+      - ".github/workflows/flutter-package.yml"
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "icons/**"
+      - "scripts/build-flutter.mjs"
+      - "scripts/icons.mjs"
+      - "packages/flutter/**"
+      - ".github/workflows/flutter-package.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: flutter-package-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version-file: .nvmrc
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - name: Generate complete Coolicons catalog
+        run: node scripts/build-flutter.mjs
+      - name: Install Flutter package dependencies
+        working-directory: packages/flutter
+        run: flutter pub get
+      - name: Format Dart files
+        working-directory: packages/flutter
+        run: dart format lib test example/lib
+      - name: Commit generated catalog and formatting
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add packages/flutter/lib packages/flutter/test packages/flutter/example packages/flutter/analysis_options.yaml
+          if git diff --cached --quiet; then
+            echo "Generated catalog and formatted sources are already up to date."
+          else
+            git commit -m "build(flutter): generate catalog and format sources"
+            git push
+          fi
+      - name: Analyze
+        working-directory: packages/flutter
+        run: flutter analyze
+      - name: Test
+        working-directory: packages/flutter
+        run: flutter test
+      - name: Validate publish contents
+        working-directory: packages/flutter
+        run: flutter pub publish --dry-run
+      - name: Analyze example
+        working-directory: packages/flutter/example
+        run: flutter pub get && flutter analyze
