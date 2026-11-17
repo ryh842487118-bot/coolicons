@@ -46,9 +46,26 @@ jobs:
       - name: Install Flutter package dependencies
         working-directory: packages/flutter
         run: flutter pub get
-      - name: Format
+      - name: Format Dart files
+        if: github.event_name != 'pull_request'
         working-directory: packages/flutter
         run: dart format lib test example/lib
+      - name: Verify Dart formatting
+        if: github.event_name == 'pull_request'
+        working-directory: packages/flutter
+        run: dart format --output=none --set-exit-if-changed lib test example/lib
+      - name: Commit generated catalog and formatting
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add packages/flutter/lib packages/flutter/test packages/flutter/example packages/flutter/analysis_options.yaml
+          if git diff --cached --quiet; then
+            echo "Generated catalog and formatted sources are already up to date."
+          else
+            git commit -m "build(flutter): generate catalog and format sources"
+            git push
+          fi
       - name: Analyze
         working-directory: packages/flutter
         run: flutter analyze
@@ -61,15 +78,3 @@ jobs:
       - name: Analyze example
         working-directory: packages/flutter/example
         run: flutter pub get && flutter analyze
-      - name: Commit generated icon catalog and formatting
-        if: github.event_name != 'pull_request'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add packages/flutter/lib packages/flutter/test packages/flutter/example
-          if git diff --cached --quiet; then
-            echo "Generated catalog is already up to date."
-          else
-            git commit -m "build(flutter): generate complete Coolicons catalog"
-            git push
-          fi
