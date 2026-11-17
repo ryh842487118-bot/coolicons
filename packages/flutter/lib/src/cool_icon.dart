@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'cool_icon_data.dart';
-import 'cool_icon_radius.dart';
+import 'cool_icon_corners.dart';
 import 'cool_icon_style.dart';
 import 'cool_icon_theme.dart';
 import 'cool_icons_theme_data.dart';
@@ -17,7 +17,7 @@ class CoolIcon extends StatelessWidget {
     this.size,
     this.color,
     this.style,
-    this.radius,
+    this.corners,
     this.strokeWidth,
     this.secondaryColor,
     this.secondaryOpacity,
@@ -37,7 +37,7 @@ class CoolIcon extends StatelessWidget {
   final CoolIconStyle? style;
 
   /// SVG corner treatment. Defaults to the nearest Coolicons theme.
-  final CoolIconRadius? radius;
+  final CoolIconCorners? corners;
 
   /// Stroke width for Line, Duocolor and Duotone variants.
   final double? strokeWidth;
@@ -67,13 +67,13 @@ class CoolIcon extends StatelessWidget {
         inheritedIconTheme.color ??
         theme.colorScheme.onSurface;
     final resolvedStyle = style ?? config.style;
-    final resolvedRadius = radius ?? config.radius;
+    final resolvedCorners = corners ?? config.corners;
     final resolvedStrokeWidth = strokeWidth ?? config.strokeWidth;
     final resolvedSecondaryColor = secondaryColor ?? config.secondaryColor;
     final resolvedSecondaryOpacity =
         secondaryOpacity ?? config.secondaryOpacity;
 
-    final source = icon.svgFor(resolvedStyle, resolvedRadius);
+    final source = icon.svgFor(resolvedStyle, resolvedCorners);
     final svg = _resolveSvg(
       source,
       strokeWidth: resolvedStrokeWidth,
