@@ -19,7 +19,7 @@ class CooliconsExampleApp extends StatelessWidget {
         extensions: const [
           CoolIconsThemeData(
             style: CoolIconStyle.line,
-            radius: CoolIconRadius.round,
+            corners: CoolIconCorners.round,
             size: 28,
             strokeWidth: 2,
           ),
@@ -34,7 +34,7 @@ class CooliconsExampleApp extends StatelessWidget {
         extensions: const [
           CoolIconsThemeData(
             style: CoolIconStyle.line,
-            radius: CoolIconRadius.round,
+            corners: CoolIconCorners.round,
             size: 28,
             strokeWidth: 2,
           ),
@@ -56,7 +56,7 @@ class IconGalleryPage extends StatefulWidget {
 
 class _IconGalleryPageState extends State<IconGalleryPage> {
   CoolIconStyle _style = CoolIconStyle.line;
-  CoolIconRadius _radius = CoolIconRadius.round;
+  CoolIconCorners _corners = CoolIconCorners.round;
   String _query = '';
 
   @override
@@ -103,10 +103,10 @@ class _IconGalleryPageState extends State<IconGalleryPage> {
                 ),
                 const SizedBox(width: 12),
                 Expanded(
-                  child: DropdownButtonFormField<CoolIconRadius>(
-                    initialValue: _radius,
+                  child: DropdownButtonFormField<CoolIconCorners>(
+                    initialValue: _corners,
                     decoration: const InputDecoration(labelText: 'Corners'),
-                    items: CoolIconRadius.values
+                    items: CoolIconCorners.values
                         .map(
                           (value) => DropdownMenuItem(
                             value: value,
@@ -115,7 +115,7 @@ class _IconGalleryPageState extends State<IconGalleryPage> {
                         )
                         .toList(),
                     onChanged: (value) {
-                      if (value != null) setState(() => _radius = value);
+                      if (value != null) setState(() => _corners = value);
                     },
                   ),
                 ),
@@ -139,7 +139,7 @@ class _IconGalleryPageState extends State<IconGalleryPage> {
                         CoolIcon(
                           entry.value,
                           style: _style,
-                          radius: _radius,
+                          corners: _corners,
                           size: 28,
                         ),
                         const SizedBox(height: 8),
