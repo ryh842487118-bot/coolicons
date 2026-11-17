@@ -155,10 +155,13 @@ if (import.meta.filename === path.resolve(process.argv[1] ?? "")) {
   if (!flutterText.startsWith(flutterHeader)) {
     throw new Error("packages/flutter/CHANGELOG.md must start with # Changelog");
   }
+  const existingFlutterEntry = changelogSection(version, flutterText);
   const flutterFirst = flutterText.indexOf("\n## ");
-  const flutterNext = flutterFirst < 0
-    ? flutterText.trimEnd() + "\n\n" + entry
-    : flutterText.slice(0, flutterFirst + 1) + entry + "\n" + flutterText.slice(flutterFirst + 1);
+  const flutterNext = existingFlutterEntry
+    ? flutterText.replace(existingFlutterEntry, entry)
+    : flutterFirst < 0
+      ? flutterText.trimEnd() + "\n\n" + entry
+      : flutterText.slice(0, flutterFirst + 1) + entry + "\n" + flutterText.slice(flutterFirst + 1);
   writeFileSync(flutterChangelogFile, flutterNext.replace(/\n{3,}/g, "\n\n").trimEnd() + "\n");
 
   console.log(`${version} since ${previousVersion ? `v${previousVersion}` : "the start"}: new ${changes.added.length}, renamed ${changes.renamed.length}, removed ${changes.removed.length}, redrawn ${changes.redrawn.length}, category changed ${changes.recategorized.length}`);
