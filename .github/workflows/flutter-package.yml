@@ -50,7 +50,7 @@ jobs:
         run: node scripts/build-flutter.mjs
       - name: Install Flutter package dependencies
         working-directory: packages/flutter
-        run: flutter pub get --no-example
+        run: flutter pub get
       - name: Format Dart files
         working-directory: packages/flutter
         run: dart format lib test example/lib
