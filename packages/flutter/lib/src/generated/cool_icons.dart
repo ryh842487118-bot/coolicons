@@ -1,7 +1,7 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND.
 // Source: icons/manifest.json and icons/svg/
 // Upstream: https://github.com/krystonschwarze/coolicons
-// Upstream manifest version: 1; source commit: 929b5b9d; manifest hash: b09553f7c44f
+// Upstream manifest version: 1; source commit: ce57bcda; manifest hash: c48b0923a42e
 // Regenerate with: node scripts/build-flutter.mjs
 
 import '../cool_icon_data.dart';
@@ -53,7 +53,7 @@ import 'icons/arrow_down_right.dart' as icon_arrow_down_right;
 import 'icons/arrow_down_right_large.dart' as icon_arrow_down_right_large;
 import 'icons/arrow_down_right_small.dart' as icon_arrow_down_right_small;
 import 'icons/arrow_down_small.dart' as icon_arrow_down_small;
-import 'icons/download.dart' as icon_download;
+import 'icons/arrow_down_to_line.dart' as icon_arrow_down_to_line;
 import 'icons/arrow_down_up.dart' as icon_arrow_down_up;
 import 'icons/arrow_left.dart' as icon_arrow_left;
 import 'icons/arrow_left_from_line.dart' as icon_arrow_left_from_line;
@@ -85,7 +85,7 @@ import 'icons/arrow_u_turn_right_up.dart' as icon_arrow_u_turn_right_up;
 import 'icons/arrow_u_turn_up_left.dart' as icon_arrow_u_turn_up_left;
 import 'icons/arrow_u_turn_up_right.dart' as icon_arrow_u_turn_up_right;
 import 'icons/arrow_up.dart' as icon_arrow_up;
-import 'icons/upload.dart' as icon_upload;
+import 'icons/arrow_up_from_line.dart' as icon_arrow_up_from_line;
 import 'icons/arrow_up_large.dart' as icon_arrow_up_large;
 import 'icons/arrow_up_left.dart' as icon_arrow_up_left;
 import 'icons/arrow_up_left_large.dart' as icon_arrow_up_left_large;
@@ -99,6 +99,7 @@ import 'icons/aspect_ratio.dart' as icon_aspect_ratio;
 import 'icons/asterisk.dart' as icon_asterisk;
 import 'icons/atm.dart' as icon_atm;
 import 'icons/atom.dart' as icon_atom;
+import 'icons/audio_description.dart' as icon_audio_description;
 import 'icons/autoplay.dart' as icon_autoplay;
 import 'icons/award.dart' as icon_award;
 import 'icons/baby.dart' as icon_baby;
@@ -165,6 +166,7 @@ import 'icons/box_taped.dart' as icon_box_taped;
 import 'icons/braces.dart' as icon_braces;
 import 'icons/brackets.dart' as icon_brackets;
 import 'icons/brackets_dots.dart' as icon_brackets_dots;
+import 'icons/braille.dart' as icon_braille;
 import 'icons/brain.dart' as icon_brain;
 import 'icons/brick_wall.dart' as icon_brick_wall;
 import 'icons/bridge.dart' as icon_bridge;
@@ -178,6 +180,9 @@ import 'icons/building_1.dart' as icon_building_1;
 import 'icons/building_2.dart' as icon_building_2;
 import 'icons/building_3.dart' as icon_building_3;
 import 'icons/building_4.dart' as icon_building_4;
+import 'icons/building_apartment.dart' as icon_building_apartment;
+import 'icons/building_dome.dart' as icon_building_dome;
+import 'icons/building_office.dart' as icon_building_office;
 import 'icons/bulb.dart' as icon_bulb;
 import 'icons/bulb_sparkle.dart' as icon_bulb_sparkle;
 import 'icons/bulb_wifi.dart' as icon_bulb_wifi;
@@ -215,6 +220,7 @@ import 'icons/calendar_settings_corner.dart' as icon_calendar_settings_corner;
 import 'icons/calendar_sparkle_corner.dart' as icon_calendar_sparkle_corner;
 import 'icons/calendar_sync_corner.dart' as icon_calendar_sync_corner;
 import 'icons/calendar_text.dart' as icon_calendar_text;
+import 'icons/calendar_warning.dart' as icon_calendar_warning;
 import 'icons/calendar_warning_corner.dart' as icon_calendar_warning_corner;
 import 'icons/calendar_week.dart' as icon_calendar_week;
 import 'icons/camera.dart' as icon_camera;
@@ -271,40 +277,67 @@ import 'icons/chart_value.dart' as icon_chart_value;
 import 'icons/chart_waterfall.dart' as icon_chart_waterfall;
 import 'icons/chat.dart' as icon_chat;
 import 'icons/chat_check.dart' as icon_chat_check;
+import 'icons/chat_check_corner.dart' as icon_chat_check_corner;
 import 'icons/chat_circle.dart' as icon_chat_circle;
 import 'icons/chat_circle_angry.dart' as icon_chat_circle_angry;
 import 'icons/chat_circle_check.dart' as icon_chat_circle_check;
+import 'icons/chat_circle_check_corner.dart' as icon_chat_circle_check_corner;
 import 'icons/chat_circle_close.dart' as icon_chat_circle_close;
+import 'icons/chat_circle_close_corner.dart' as icon_chat_circle_close_corner;
 import 'icons/chat_circle_dots.dart' as icon_chat_circle_dots;
+import 'icons/chat_circle_edit.dart' as icon_chat_circle_edit;
+import 'icons/chat_circle_edit_corner.dart' as icon_chat_circle_edit_corner;
 import 'icons/chat_circle_heart.dart' as icon_chat_circle_heart;
+import 'icons/chat_circle_heart_corner.dart' as icon_chat_circle_heart_corner;
 import 'icons/chat_circle_help.dart' as icon_chat_circle_help;
+import 'icons/chat_circle_help_corner.dart' as icon_chat_circle_help_corner;
 import 'icons/chat_circle_laugh.dart' as icon_chat_circle_laugh;
 import 'icons/chat_circle_minus.dart' as icon_chat_circle_minus;
+import 'icons/chat_circle_minus_corner.dart' as icon_chat_circle_minus_corner;
 import 'icons/chat_circle_neutral.dart' as icon_chat_circle_neutral;
 import 'icons/chat_circle_off.dart' as icon_chat_circle_off;
 import 'icons/chat_circle_plus.dart' as icon_chat_circle_plus;
+import 'icons/chat_circle_plus_corner.dart' as icon_chat_circle_plus_corner;
 import 'icons/chat_circle_quote.dart' as icon_chat_circle_quote;
 import 'icons/chat_circle_sad.dart' as icon_chat_circle_sad;
+import 'icons/chat_circle_search.dart' as icon_chat_circle_search;
+import 'icons/chat_circle_search_corner.dart' as icon_chat_circle_search_corner;
 import 'icons/chat_circle_share.dart' as icon_chat_circle_share;
+import 'icons/chat_circle_share_corner.dart' as icon_chat_circle_share_corner;
 import 'icons/chat_circle_smile.dart' as icon_chat_circle_smile;
 import 'icons/chat_circle_surprised.dart' as icon_chat_circle_surprised;
 import 'icons/chat_circle_text.dart' as icon_chat_circle_text;
 import 'icons/chat_circle_warning.dart' as icon_chat_circle_warning;
+import 'icons/chat_circle_warning_corner.dart'
+    as icon_chat_circle_warning_corner;
 import 'icons/chat_circle_wink.dart' as icon_chat_circle_wink;
 import 'icons/chat_close.dart' as icon_chat_close;
+import 'icons/chat_close_corner.dart' as icon_chat_close_corner;
 import 'icons/chat_conversation.dart' as icon_chat_conversation;
 import 'icons/chat_conversation_circle.dart' as icon_chat_conversation_circle;
 import 'icons/chat_dots.dart' as icon_chat_dots;
+import 'icons/chat_edit.dart' as icon_chat_edit;
+import 'icons/chat_edit_corner.dart' as icon_chat_edit_corner;
 import 'icons/chat_heart.dart' as icon_chat_heart;
+import 'icons/chat_heart_corner.dart' as icon_chat_heart_corner;
 import 'icons/chat_help.dart' as icon_chat_help;
+import 'icons/chat_help_corner.dart' as icon_chat_help_corner;
 import 'icons/chat_minus.dart' as icon_chat_minus;
+import 'icons/chat_minus_corner.dart' as icon_chat_minus_corner;
 import 'icons/chat_off.dart' as icon_chat_off;
 import 'icons/chat_plus.dart' as icon_chat_plus;
+import 'icons/chat_plus_corner.dart' as icon_chat_plus_corner;
 import 'icons/chat_quote.dart' as icon_chat_quote;
+import 'icons/chat_search.dart' as icon_chat_search;
+import 'icons/chat_search_corner.dart' as icon_chat_search_corner;
+import 'icons/chat_settings_corner.dart' as icon_chat_settings_corner;
 import 'icons/chat_share.dart' as icon_chat_share;
+import 'icons/chat_share_corner.dart' as icon_chat_share_corner;
 import 'icons/chat_sparkle.dart' as icon_chat_sparkle;
+import 'icons/chat_sparkle_corner.dart' as icon_chat_sparkle_corner;
 import 'icons/chat_text.dart' as icon_chat_text;
 import 'icons/chat_warning.dart' as icon_chat_warning;
+import 'icons/chat_warning_corner.dart' as icon_chat_warning_corner;
 import 'icons/check.dart' as icon_check;
 import 'icons/check_all.dart' as icon_check_all;
 import 'icons/check_large.dart' as icon_check_large;
@@ -404,13 +437,25 @@ import 'icons/circle_stop.dart' as icon_circle_stop;
 import 'icons/circle_user.dart' as icon_circle_user;
 import 'icons/circle_warning.dart' as icon_circle_warning;
 import 'icons/circuit_board.dart' as icon_circuit_board;
+import 'icons/circus_tent.dart' as icon_circus_tent;
+import 'icons/city.dart' as icon_city;
 import 'icons/clapperboard.dart' as icon_clapperboard;
 import 'icons/clipboard.dart' as icon_clipboard;
 import 'icons/clipboard_check.dart' as icon_clipboard_check;
+import 'icons/clipboard_check_corner.dart' as icon_clipboard_check_corner;
 import 'icons/clipboard_close.dart' as icon_clipboard_close;
+import 'icons/clipboard_close_corner.dart' as icon_clipboard_close_corner;
+import 'icons/clipboard_edit.dart' as icon_clipboard_edit;
+import 'icons/clipboard_edit_corner.dart' as icon_clipboard_edit_corner;
 import 'icons/clipboard_list.dart' as icon_clipboard_list;
 import 'icons/clipboard_minus.dart' as icon_clipboard_minus;
+import 'icons/clipboard_minus_corner.dart' as icon_clipboard_minus_corner;
 import 'icons/clipboard_plus.dart' as icon_clipboard_plus;
+import 'icons/clipboard_plus_corner.dart' as icon_clipboard_plus_corner;
+import 'icons/clipboard_search.dart' as icon_clipboard_search;
+import 'icons/clipboard_search_corner.dart' as icon_clipboard_search_corner;
+import 'icons/clipboard_warning.dart' as icon_clipboard_warning;
+import 'icons/clipboard_warning_corner.dart' as icon_clipboard_warning_corner;
 import 'icons/clock.dart' as icon_clock;
 import 'icons/clock_1.dart' as icon_clock_1;
 import 'icons/clock_10.dart' as icon_clock_10;
@@ -423,25 +468,44 @@ import 'icons/clock_6.dart' as icon_clock_6;
 import 'icons/clock_7.dart' as icon_clock_7;
 import 'icons/clock_8.dart' as icon_clock_8;
 import 'icons/clock_9.dart' as icon_clock_9;
+import 'icons/clock_check.dart' as icon_clock_check;
+import 'icons/clock_close.dart' as icon_clock_close;
+import 'icons/clock_edit.dart' as icon_clock_edit;
+import 'icons/clock_help.dart' as icon_clock_help;
 import 'icons/clock_pause.dart' as icon_clock_pause;
+import 'icons/clock_search.dart' as icon_clock_search;
+import 'icons/clock_warning.dart' as icon_clock_warning;
 import 'icons/close.dart' as icon_close;
 import 'icons/close_large.dart' as icon_close_large;
 import 'icons/close_small.dart' as icon_close_small;
 import 'icons/cloud.dart' as icon_cloud;
 import 'icons/cloud_check.dart' as icon_cloud_check;
+import 'icons/cloud_check_corner.dart' as icon_cloud_check_corner;
 import 'icons/cloud_close.dart' as icon_cloud_close;
+import 'icons/cloud_close_corner.dart' as icon_cloud_close_corner;
 import 'icons/cloud_download.dart' as icon_cloud_download;
+import 'icons/cloud_download_corner.dart' as icon_cloud_download_corner;
+import 'icons/cloud_edit.dart' as icon_cloud_edit;
+import 'icons/cloud_edit_corner.dart' as icon_cloud_edit_corner;
 import 'icons/cloud_fog.dart' as icon_cloud_fog;
 import 'icons/cloud_lightning.dart' as icon_cloud_lightning;
 import 'icons/cloud_minus.dart' as icon_cloud_minus;
+import 'icons/cloud_minus_corner.dart' as icon_cloud_minus_corner;
 import 'icons/cloud_moon.dart' as icon_cloud_moon;
 import 'icons/cloud_off.dart' as icon_cloud_off;
 import 'icons/cloud_plus.dart' as icon_cloud_plus;
+import 'icons/cloud_plus_corner.dart' as icon_cloud_plus_corner;
 import 'icons/cloud_rain.dart' as icon_cloud_rain;
+import 'icons/cloud_search.dart' as icon_cloud_search;
+import 'icons/cloud_search_corner.dart' as icon_cloud_search_corner;
 import 'icons/cloud_snow.dart' as icon_cloud_snow;
 import 'icons/cloud_sun.dart' as icon_cloud_sun;
 import 'icons/cloud_sync_corner.dart' as icon_cloud_sync_corner;
+import 'icons/cloud_sync_corner_alt.dart' as icon_cloud_sync_corner_alt;
 import 'icons/cloud_upload.dart' as icon_cloud_upload;
+import 'icons/cloud_upload_corner.dart' as icon_cloud_upload_corner;
+import 'icons/cloud_warning.dart' as icon_cloud_warning;
+import 'icons/cloud_warning_corner.dart' as icon_cloud_warning_corner;
 import 'icons/clover.dart' as icon_clover;
 import 'icons/co2.dart' as icon_co2;
 import 'icons/coach.dart' as icon_coach;
@@ -464,10 +528,12 @@ import 'icons/component.dart' as icon_component;
 import 'icons/component_instance.dart' as icon_component_instance;
 import 'icons/contacts.dart' as icon_contacts;
 import 'icons/container.dart' as icon_container;
+import 'icons/control_tower.dart' as icon_control_tower;
 import 'icons/cookie.dart' as icon_cookie;
 import 'icons/cooking_pot.dart' as icon_cooking_pot;
 import 'icons/cooktop.dart' as icon_cooktop;
 import 'icons/coolicons.dart' as icon_coolicons;
+import 'icons/cooling_tower.dart' as icon_cooling_tower;
 import 'icons/copy.dart' as icon_copy;
 import 'icons/copy_alt_1.dart' as icon_copy_alt_1;
 import 'icons/copy_alt_2.dart' as icon_copy_alt_2;
@@ -475,7 +541,11 @@ import 'icons/copy_check.dart' as icon_copy_check;
 import 'icons/copy_minus.dart' as icon_copy_minus;
 import 'icons/copy_plus.dart' as icon_copy_plus;
 import 'icons/corner_radius.dart' as icon_corner_radius;
+import 'icons/corner_regular.dart' as icon_corner_regular;
+import 'icons/corner_round.dart' as icon_corner_round;
+import 'icons/corner_sharp.dart' as icon_corner_sharp;
 import 'icons/coupon.dart' as icon_coupon;
+import 'icons/courthouse.dart' as icon_courthouse;
 import 'icons/cow.dart' as icon_cow;
 import 'icons/cpu.dart' as icon_cpu;
 import 'icons/cpu_sparkle.dart' as icon_cpu_sparkle;
@@ -486,9 +556,14 @@ import 'icons/credit_card_check_corner.dart' as icon_credit_card_check_corner;
 import 'icons/credit_card_clock_corner.dart' as icon_credit_card_clock_corner;
 import 'icons/credit_card_close_corner.dart' as icon_credit_card_close_corner;
 import 'icons/credit_card_contactless.dart' as icon_credit_card_contactless;
+import 'icons/credit_card_edit_corner.dart' as icon_credit_card_edit_corner;
+import 'icons/credit_card_minus_corner.dart' as icon_credit_card_minus_corner;
 import 'icons/credit_card_plus_corner.dart' as icon_credit_card_plus_corner;
 import 'icons/credit_card_return_corner.dart' as icon_credit_card_return_corner;
+import 'icons/credit_card_search_corner.dart' as icon_credit_card_search_corner;
 import 'icons/credit_card_sync_corner.dart' as icon_credit_card_sync_corner;
+import 'icons/credit_card_warning_corner.dart'
+    as icon_credit_card_warning_corner;
 import 'icons/croissant.dart' as icon_croissant;
 import 'icons/crop.dart' as icon_crop;
 import 'icons/crown.dart' as icon_crown;
@@ -516,6 +591,7 @@ import 'icons/database.dart' as icon_database;
 import 'icons/database_backup_corner.dart' as icon_database_backup_corner;
 import 'icons/database_check_corner.dart' as icon_database_check_corner;
 import 'icons/database_close_corner.dart' as icon_database_close_corner;
+import 'icons/database_edit_corner.dart' as icon_database_edit_corner;
 import 'icons/database_lock_corner.dart' as icon_database_lock_corner;
 import 'icons/database_minus_corner.dart' as icon_database_minus_corner;
 import 'icons/database_plus_corner.dart' as icon_database_plus_corner;
@@ -532,6 +608,7 @@ import 'icons/desktop.dart' as icon_desktop;
 import 'icons/desktop_tower.dart' as icon_desktop_tower;
 import 'icons/devices.dart' as icon_devices;
 import 'icons/devices_code_corner.dart' as icon_devices_code_corner;
+import 'icons/dialpad.dart' as icon_dialpad;
 import 'icons/diamond.dart' as icon_diamond;
 import 'icons/diamond_check.dart' as icon_diamond_check;
 import 'icons/diamond_close.dart' as icon_diamond_close;
@@ -554,6 +631,7 @@ import 'icons/dna.dart' as icon_dna;
 import 'icons/dog.dart' as icon_dog;
 import 'icons/door.dart' as icon_door;
 import 'icons/doorbell.dart' as icon_doorbell;
+import 'icons/download.dart' as icon_download;
 import 'icons/drag_horizontal.dart' as icon_drag_horizontal;
 import 'icons/drag_vertical.dart' as icon_drag_vertical;
 import 'icons/dribbble.dart' as icon_dribbble;
@@ -610,6 +688,7 @@ import 'icons/fast_forward.dart' as icon_fast_forward;
 import 'icons/faucet.dart' as icon_faucet;
 import 'icons/feather.dart' as icon_feather;
 import 'icons/fence.dart' as icon_fence;
+import 'icons/ferris_wheel.dart' as icon_ferris_wheel;
 import 'icons/ferry.dart' as icon_ferry;
 import 'icons/figma.dart' as icon_figma;
 import 'icons/file.dart' as icon_file;
@@ -632,6 +711,7 @@ import 'icons/file_minus_corner.dart' as icon_file_minus_corner;
 import 'icons/file_off.dart' as icon_file_off;
 import 'icons/file_pause_corner.dart' as icon_file_pause_corner;
 import 'icons/file_percent.dart' as icon_file_percent;
+import 'icons/file_percent_corner.dart' as icon_file_percent_corner;
 import 'icons/file_phone_corner.dart' as icon_file_phone_corner;
 import 'icons/file_pin_corner.dart' as icon_file_pin_corner;
 import 'icons/file_plus.dart' as icon_file_plus;
@@ -641,6 +721,7 @@ import 'icons/file_search_corner.dart' as icon_file_search_corner;
 import 'icons/file_settings_corner.dart' as icon_file_settings_corner;
 import 'icons/file_share_corner.dart' as icon_file_share_corner;
 import 'icons/file_shield.dart' as icon_file_shield;
+import 'icons/file_shield_corner.dart' as icon_file_shield_corner;
 import 'icons/file_signature.dart' as icon_file_signature;
 import 'icons/file_sparkle_corner.dart' as icon_file_sparkle_corner;
 import 'icons/file_spreadsheet.dart' as icon_file_spreadsheet;
@@ -650,6 +731,7 @@ import 'icons/file_text.dart' as icon_file_text;
 import 'icons/file_type.dart' as icon_file_type;
 import 'icons/file_upload.dart' as icon_file_upload;
 import 'icons/file_upload_corner.dart' as icon_file_upload_corner;
+import 'icons/file_warning.dart' as icon_file_warning;
 import 'icons/file_warning_corner.dart' as icon_file_warning_corner;
 import 'icons/file_zap_corner.dart' as icon_file_zap_corner;
 import 'icons/files.dart' as icon_files;
@@ -658,6 +740,7 @@ import 'icons/filter.dart' as icon_filter;
 import 'icons/filter_off.dart' as icon_filter_off;
 import 'icons/fingerprint.dart' as icon_fingerprint;
 import 'icons/fire_extinguisher.dart' as icon_fire_extinguisher;
+import 'icons/fire_station.dart' as icon_fire_station;
 import 'icons/fireplace.dart' as icon_fireplace;
 import 'icons/firewall.dart' as icon_firewall;
 import 'icons/firewood.dart' as icon_firewood;
@@ -690,6 +773,7 @@ import 'icons/folder_download.dart' as icon_folder_download;
 import 'icons/folder_download_corner.dart' as icon_folder_download_corner;
 import 'icons/folder_edit.dart' as icon_folder_edit;
 import 'icons/folder_edit_corner.dart' as icon_folder_edit_corner;
+import 'icons/folder_help.dart' as icon_folder_help;
 import 'icons/folder_help_corner.dart' as icon_folder_help_corner;
 import 'icons/folder_lock_corner.dart' as icon_folder_lock_corner;
 import 'icons/folder_minus.dart' as icon_folder_minus;
@@ -709,6 +793,7 @@ import 'icons/folder_sync_corner.dart' as icon_folder_sync_corner;
 import 'icons/folder_text.dart' as icon_folder_text;
 import 'icons/folder_upload.dart' as icon_folder_upload;
 import 'icons/folder_upload_corner.dart' as icon_folder_upload_corner;
+import 'icons/folder_warning.dart' as icon_folder_warning;
 import 'icons/folder_warning_corner.dart' as icon_folder_warning_corner;
 import 'icons/folders.dart' as icon_folders;
 import 'icons/footprints.dart' as icon_footprints;
@@ -830,10 +915,12 @@ import 'icons/house_check_corner.dart' as icon_house_check_corner;
 import 'icons/house_close.dart' as icon_house_close;
 import 'icons/house_close_corner.dart' as icon_house_close_corner;
 import 'icons/house_connection.dart' as icon_house_connection;
+import 'icons/house_edit.dart' as icon_house_edit;
 import 'icons/house_edit_corner.dart' as icon_house_edit_corner;
 import 'icons/house_garage.dart' as icon_house_garage;
 import 'icons/house_garage_open.dart' as icon_house_garage_open;
 import 'icons/house_geothermal.dart' as icon_house_geothermal;
+import 'icons/house_help.dart' as icon_house_help;
 import 'icons/house_help_corner.dart' as icon_house_help_corner;
 import 'icons/house_leaf.dart' as icon_house_leaf;
 import 'icons/house_leaf_corner.dart' as icon_house_leaf_corner;
@@ -854,10 +941,14 @@ import 'icons/house_shield_corner.dart' as icon_house_shield_corner;
 import 'icons/house_solar_panel.dart' as icon_house_solar_panel;
 import 'icons/house_solar_panel_corner.dart' as icon_house_solar_panel_corner;
 import 'icons/house_star_corner.dart' as icon_house_star_corner;
+import 'icons/house_sun.dart' as icon_house_sun;
+import 'icons/house_sun_corner.dart' as icon_house_sun_corner;
 import 'icons/house_sync_corner.dart' as icon_house_sync_corner;
 import 'icons/house_thermometer.dart' as icon_house_thermometer;
 import 'icons/house_thermometer_corner.dart' as icon_house_thermometer_corner;
 import 'icons/house_user.dart' as icon_house_user;
+import 'icons/house_user_corner.dart' as icon_house_user_corner;
+import 'icons/house_warning.dart' as icon_house_warning;
 import 'icons/house_warning_corner.dart' as icon_house_warning_corner;
 import 'icons/house_wifi.dart' as icon_house_wifi;
 import 'icons/house_wifi_corner.dart' as icon_house_wifi_corner;
@@ -877,12 +968,15 @@ import 'icons/image_download.dart' as icon_image_download;
 import 'icons/image_download_corner.dart' as icon_image_download_corner;
 import 'icons/image_edit.dart' as icon_image_edit;
 import 'icons/image_edit_corner.dart' as icon_image_edit_corner;
+import 'icons/image_minus.dart' as icon_image_minus;
+import 'icons/image_minus_corner.dart' as icon_image_minus_corner;
 import 'icons/image_off.dart' as icon_image_off;
 import 'icons/image_plus.dart' as icon_image_plus;
 import 'icons/image_plus_corner.dart' as icon_image_plus_corner;
 import 'icons/image_search.dart' as icon_image_search;
 import 'icons/image_search_corner.dart' as icon_image_search_corner;
 import 'icons/image_sparkle.dart' as icon_image_sparkle;
+import 'icons/image_sparkle_corner.dart' as icon_image_sparkle_corner;
 import 'icons/image_upload.dart' as icon_image_upload;
 import 'icons/image_upload_corner.dart' as icon_image_upload_corner;
 import 'icons/image_warning.dart' as icon_image_warning;
@@ -952,6 +1046,7 @@ import 'icons/letters_ab.dart' as icon_letters_ab;
 import 'icons/library.dart' as icon_library;
 import 'icons/life_buoy.dart' as icon_life_buoy;
 import 'icons/light_switch.dart' as icon_light_switch;
+import 'icons/lighthouse.dart' as icon_lighthouse;
 import 'icons/line_height.dart' as icon_line_height;
 import 'icons/linear.dart' as icon_linear;
 import 'icons/link.dart' as icon_link;
@@ -980,9 +1075,22 @@ import 'icons/loading.dart' as icon_loading;
 import 'icons/locate.dart' as icon_locate;
 import 'icons/lock.dart' as icon_lock;
 import 'icons/lock_check.dart' as icon_lock_check;
+import 'icons/lock_check_corner.dart' as icon_lock_check_corner;
+import 'icons/lock_close.dart' as icon_lock_close;
+import 'icons/lock_close_corner.dart' as icon_lock_close_corner;
+import 'icons/lock_edit.dart' as icon_lock_edit;
+import 'icons/lock_edit_corner.dart' as icon_lock_edit_corner;
 import 'icons/lock_keyhole.dart' as icon_lock_keyhole;
+import 'icons/lock_minus.dart' as icon_lock_minus;
+import 'icons/lock_minus_corner.dart' as icon_lock_minus_corner;
 import 'icons/lock_off.dart' as icon_lock_off;
 import 'icons/lock_open.dart' as icon_lock_open;
+import 'icons/lock_plus.dart' as icon_lock_plus;
+import 'icons/lock_plus_corner.dart' as icon_lock_plus_corner;
+import 'icons/lock_search.dart' as icon_lock_search;
+import 'icons/lock_search_corner.dart' as icon_lock_search_corner;
+import 'icons/lock_warning.dart' as icon_lock_warning;
+import 'icons/lock_warning_corner.dart' as icon_lock_warning_corner;
 import 'icons/log_in.dart' as icon_log_in;
 import 'icons/log_out.dart' as icon_log_out;
 import 'icons/logs.dart' as icon_logs;
@@ -997,7 +1105,9 @@ import 'icons/mail_check_corner.dart' as icon_mail_check_corner;
 import 'icons/mail_close.dart' as icon_mail_close;
 import 'icons/mail_close_corner.dart' as icon_mail_close_corner;
 import 'icons/mail_dot.dart' as icon_mail_dot;
+import 'icons/mail_edit_corner.dart' as icon_mail_edit_corner;
 import 'icons/mail_help.dart' as icon_mail_help;
+import 'icons/mail_help_corner.dart' as icon_mail_help_corner;
 import 'icons/mail_minus.dart' as icon_mail_minus;
 import 'icons/mail_minus_corner.dart' as icon_mail_minus_corner;
 import 'icons/mail_off.dart' as icon_mail_off;
@@ -1007,25 +1117,39 @@ import 'icons/mail_plus_corner.dart' as icon_mail_plus_corner;
 import 'icons/mail_search.dart' as icon_mail_search;
 import 'icons/mail_search_corner.dart' as icon_mail_search_corner;
 import 'icons/mail_sparkle.dart' as icon_mail_sparkle;
+import 'icons/mail_sparkle_corner.dart' as icon_mail_sparkle_corner;
 import 'icons/mail_warning.dart' as icon_mail_warning;
+import 'icons/mail_warning_corner.dart' as icon_mail_warning_corner;
 import 'icons/mailbox.dart' as icon_mailbox;
 import 'icons/mails.dart' as icon_mails;
 import 'icons/map.dart' as icon_map;
 import 'icons/map_pin.dart' as icon_map_pin;
 import 'icons/map_pin_check.dart' as icon_map_pin_check;
+import 'icons/map_pin_check_corner.dart' as icon_map_pin_check_corner;
 import 'icons/map_pin_close.dart' as icon_map_pin_close;
+import 'icons/map_pin_close_corner.dart' as icon_map_pin_close_corner;
+import 'icons/map_pin_edit.dart' as icon_map_pin_edit;
+import 'icons/map_pin_edit_corner.dart' as icon_map_pin_edit_corner;
 import 'icons/map_pin_heart.dart' as icon_map_pin_heart;
+import 'icons/map_pin_heart_corner.dart' as icon_map_pin_heart_corner;
 import 'icons/map_pin_minus.dart' as icon_map_pin_minus;
+import 'icons/map_pin_minus_corner.dart' as icon_map_pin_minus_corner;
 import 'icons/map_pin_off.dart' as icon_map_pin_off;
 import 'icons/map_pin_plus.dart' as icon_map_pin_plus;
+import 'icons/map_pin_plus_corner.dart' as icon_map_pin_plus_corner;
 import 'icons/map_pin_radius.dart' as icon_map_pin_radius;
 import 'icons/map_pin_radius_minus.dart' as icon_map_pin_radius_minus;
 import 'icons/map_pin_radius_plus.dart' as icon_map_pin_radius_plus;
 import 'icons/map_pin_search.dart' as icon_map_pin_search;
+import 'icons/map_pin_search_corner.dart' as icon_map_pin_search_corner;
+import 'icons/map_pin_warning.dart' as icon_map_pin_warning;
+import 'icons/map_pin_warning_corner.dart' as icon_map_pin_warning_corner;
 import 'icons/map_pin_zap.dart' as icon_map_pin_zap;
+import 'icons/map_pin_zap_corner.dart' as icon_map_pin_zap_corner;
 import 'icons/markdown.dart' as icon_markdown;
 import 'icons/mars.dart' as icon_mars;
 import 'icons/martini.dart' as icon_martini;
+import 'icons/masks_theater.dart' as icon_masks_theater;
 import 'icons/mastodon.dart' as icon_mastodon;
 import 'icons/medal.dart' as icon_medal;
 import 'icons/medical_cross.dart' as icon_medical_cross;
@@ -1154,14 +1278,26 @@ import 'icons/oven.dart' as icon_oven;
 import 'icons/owl.dart' as icon_owl;
 import 'icons/owl_head.dart' as icon_owl_head;
 import 'icons/package.dart' as icon_package;
+import 'icons/package_check.dart' as icon_package_check;
 import 'icons/package_check_corner.dart' as icon_package_check_corner;
+import 'icons/package_close.dart' as icon_package_close;
+import 'icons/package_close_corner.dart' as icon_package_close_corner;
 import 'icons/package_download.dart' as icon_package_download;
 import 'icons/package_download_corner.dart' as icon_package_download_corner;
+import 'icons/package_edit.dart' as icon_package_edit;
+import 'icons/package_edit_corner.dart' as icon_package_edit_corner;
+import 'icons/package_minus.dart' as icon_package_minus;
+import 'icons/package_minus_corner.dart' as icon_package_minus_corner;
+import 'icons/package_plus.dart' as icon_package_plus;
 import 'icons/package_plus_corner.dart' as icon_package_plus_corner;
 import 'icons/package_return_corner.dart' as icon_package_return_corner;
+import 'icons/package_search.dart' as icon_package_search;
+import 'icons/package_search_corner.dart' as icon_package_search_corner;
 import 'icons/package_tracking_corner.dart' as icon_package_tracking_corner;
 import 'icons/package_upload.dart' as icon_package_upload;
 import 'icons/package_upload_corner.dart' as icon_package_upload_corner;
+import 'icons/package_warning.dart' as icon_package_warning;
+import 'icons/package_warning_corner.dart' as icon_package_warning_corner;
 import 'icons/packages.dart' as icon_packages;
 import 'icons/page_margins.dart' as icon_page_margins;
 import 'icons/paint_bucket.dart' as icon_paint_bucket;
@@ -1196,16 +1332,31 @@ import 'icons/pencil.dart' as icon_pencil;
 import 'icons/pencil_alt.dart' as icon_pencil_alt;
 import 'icons/pencil_line.dart' as icon_pencil_line;
 import 'icons/pencil_line_alt.dart' as icon_pencil_line_alt;
+import 'icons/pencil_minus.dart' as icon_pencil_minus;
+import 'icons/pencil_plus.dart' as icon_pencil_plus;
 import 'icons/pencil_ruler.dart' as icon_pencil_ruler;
 import 'icons/pencil_sparkle.dart' as icon_pencil_sparkle;
 import 'icons/penguin.dart' as icon_penguin;
 import 'icons/percent.dart' as icon_percent;
+import 'icons/person_cane.dart' as icon_person_cane;
 import 'icons/phone.dart' as icon_phone;
+import 'icons/phone_arrow_left.dart' as icon_phone_arrow_left;
+import 'icons/phone_arrow_right.dart' as icon_phone_arrow_right;
+import 'icons/phone_arrow_u_turn_up_left.dart'
+    as icon_phone_arrow_u_turn_up_left;
+import 'icons/phone_arrow_u_turn_up_right.dart'
+    as icon_phone_arrow_u_turn_up_right;
 import 'icons/phone_call.dart' as icon_phone_call;
+import 'icons/phone_desk.dart' as icon_phone_desk;
 import 'icons/phone_incoming.dart' as icon_phone_incoming;
+import 'icons/phone_list.dart' as icon_phone_list;
 import 'icons/phone_missed.dart' as icon_phone_missed;
 import 'icons/phone_off.dart' as icon_phone_off;
 import 'icons/phone_outgoing.dart' as icon_phone_outgoing;
+import 'icons/phone_parking.dart' as icon_phone_parking;
+import 'icons/phone_pause.dart' as icon_phone_pause;
+import 'icons/phone_plus.dart' as icon_phone_plus;
+import 'icons/phone_record.dart' as icon_phone_record;
 import 'icons/picture_in_picture.dart' as icon_picture_in_picture;
 import 'icons/pig.dart' as icon_pig;
 import 'icons/piggy_bank.dart' as icon_piggy_bank;
@@ -1236,6 +1387,8 @@ import 'icons/podcast.dart' as icon_podcast;
 import 'icons/podium.dart' as icon_podium;
 import 'icons/police_car.dart' as icon_police_car;
 import 'icons/police_car_side.dart' as icon_police_car_side;
+import 'icons/police_station.dart' as icon_police_station;
+import 'icons/police_station_alt.dart' as icon_police_station_alt;
 import 'icons/poll.dart' as icon_poll;
 import 'icons/popover.dart' as icon_popover;
 import 'icons/potted_plant.dart' as icon_potted_plant;
@@ -1244,6 +1397,7 @@ import 'icons/presentation.dart' as icon_presentation;
 import 'icons/printer.dart' as icon_printer;
 import 'icons/prompt.dart' as icon_prompt;
 import 'icons/puzzle.dart' as icon_puzzle;
+import 'icons/pyramid.dart' as icon_pyramid;
 import 'icons/qr_code.dart' as icon_qr_code;
 import 'icons/queue.dart' as icon_queue;
 import 'icons/quote_left.dart' as icon_quote_left;
@@ -1258,6 +1412,7 @@ import 'icons/radiator.dart' as icon_radiator;
 import 'icons/radio.dart' as icon_radio;
 import 'icons/radio_checked.dart' as icon_radio_checked;
 import 'icons/radio_receiver.dart' as icon_radio_receiver;
+import 'icons/radio_tower.dart' as icon_radio_tower;
 import 'icons/rainbow.dart' as icon_rainbow;
 import 'icons/square.dart' as icon_square;
 import 'icons/ratio_16_9.dart' as icon_ratio_16_9;
@@ -1265,6 +1420,7 @@ import 'icons/ratio_21_9.dart' as icon_ratio_21_9;
 import 'icons/ratio_3_2.dart' as icon_ratio_3_2;
 import 'icons/ratio_4_3.dart' as icon_ratio_4_3;
 import 'icons/receipt.dart' as icon_receipt;
+import 'icons/receipt_plus.dart' as icon_receipt_plus;
 import 'icons/recharge.dart' as icon_recharge;
 import 'icons/recycle.dart' as icon_recycle;
 import 'icons/reddit.dart' as icon_reddit;
@@ -1327,10 +1483,12 @@ import 'icons/segmented_control.dart' as icon_segmented_control;
 import 'icons/server.dart' as icon_server;
 import 'icons/server_check_corner.dart' as icon_server_check_corner;
 import 'icons/server_close_corner.dart' as icon_server_close_corner;
+import 'icons/server_edit_corner.dart' as icon_server_edit_corner;
 import 'icons/server_lock_corner.dart' as icon_server_lock_corner;
 import 'icons/server_minus_corner.dart' as icon_server_minus_corner;
 import 'icons/server_off.dart' as icon_server_off;
 import 'icons/server_plus_corner.dart' as icon_server_plus_corner;
+import 'icons/server_search_corner.dart' as icon_server_search_corner;
 import 'icons/server_settings_corner.dart' as icon_server_settings_corner;
 import 'icons/server_sync_corner.dart' as icon_server_sync_corner;
 import 'icons/server_warning_corner.dart' as icon_server_warning_corner;
@@ -1373,6 +1531,7 @@ import 'icons/signal_medium.dart' as icon_signal_medium;
 import 'icons/signal_none.dart' as icon_signal_none;
 import 'icons/signature.dart' as icon_signature;
 import 'icons/signpost.dart' as icon_signpost;
+import 'icons/silo.dart' as icon_silo;
 import 'icons/sim_card.dart' as icon_sim_card;
 import 'icons/siren.dart' as icon_siren;
 import 'icons/skip_back.dart' as icon_skip_back;
@@ -1380,6 +1539,7 @@ import 'icons/skip_back_15.dart' as icon_skip_back_15;
 import 'icons/skip_forward.dart' as icon_skip_forward;
 import 'icons/skip_forward_15.dart' as icon_skip_forward_15;
 import 'icons/skull.dart' as icon_skull;
+import 'icons/skyscraper.dart' as icon_skyscraper;
 import 'icons/slack.dart' as icon_slack;
 import 'icons/slider_1.dart' as icon_slider_1;
 import 'icons/slider_1_sparkle.dart' as icon_slider_1_sparkle;
@@ -1580,6 +1740,7 @@ import 'icons/toolbox.dart' as icon_toolbox;
 import 'icons/tooth.dart' as icon_tooth;
 import 'icons/tornado.dart' as icon_tornado;
 import 'icons/touchpad.dart' as icon_touchpad;
+import 'icons/town_hall.dart' as icon_town_hall;
 import 'icons/traffic_cone.dart' as icon_traffic_cone;
 import 'icons/traffic_light.dart' as icon_traffic_light;
 import 'icons/train.dart' as icon_train;
@@ -1624,6 +1785,8 @@ import 'icons/unfold_less_horizontal.dart' as icon_unfold_less_horizontal;
 import 'icons/unfold_more.dart' as icon_unfold_more;
 import 'icons/unfold_more_horizontal.dart' as icon_unfold_more_horizontal;
 import 'icons/ungroup.dart' as icon_ungroup;
+import 'icons/university.dart' as icon_university;
+import 'icons/upload.dart' as icon_upload;
 import 'icons/upscale_sparkle.dart' as icon_upscale_sparkle;
 import 'icons/usb.dart' as icon_usb;
 import 'icons/usb_hub.dart' as icon_usb_hub;
@@ -1633,7 +1796,9 @@ import 'icons/user_check_corner.dart' as icon_user_check_corner;
 import 'icons/user_clock_corner.dart' as icon_user_clock_corner;
 import 'icons/user_close_corner.dart' as icon_user_close_corner;
 import 'icons/user_edit_corner.dart' as icon_user_edit_corner;
+import 'icons/user_headset.dart' as icon_user_headset;
 import 'icons/user_help_corner.dart' as icon_user_help_corner;
+import 'icons/user_info_corner.dart' as icon_user_info_corner;
 import 'icons/user_list.dart' as icon_user_list;
 import 'icons/user_lock_corner.dart' as icon_user_lock_corner;
 import 'icons/user_minus_corner.dart' as icon_user_minus_corner;
@@ -1710,21 +1875,29 @@ import 'icons/wifi_problem.dart' as icon_wifi_problem;
 import 'icons/wind.dart' as icon_wind;
 import 'icons/wind_turbine.dart' as icon_wind_turbine;
 import 'icons/wind_turbine_solar_panel.dart' as icon_wind_turbine_solar_panel;
+import 'icons/windmill.dart' as icon_windmill;
 import 'icons/window.dart' as icon_window;
 import 'icons/window_check.dart' as icon_window_check;
 import 'icons/window_check_corner.dart' as icon_window_check_corner;
 import 'icons/window_close.dart' as icon_window_close;
 import 'icons/window_close_corner.dart' as icon_window_close_corner;
 import 'icons/window_code.dart' as icon_window_code;
+import 'icons/window_edit.dart' as icon_window_edit;
+import 'icons/window_edit_corner.dart' as icon_window_edit_corner;
 import 'icons/window_lock_corner.dart' as icon_window_lock_corner;
+import 'icons/window_minus.dart' as icon_window_minus;
 import 'icons/window_minus_corner.dart' as icon_window_minus_corner;
+import 'icons/window_plus.dart' as icon_window_plus;
 import 'icons/window_plus_corner.dart' as icon_window_plus_corner;
+import 'icons/window_search.dart' as icon_window_search;
+import 'icons/window_search_corner.dart' as icon_window_search_corner;
 import 'icons/window_sensor.dart' as icon_window_sensor;
 import 'icons/window_settings_corner.dart' as icon_window_settings_corner;
 import 'icons/window_sidebar.dart' as icon_window_sidebar;
 import 'icons/window_sidebar_right.dart' as icon_window_sidebar_right;
 import 'icons/window_sync_corner.dart' as icon_window_sync_corner;
 import 'icons/window_terminal.dart' as icon_window_terminal;
+import 'icons/window_warning.dart' as icon_window_warning;
 import 'icons/window_warning_corner.dart' as icon_window_warning_corner;
 import 'icons/windows_logo.dart' as icon_windows_logo;
 import 'icons/wine.dart' as icon_wine;
@@ -1918,7 +2091,8 @@ abstract final class CoolIcons {
       icon_arrow_down_small.arrowDownSmall;
 
   /// Upstream icon name: arrow-down-to-line.
-  static const CoolIconData arrowDownToLine = icon_download.download;
+  static const CoolIconData arrowDownToLine =
+      icon_arrow_down_to_line.arrowDownToLine;
 
   /// Upstream icon name: arrow-down-up.
   static const CoolIconData arrowDownUp = icon_arrow_down_up.arrowDownUp;
@@ -2040,7 +2214,8 @@ abstract final class CoolIcons {
   static const CoolIconData arrowUp = icon_arrow_up.arrowUp;
 
   /// Upstream icon name: arrow-up-from-line.
-  static const CoolIconData arrowUpFromLine = icon_upload.upload;
+  static const CoolIconData arrowUpFromLine =
+      icon_arrow_up_from_line.arrowUpFromLine;
 
   /// Upstream icon name: arrow-up-large.
   static const CoolIconData arrowUpLarge = icon_arrow_up_large.arrowUpLarge;
@@ -2084,6 +2259,10 @@ abstract final class CoolIcons {
 
   /// Upstream icon name: atom.
   static const CoolIconData atom = icon_atom.atom;
+
+  /// Upstream icon name: audio-description.
+  static const CoolIconData audioDescription =
+      icon_audio_description.audioDescription;
 
   /// Upstream icon name: autoplay.
   static const CoolIconData autoplay = icon_autoplay.autoplay;
@@ -2287,6 +2466,9 @@ abstract final class CoolIcons {
   /// Upstream icon name: brackets-dots.
   static const CoolIconData bracketsDots = icon_brackets_dots.bracketsDots;
 
+  /// Upstream icon name: braille.
+  static const CoolIconData braille = icon_braille.braille;
+
   /// Upstream icon name: brain.
   static const CoolIconData brain = icon_brain.brain;
 
@@ -2326,6 +2508,17 @@ abstract final class CoolIcons {
 
   /// Upstream icon name: building-4.
   static const CoolIconData building4 = icon_building_4.building4;
+
+  /// Upstream icon name: building-apartment.
+  static const CoolIconData buildingApartment =
+      icon_building_apartment.buildingApartment;
+
+  /// Upstream icon name: building-dome.
+  static const CoolIconData buildingDome = icon_building_dome.buildingDome;
+
+  /// Upstream icon name: building-office.
+  static const CoolIconData buildingOffice =
+      icon_building_office.buildingOffice;
 
   /// Upstream icon name: bulb.
   static const CoolIconData bulb = icon_bulb.bulb;
@@ -2450,6 +2643,10 @@ abstract final class CoolIcons {
 
   /// Upstream icon name: calendar-text.
   static const CoolIconData calendarText = icon_calendar_text.calendarText;
+
+  /// Upstream icon name: calendar-warning.
+  static const CoolIconData calendarWarning =
+      icon_calendar_warning.calendarWarning;
 
   /// Upstream icon name: calendar-warning-corner.
   static const CoolIconData calendarWarningCorner =
@@ -2631,6 +2828,10 @@ abstract final class CoolIcons {
   /// Upstream icon name: chat-check.
   static const CoolIconData chatCheck = icon_chat_check.chatCheck;
 
+  /// Upstream icon name: chat-check-corner.
+  static const CoolIconData chatCheckCorner =
+      icon_chat_check_corner.chatCheckCorner;
+
   /// Upstream icon name: chat-circle.
   static const CoolIconData chatCircle = icon_chat_circle.chatCircle;
 
@@ -2642,21 +2843,45 @@ abstract final class CoolIcons {
   static const CoolIconData chatCircleCheck =
       icon_chat_circle_check.chatCircleCheck;
 
+  /// Upstream icon name: chat-circle-check-corner.
+  static const CoolIconData chatCircleCheckCorner =
+      icon_chat_circle_check_corner.chatCircleCheckCorner;
+
   /// Upstream icon name: chat-circle-close.
   static const CoolIconData chatCircleClose =
       icon_chat_circle_close.chatCircleClose;
+
+  /// Upstream icon name: chat-circle-close-corner.
+  static const CoolIconData chatCircleCloseCorner =
+      icon_chat_circle_close_corner.chatCircleCloseCorner;
 
   /// Upstream icon name: chat-circle-dots.
   static const CoolIconData chatCircleDots =
       icon_chat_circle_dots.chatCircleDots;
 
+  /// Upstream icon name: chat-circle-edit.
+  static const CoolIconData chatCircleEdit =
+      icon_chat_circle_edit.chatCircleEdit;
+
+  /// Upstream icon name: chat-circle-edit-corner.
+  static const CoolIconData chatCircleEditCorner =
+      icon_chat_circle_edit_corner.chatCircleEditCorner;
+
   /// Upstream icon name: chat-circle-heart.
   static const CoolIconData chatCircleHeart =
       icon_chat_circle_heart.chatCircleHeart;
 
+  /// Upstream icon name: chat-circle-heart-corner.
+  static const CoolIconData chatCircleHeartCorner =
+      icon_chat_circle_heart_corner.chatCircleHeartCorner;
+
   /// Upstream icon name: chat-circle-help.
   static const CoolIconData chatCircleHelp =
       icon_chat_circle_help.chatCircleHelp;
+
+  /// Upstream icon name: chat-circle-help-corner.
+  static const CoolIconData chatCircleHelpCorner =
+      icon_chat_circle_help_corner.chatCircleHelpCorner;
 
   /// Upstream icon name: chat-circle-laugh.
   static const CoolIconData chatCircleLaugh =
@@ -2665,6 +2890,10 @@ abstract final class CoolIcons {
   /// Upstream icon name: chat-circle-minus.
   static const CoolIconData chatCircleMinus =
       icon_chat_circle_minus.chatCircleMinus;
+
+  /// Upstream icon name: chat-circle-minus-corner.
+  static const CoolIconData chatCircleMinusCorner =
+      icon_chat_circle_minus_corner.chatCircleMinusCorner;
 
   /// Upstream icon name: chat-circle-neutral.
   static const CoolIconData chatCircleNeutral =
@@ -2677,6 +2906,10 @@ abstract final class CoolIcons {
   static const CoolIconData chatCirclePlus =
       icon_chat_circle_plus.chatCirclePlus;
 
+  /// Upstream icon name: chat-circle-plus-corner.
+  static const CoolIconData chatCirclePlusCorner =
+      icon_chat_circle_plus_corner.chatCirclePlusCorner;
+
   /// Upstream icon name: chat-circle-quote.
   static const CoolIconData chatCircleQuote =
       icon_chat_circle_quote.chatCircleQuote;
@@ -2684,9 +2917,21 @@ abstract final class CoolIcons {
   /// Upstream icon name: chat-circle-sad.
   static const CoolIconData chatCircleSad = icon_chat_circle_sad.chatCircleSad;
 
+  /// Upstream icon name: chat-circle-search.
+  static const CoolIconData chatCircleSearch =
+      icon_chat_circle_search.chatCircleSearch;
+
+  /// Upstream icon name: chat-circle-search-corner.
+  static const CoolIconData chatCircleSearchCorner =
+      icon_chat_circle_search_corner.chatCircleSearchCorner;
+
   /// Upstream icon name: chat-circle-share.
   static const CoolIconData chatCircleShare =
       icon_chat_circle_share.chatCircleShare;
+
+  /// Upstream icon name: chat-circle-share-corner.
+  static const CoolIconData chatCircleShareCorner =
+      icon_chat_circle_share_corner.chatCircleShareCorner;
 
   /// Upstream icon name: chat-circle-smile.
   static const CoolIconData chatCircleSmile =
@@ -2704,12 +2949,20 @@ abstract final class CoolIcons {
   static const CoolIconData chatCircleWarning =
       icon_chat_circle_warning.chatCircleWarning;
 
+  /// Upstream icon name: chat-circle-warning-corner.
+  static const CoolIconData chatCircleWarningCorner =
+      icon_chat_circle_warning_corner.chatCircleWarningCorner;
+
   /// Upstream icon name: chat-circle-wink.
   static const CoolIconData chatCircleWink =
       icon_chat_circle_wink.chatCircleWink;
 
   /// Upstream icon name: chat-close.
   static const CoolIconData chatClose = icon_chat_close.chatClose;
+
+  /// Upstream icon name: chat-close-corner.
+  static const CoolIconData chatCloseCorner =
+      icon_chat_close_corner.chatCloseCorner;
 
   /// Upstream icon name: chat-conversation.
   static const CoolIconData chatConversation =
@@ -2722,14 +2975,33 @@ abstract final class CoolIcons {
   /// Upstream icon name: chat-dots.
   static const CoolIconData chatDots = icon_chat_dots.chatDots;
 
+  /// Upstream icon name: chat-edit.
+  static const CoolIconData chatEdit = icon_chat_edit.chatEdit;
+
+  /// Upstream icon name: chat-edit-corner.
+  static const CoolIconData chatEditCorner =
+      icon_chat_edit_corner.chatEditCorner;
+
   /// Upstream icon name: chat-heart.
   static const CoolIconData chatHeart = icon_chat_heart.chatHeart;
+
+  /// Upstream icon name: chat-heart-corner.
+  static const CoolIconData chatHeartCorner =
+      icon_chat_heart_corner.chatHeartCorner;
 
   /// Upstream icon name: chat-help.
   static const CoolIconData chatHelp = icon_chat_help.chatHelp;
 
+  /// Upstream icon name: chat-help-corner.
+  static const CoolIconData chatHelpCorner =
+      icon_chat_help_corner.chatHelpCorner;
+
   /// Upstream icon name: chat-minus.
   static const CoolIconData chatMinus = icon_chat_minus.chatMinus;
+
+  /// Upstream icon name: chat-minus-corner.
+  static const CoolIconData chatMinusCorner =
+      icon_chat_minus_corner.chatMinusCorner;
 
   /// Upstream icon name: chat-off.
   static const CoolIconData chatOff = icon_chat_off.chatOff;
@@ -2737,20 +3009,47 @@ abstract final class CoolIcons {
   /// Upstream icon name: chat-plus.
   static const CoolIconData chatPlus = icon_chat_plus.chatPlus;
 
+  /// Upstream icon name: chat-plus-corner.
+  static const CoolIconData chatPlusCorner =
+      icon_chat_plus_corner.chatPlusCorner;
+
   /// Upstream icon name: chat-quote.
   static const CoolIconData chatQuote = icon_chat_quote.chatQuote;
+
+  /// Upstream icon name: chat-search.
+  static const CoolIconData chatSearch = icon_chat_search.chatSearch;
+
+  /// Upstream icon name: chat-search-corner.
+  static const CoolIconData chatSearchCorner =
+      icon_chat_search_corner.chatSearchCorner;
+
+  /// Upstream icon name: chat-settings-corner.
+  static const CoolIconData chatSettingsCorner =
+      icon_chat_settings_corner.chatSettingsCorner;
 
   /// Upstream icon name: chat-share.
   static const CoolIconData chatShare = icon_chat_share.chatShare;
 
+  /// Upstream icon name: chat-share-corner.
+  static const CoolIconData chatShareCorner =
+      icon_chat_share_corner.chatShareCorner;
+
   /// Upstream icon name: chat-sparkle.
   static const CoolIconData chatSparkle = icon_chat_sparkle.chatSparkle;
+
+  /// Upstream icon name: chat-sparkle-corner.
+  static const CoolIconData chatSparkleCorner =
+      icon_chat_sparkle_corner.chatSparkleCorner;
 
   /// Upstream icon name: chat-text.
   static const CoolIconData chatText = icon_chat_text.chatText;
 
   /// Upstream icon name: chat-warning.
   static const CoolIconData chatWarning = icon_chat_warning.chatWarning;
+
+  /// Upstream icon name: chat-warning-corner.
+  static const CoolIconData chatWarningCorner =
+      icon_chat_warning_corner.chatWarningCorner;
 
   /// Upstream icon name: check.
   static const CoolIconData check = icon_check.check;
@@ -3084,6 +3383,12 @@ abstract final class CoolIcons {
   /// Upstream icon name: circuit-board.
   static const CoolIconData circuitBoard = icon_circuit_board.circuitBoard;
 
+  /// Upstream icon name: circus-tent.
+  static const CoolIconData circusTent = icon_circus_tent.circusTent;
+
+  /// Upstream icon name: city.
+  static const CoolIconData city = icon_city.city;
+
   /// Upstream icon name: clapperboard.
   static const CoolIconData clapperboard = icon_clapperboard.clapperboard;
 
@@ -3094,9 +3399,24 @@ abstract final class CoolIcons {
   static const CoolIconData clipboardCheck =
       icon_clipboard_check.clipboardCheck;
 
+  /// Upstream icon name: clipboard-check-corner.
+  static const CoolIconData clipboardCheckCorner =
+      icon_clipboard_check_corner.clipboardCheckCorner;
+
   /// Upstream icon name: clipboard-close.
   static const CoolIconData clipboardClose =
       icon_clipboard_close.clipboardClose;
+
+  /// Upstream icon name: clipboard-close-corner.
+  static const CoolIconData clipboardCloseCorner =
+      icon_clipboard_close_corner.clipboardCloseCorner;
+
+  /// Upstream icon name: clipboard-edit.
+  static const CoolIconData clipboardEdit = icon_clipboard_edit.clipboardEdit;
+
+  /// Upstream icon name: clipboard-edit-corner.
+  static const CoolIconData clipboardEditCorner =
+      icon_clipboard_edit_corner.clipboardEditCorner;
 
   /// Upstream icon name: clipboard-list.
   static const CoolIconData clipboardList = icon_clipboard_list.clipboardList;
@@ -3105,8 +3425,32 @@ abstract final class CoolIcons {
   static const CoolIconData clipboardMinus =
       icon_clipboard_minus.clipboardMinus;
 
+  /// Upstream icon name: clipboard-minus-corner.
+  static const CoolIconData clipboardMinusCorner =
+      icon_clipboard_minus_corner.clipboardMinusCorner;
+
   /// Upstream icon name: clipboard-plus.
   static const CoolIconData clipboardPlus = icon_clipboard_plus.clipboardPlus;
+
+  /// Upstream icon name: clipboard-plus-corner.
+  static const CoolIconData clipboardPlusCorner =
+      icon_clipboard_plus_corner.clipboardPlusCorner;
+
+  /// Upstream icon name: clipboard-search.
+  static const CoolIconData clipboardSearch =
+      icon_clipboard_search.clipboardSearch;
+
+  /// Upstream icon name: clipboard-search-corner.
+  static const CoolIconData clipboardSearchCorner =
+      icon_clipboard_search_corner.clipboardSearchCorner;
+
+  /// Upstream icon name: clipboard-warning.
+  static const CoolIconData clipboardWarning =
+      icon_clipboard_warning.clipboardWarning;
+
+  /// Upstream icon name: clipboard-warning-corner.
+  static const CoolIconData clipboardWarningCorner =
+      icon_clipboard_warning_corner.clipboardWarningCorner;
 
   /// Upstream icon name: clock.
   static const CoolIconData clock = icon_clock.clock;
@@ -3147,8 +3491,26 @@ abstract final class CoolIcons {
   /// Upstream icon name: clock-9.
   static const CoolIconData clock9 = icon_clock_9.clock9;
 
+  /// Upstream icon name: clock-check.
+  static const CoolIconData clockCheck = icon_clock_check.clockCheck;
+
+  /// Upstream icon name: clock-close.
+  static const CoolIconData clockClose = icon_clock_close.clockClose;
+
+  /// Upstream icon name: clock-edit.
+  static const CoolIconData clockEdit = icon_clock_edit.clockEdit;
+
+  /// Upstream icon name: clock-help.
+  static const CoolIconData clockHelp = icon_clock_help.clockHelp;
+
   /// Upstream icon name: clock-pause.
   static const CoolIconData clockPause = icon_clock_pause.clockPause;
+
+  /// Upstream icon name: clock-search.
+  static const CoolIconData clockSearch = icon_clock_search.clockSearch;
+
+  /// Upstream icon name: clock-warning.
+  static const CoolIconData clockWarning = icon_clock_warning.clockWarning;
 
   /// Upstream icon name: close.
   static const CoolIconData close = icon_close.close;
@@ -3165,11 +3527,30 @@ abstract final class CoolIcons {
   /// Upstream icon name: cloud-check.
   static const CoolIconData cloudCheck = icon_cloud_check.cloudCheck;
 
+  /// Upstream icon name: cloud-check-corner.
+  static const CoolIconData cloudCheckCorner =
+      icon_cloud_check_corner.cloudCheckCorner;
+
   /// Upstream icon name: cloud-close.
   static const CoolIconData cloudClose = icon_cloud_close.cloudClose;
 
+  /// Upstream icon name: cloud-close-corner.
+  static const CoolIconData cloudCloseCorner =
+      icon_cloud_close_corner.cloudCloseCorner;
+
   /// Upstream icon name: cloud-download.
   static const CoolIconData cloudDownload = icon_cloud_download.cloudDownload;
+
+  /// Upstream icon name: cloud-download-corner.
+  static const CoolIconData cloudDownloadCorner =
+      icon_cloud_download_corner.cloudDownloadCorner;
+
+  /// Upstream icon name: cloud-edit.
+  static const CoolIconData cloudEdit = icon_cloud_edit.cloudEdit;
+
+  /// Upstream icon name: cloud-edit-corner.
+  static const CoolIconData cloudEditCorner =
+      icon_cloud_edit_corner.cloudEditCorner;
 
   /// Upstream icon name: cloud-fog.
   static const CoolIconData cloudFog = icon_cloud_fog.cloudFog;
@@ -3181,6 +3562,10 @@ abstract final class CoolIcons {
   /// Upstream icon name: cloud-minus.
   static const CoolIconData cloudMinus = icon_cloud_minus.cloudMinus;
 
+  /// Upstream icon name: cloud-minus-corner.
+  static const CoolIconData cloudMinusCorner =
+      icon_cloud_minus_corner.cloudMinusCorner;
+
   /// Upstream icon name: cloud-moon.
   static const CoolIconData cloudMoon = icon_cloud_moon.cloudMoon;
 
@@ -3190,8 +3575,19 @@ abstract final class CoolIcons {
   /// Upstream icon name: cloud-plus.
   static const CoolIconData cloudPlus = icon_cloud_plus.cloudPlus;
 
+  /// Upstream icon name: cloud-plus-corner.
+  static const CoolIconData cloudPlusCorner =
+      icon_cloud_plus_corner.cloudPlusCorner;
+
   /// Upstream icon name: cloud-rain.
   static const CoolIconData cloudRain = icon_cloud_rain.cloudRain;
+
+  /// Upstream icon name: cloud-search.
+  static const CoolIconData cloudSearch = icon_cloud_search.cloudSearch;
+
+  /// Upstream icon name: cloud-search-corner.
+  static const CoolIconData cloudSearchCorner =
+      icon_cloud_search_corner.cloudSearchCorner;
 
   /// Upstream icon name: cloud-snow.
   static const CoolIconData cloudSnow = icon_cloud_snow.cloudSnow;
@@ -3203,8 +3599,23 @@ abstract final class CoolIcons {
   static const CoolIconData cloudSyncCorner =
       icon_cloud_sync_corner.cloudSyncCorner;
 
+  /// Upstream icon name: cloud-sync-corner-alt.
+  static const CoolIconData cloudSyncCornerAlt =
+      icon_cloud_sync_corner_alt.cloudSyncCornerAlt;
+
   /// Upstream icon name: cloud-upload.
   static const CoolIconData cloudUpload = icon_cloud_upload.cloudUpload;
+
+  /// Upstream icon name: cloud-upload-corner.
+  static const CoolIconData cloudUploadCorner =
+      icon_cloud_upload_corner.cloudUploadCorner;
+
+  /// Upstream icon name: cloud-warning.
+  static const CoolIconData cloudWarning = icon_cloud_warning.cloudWarning;
+
+  /// Upstream icon name: cloud-warning-corner.
+  static const CoolIconData cloudWarningCorner =
+      icon_cloud_warning_corner.cloudWarningCorner;
 
   /// Upstream icon name: clover.
   static const CoolIconData clover = icon_clover.clover;
@@ -3280,6 +3691,9 @@ abstract final class CoolIcons {
   /// Upstream icon name: control.
   static const CoolIconData control = icon_chevron_up.chevronUp;
 
+  /// Upstream icon name: control-tower.
+  static const CoolIconData controlTower = icon_control_tower.controlTower;
+
   /// Upstream icon name: cookie.
   static const CoolIconData cookie = icon_cookie.cookie;
 
@@ -3291,6 +3705,9 @@ abstract final class CoolIcons {
 
   /// Upstream icon name: coolicons.
   static const CoolIconData coolicons = icon_coolicons.coolicons;
+
+  /// Upstream icon name: cooling-tower.
+  static const CoolIconData coolingTower = icon_cooling_tower.coolingTower;
 
   /// Upstream icon name: copy.
   static const CoolIconData copy = icon_copy.copy;
@@ -3313,8 +3730,20 @@ abstract final class CoolIcons {
   /// Upstream icon name: corner-radius.
   static const CoolIconData cornerRadius = icon_corner_radius.cornerRadius;
 
+  /// Upstream icon name: corner-regular.
+  static const CoolIconData cornerRegular = icon_corner_regular.cornerRegular;
+
+  /// Upstream icon name: corner-round.
+  static const CoolIconData cornerRound = icon_corner_round.cornerRound;
+
+  /// Upstream icon name: corner-sharp.
+  static const CoolIconData cornerSharp = icon_corner_sharp.cornerSharp;
+
   /// Upstream icon name: coupon.
   static const CoolIconData coupon = icon_coupon.coupon;
+
+  /// Upstream icon name: courthouse.
+  static const CoolIconData courthouse = icon_courthouse.courthouse;
 
   /// Upstream icon name: cow.
   static const CoolIconData cow = icon_cow.cow;
@@ -3350,6 +3779,14 @@ abstract final class CoolIcons {
   static const CoolIconData creditCardContactless =
       icon_credit_card_contactless.creditCardContactless;
 
+  /// Upstream icon name: credit-card-edit-corner.
+  static const CoolIconData creditCardEditCorner =
+      icon_credit_card_edit_corner.creditCardEditCorner;
+
+  /// Upstream icon name: credit-card-minus-corner.
+  static const CoolIconData creditCardMinusCorner =
+      icon_credit_card_minus_corner.creditCardMinusCorner;
+
   /// Upstream icon name: credit-card-plus-corner.
   static const CoolIconData creditCardPlusCorner =
       icon_credit_card_plus_corner.creditCardPlusCorner;
@@ -3358,9 +3795,17 @@ abstract final class CoolIcons {
   static const CoolIconData creditCardReturnCorner =
       icon_credit_card_return_corner.creditCardReturnCorner;
 
+  /// Upstream icon name: credit-card-search-corner.
+  static const CoolIconData creditCardSearchCorner =
+      icon_credit_card_search_corner.creditCardSearchCorner;
+
   /// Upstream icon name: credit-card-sync-corner.
   static const CoolIconData creditCardSyncCorner =
       icon_credit_card_sync_corner.creditCardSyncCorner;
+
+  /// Upstream icon name: credit-card-warning-corner.
+  static const CoolIconData creditCardWarningCorner =
+      icon_credit_card_warning_corner.creditCardWarningCorner;
 
   /// Upstream icon name: croissant.
   static const CoolIconData croissant = icon_croissant.croissant;
@@ -3452,6 +3897,10 @@ abstract final class CoolIcons {
   static const CoolIconData databaseCloseCorner =
       icon_database_close_corner.databaseCloseCorner;
 
+  /// Upstream icon name: database-edit-corner.
+  static const CoolIconData databaseEditCorner =
+      icon_database_edit_corner.databaseEditCorner;
+
   /// Upstream icon name: database-lock-corner.
   static const CoolIconData databaseLockCorner =
       icon_database_lock_corner.databaseLockCorner;
@@ -3512,6 +3961,9 @@ abstract final class CoolIcons {
   /// Upstream icon name: devices-code-corner.
   static const CoolIconData devicesCodeCorner =
       icon_devices_code_corner.devicesCodeCorner;
+
+  /// Upstream icon name: dialpad.
+  static const CoolIconData dialpad = icon_dialpad.dialpad;
 
   /// Upstream icon name: diamond.
   static const CoolIconData diamond = icon_diamond.diamond;
@@ -3760,6 +4212,9 @@ abstract final class CoolIcons {
   /// Upstream icon name: fence.
   static const CoolIconData fence = icon_fence.fence;
 
+  /// Upstream icon name: ferris-wheel.
+  static const CoolIconData ferrisWheel = icon_ferris_wheel.ferrisWheel;
+
   /// Upstream icon name: ferry.
   static const CoolIconData ferry = icon_ferry.ferry;
 
@@ -3835,6 +4290,10 @@ abstract final class CoolIcons {
   /// Upstream icon name: file-percent.
   static const CoolIconData filePercent = icon_file_percent.filePercent;
 
+  /// Upstream icon name: file-percent-corner.
+  static const CoolIconData filePercentCorner =
+      icon_file_percent_corner.filePercentCorner;
+
   /// Upstream icon name: file-phone-corner.
   static const CoolIconData filePhoneCorner =
       icon_file_phone_corner.filePhoneCorner;
@@ -3866,6 +4325,10 @@ abstract final class CoolIcons {
 
   /// Upstream icon name: file-shield.
   static const CoolIconData fileShield = icon_file_shield.fileShield;
+
+  /// Upstream icon name: file-shield-corner.
+  static const CoolIconData fileShieldCorner =
+      icon_file_shield_corner.fileShieldCorner;
 
   /// Upstream icon name: file-signature.
   static const CoolIconData fileSignature = icon_file_signature.fileSignature;
@@ -3899,6 +4362,9 @@ abstract final class CoolIcons {
   static const CoolIconData fileUploadCorner =
       icon_file_upload_corner.fileUploadCorner;
 
+  /// Upstream icon name: file-warning.
+  static const CoolIconData fileWarning = icon_file_warning.fileWarning;
+
   /// Upstream icon name: file-warning-corner.
   static const CoolIconData fileWarningCorner =
       icon_file_warning_corner.fileWarningCorner;
@@ -3924,6 +4390,9 @@ abstract final class CoolIcons {
   /// Upstream icon name: fire-extinguisher.
   static const CoolIconData fireExtinguisher =
       icon_fire_extinguisher.fireExtinguisher;
+
+  /// Upstream icon name: fire-station.
+  static const CoolIconData fireStation = icon_fire_station.fireStation;
 
   /// Upstream icon name: fireplace.
   static const CoolIconData fireplace = icon_fireplace.fireplace;
@@ -4031,6 +4500,9 @@ abstract final class CoolIcons {
   static const CoolIconData folderEditCorner =
       icon_folder_edit_corner.folderEditCorner;
 
+  /// Upstream icon name: folder-help.
+  static const CoolIconData folderHelp = icon_folder_help.folderHelp;
+
   /// Upstream icon name: folder-help-corner.
   static const CoolIconData folderHelpCorner =
       icon_folder_help_corner.folderHelpCorner;
@@ -4100,6 +4572,9 @@ abstract final class CoolIcons {
   /// Upstream icon name: folder-upload-corner.
   static const CoolIconData folderUploadCorner =
       icon_folder_upload_corner.folderUploadCorner;
+
+  /// Upstream icon name: folder-warning.
+  static const CoolIconData folderWarning = icon_folder_warning.folderWarning;
 
   /// Upstream icon name: folder-warning-corner.
   static const CoolIconData folderWarningCorner =
@@ -4492,6 +4967,9 @@ abstract final class CoolIcons {
   static const CoolIconData houseConnection =
       icon_house_connection.houseConnection;
 
+  /// Upstream icon name: house-edit.
+  static const CoolIconData houseEdit = icon_house_edit.houseEdit;
+
   /// Upstream icon name: house-edit-corner.
   static const CoolIconData houseEditCorner =
       icon_house_edit_corner.houseEditCorner;
@@ -4506,6 +4984,9 @@ abstract final class CoolIcons {
   /// Upstream icon name: house-geothermal.
   static const CoolIconData houseGeothermal =
       icon_house_geothermal.houseGeothermal;
+
+  /// Upstream icon name: house-help.
+  static const CoolIconData houseHelp = icon_house_help.houseHelp;
 
   /// Upstream icon name: house-help-corner.
   static const CoolIconData houseHelpCorner =
@@ -4581,6 +5062,13 @@ abstract final class CoolIcons {
   static const CoolIconData houseStarCorner =
       icon_house_star_corner.houseStarCorner;
 
+  /// Upstream icon name: house-sun.
+  static const CoolIconData houseSun = icon_house_sun.houseSun;
+
+  /// Upstream icon name: house-sun-corner.
+  static const CoolIconData houseSunCorner =
+      icon_house_sun_corner.houseSunCorner;
+
   /// Upstream icon name: house-sync-corner.
   static const CoolIconData houseSyncCorner =
       icon_house_sync_corner.houseSyncCorner;
@@ -4595,6 +5083,13 @@ abstract final class CoolIcons {
 
   /// Upstream icon name: house-user.
   static const CoolIconData houseUser = icon_house_user.houseUser;
+
+  /// Upstream icon name: house-user-corner.
+  static const CoolIconData houseUserCorner =
+      icon_house_user_corner.houseUserCorner;
+
+  /// Upstream icon name: house-warning.
+  static const CoolIconData houseWarning = icon_house_warning.houseWarning;
 
   /// Upstream icon name: house-warning-corner.
   static const CoolIconData houseWarningCorner =
@@ -4660,6 +5155,13 @@ abstract final class CoolIcons {
   static const CoolIconData imageEditCorner =
       icon_image_edit_corner.imageEditCorner;
 
+  /// Upstream icon name: image-minus.
+  static const CoolIconData imageMinus = icon_image_minus.imageMinus;
+
+  /// Upstream icon name: image-minus-corner.
+  static const CoolIconData imageMinusCorner =
+      icon_image_minus_corner.imageMinusCorner;
+
   /// Upstream icon name: image-off.
   static const CoolIconData imageOff = icon_image_off.imageOff;
 
@@ -4679,6 +5181,10 @@ abstract final class CoolIcons {
 
   /// Upstream icon name: image-sparkle.
   static const CoolIconData imageSparkle = icon_image_sparkle.imageSparkle;
+
+  /// Upstream icon name: image-sparkle-corner.
+  static const CoolIconData imageSparkleCorner =
+      icon_image_sparkle_corner.imageSparkleCorner;
 
   /// Upstream icon name: image-upload.
   static const CoolIconData imageUpload = icon_image_upload.imageUpload;
@@ -4890,6 +5396,9 @@ abstract final class CoolIcons {
   /// Upstream icon name: light-switch.
   static const CoolIconData lightSwitch = icon_light_switch.lightSwitch;
 
+  /// Upstream icon name: lighthouse.
+  static const CoolIconData lighthouse = icon_lighthouse.lighthouse;
+
   /// Upstream icon name: line-height.
   static const CoolIconData lineHeight = icon_line_height.lineHeight;
 
@@ -4977,14 +5486,60 @@ abstract final class CoolIcons {
   /// Upstream icon name: lock-check.
   static const CoolIconData lockCheck = icon_lock_check.lockCheck;
 
+  /// Upstream icon name: lock-check-corner.
+  static const CoolIconData lockCheckCorner =
+      icon_lock_check_corner.lockCheckCorner;
+
+  /// Upstream icon name: lock-close.
+  static const CoolIconData lockClose = icon_lock_close.lockClose;
+
+  /// Upstream icon name: lock-close-corner.
+  static const CoolIconData lockCloseCorner =
+      icon_lock_close_corner.lockCloseCorner;
+
+  /// Upstream icon name: lock-edit.
+  static const CoolIconData lockEdit = icon_lock_edit.lockEdit;
+
+  /// Upstream icon name: lock-edit-corner.
+  static const CoolIconData lockEditCorner =
+      icon_lock_edit_corner.lockEditCorner;
+
   /// Upstream icon name: lock-keyhole.
   static const CoolIconData lockKeyhole = icon_lock_keyhole.lockKeyhole;
+
+  /// Upstream icon name: lock-minus.
+  static const CoolIconData lockMinus = icon_lock_minus.lockMinus;
+
+  /// Upstream icon name: lock-minus-corner.
+  static const CoolIconData lockMinusCorner =
+      icon_lock_minus_corner.lockMinusCorner;
 
   /// Upstream icon name: lock-off.
   static const CoolIconData lockOff = icon_lock_off.lockOff;
 
   /// Upstream icon name: lock-open.
   static const CoolIconData lockOpen = icon_lock_open.lockOpen;
+
+  /// Upstream icon name: lock-plus.
+  static const CoolIconData lockPlus = icon_lock_plus.lockPlus;
+
+  /// Upstream icon name: lock-plus-corner.
+  static const CoolIconData lockPlusCorner =
+      icon_lock_plus_corner.lockPlusCorner;
+
+  /// Upstream icon name: lock-search.
+  static const CoolIconData lockSearch = icon_lock_search.lockSearch;
+
+  /// Upstream icon name: lock-search-corner.
+  static const CoolIconData lockSearchCorner =
+      icon_lock_search_corner.lockSearchCorner;
+
+  /// Upstream icon name: lock-warning.
+  static const CoolIconData lockWarning = icon_lock_warning.lockWarning;
+
+  /// Upstream icon name: lock-warning-corner.
+  static const CoolIconData lockWarningCorner =
+      icon_lock_warning_corner.lockWarningCorner;
 
   /// Upstream icon name: log-in.
   static const CoolIconData logIn = icon_log_in.logIn;
@@ -5031,8 +5586,16 @@ abstract final class CoolIcons {
   /// Upstream icon name: mail-dot.
   static const CoolIconData mailDot = icon_mail_dot.mailDot;
 
+  /// Upstream icon name: mail-edit-corner.
+  static const CoolIconData mailEditCorner =
+      icon_mail_edit_corner.mailEditCorner;
+
   /// Upstream icon name: mail-help.
   static const CoolIconData mailHelp = icon_mail_help.mailHelp;
+
+  /// Upstream icon name: mail-help-corner.
+  static const CoolIconData mailHelpCorner =
+      icon_mail_help_corner.mailHelpCorner;
 
   /// Upstream icon name: mail-minus.
   static const CoolIconData mailMinus = icon_mail_minus.mailMinus;
@@ -5064,8 +5627,16 @@ abstract final class CoolIcons {
   /// Upstream icon name: mail-sparkle.
   static const CoolIconData mailSparkle = icon_mail_sparkle.mailSparkle;
 
+  /// Upstream icon name: mail-sparkle-corner.
+  static const CoolIconData mailSparkleCorner =
+      icon_mail_sparkle_corner.mailSparkleCorner;
+
   /// Upstream icon name: mail-warning.
   static const CoolIconData mailWarning = icon_mail_warning.mailWarning;
+
+  /// Upstream icon name: mail-warning-corner.
+  static const CoolIconData mailWarningCorner =
+      icon_mail_warning_corner.mailWarningCorner;
 
   /// Upstream icon name: mailbox.
   static const CoolIconData mailbox = icon_mailbox.mailbox;
@@ -5082,20 +5653,47 @@ abstract final class CoolIcons {
   /// Upstream icon name: map-pin-check.
   static const CoolIconData mapPinCheck = icon_map_pin_check.mapPinCheck;
 
+  /// Upstream icon name: map-pin-check-corner.
+  static const CoolIconData mapPinCheckCorner =
+      icon_map_pin_check_corner.mapPinCheckCorner;
+
   /// Upstream icon name: map-pin-close.
   static const CoolIconData mapPinClose = icon_map_pin_close.mapPinClose;
+
+  /// Upstream icon name: map-pin-close-corner.
+  static const CoolIconData mapPinCloseCorner =
+      icon_map_pin_close_corner.mapPinCloseCorner;
+
+  /// Upstream icon name: map-pin-edit.
+  static const CoolIconData mapPinEdit = icon_map_pin_edit.mapPinEdit;
+
+  /// Upstream icon name: map-pin-edit-corner.
+  static const CoolIconData mapPinEditCorner =
+      icon_map_pin_edit_corner.mapPinEditCorner;
 
   /// Upstream icon name: map-pin-heart.
   static const CoolIconData mapPinHeart = icon_map_pin_heart.mapPinHeart;
 
+  /// Upstream icon name: map-pin-heart-corner.
+  static const CoolIconData mapPinHeartCorner =
+      icon_map_pin_heart_corner.mapPinHeartCorner;
+
   /// Upstream icon name: map-pin-minus.
   static const CoolIconData mapPinMinus = icon_map_pin_minus.mapPinMinus;
+
+  /// Upstream icon name: map-pin-minus-corner.
+  static const CoolIconData mapPinMinusCorner =
+      icon_map_pin_minus_corner.mapPinMinusCorner;
 
   /// Upstream icon name: map-pin-off.
   static const CoolIconData mapPinOff = icon_map_pin_off.mapPinOff;
 
   /// Upstream icon name: map-pin-plus.
   static const CoolIconData mapPinPlus = icon_map_pin_plus.mapPinPlus;
+
+  /// Upstream icon name: map-pin-plus-corner.
+  static const CoolIconData mapPinPlusCorner =
+      icon_map_pin_plus_corner.mapPinPlusCorner;
 
   /// Upstream icon name: map-pin-radius.
   static const CoolIconData mapPinRadius = icon_map_pin_radius.mapPinRadius;
@@ -5111,8 +5709,23 @@ abstract final class CoolIcons {
   /// Upstream icon name: map-pin-search.
   static const CoolIconData mapPinSearch = icon_map_pin_search.mapPinSearch;
 
+  /// Upstream icon name: map-pin-search-corner.
+  static const CoolIconData mapPinSearchCorner =
+      icon_map_pin_search_corner.mapPinSearchCorner;
+
+  /// Upstream icon name: map-pin-warning.
+  static const CoolIconData mapPinWarning = icon_map_pin_warning.mapPinWarning;
+
+  /// Upstream icon name: map-pin-warning-corner.
+  static const CoolIconData mapPinWarningCorner =
+      icon_map_pin_warning_corner.mapPinWarningCorner;
+
   /// Upstream icon name: map-pin-zap.
   static const CoolIconData mapPinZap = icon_map_pin_zap.mapPinZap;
+
+  /// Upstream icon name: map-pin-zap-corner.
+  static const CoolIconData mapPinZapCorner =
+      icon_map_pin_zap_corner.mapPinZapCorner;
 
   /// Upstream icon name: markdown.
   static const CoolIconData markdown = icon_markdown.markdown;
@@ -5122,6 +5735,9 @@ abstract final class CoolIcons {
 
   /// Upstream icon name: martini.
   static const CoolIconData martini = icon_martini.martini;
+
+  /// Upstream icon name: masks-theater.
+  static const CoolIconData masksTheater = icon_masks_theater.masksTheater;
 
   /// Upstream icon name: mastodon.
   static const CoolIconData mastodon = icon_mastodon.mastodon;
@@ -5541,9 +6157,19 @@ abstract final class CoolIcons {
   /// Upstream icon name: package.
   static const CoolIconData package = icon_package.package;
 
+  /// Upstream icon name: package-check.
+  static const CoolIconData packageCheck = icon_package_check.packageCheck;
+
   /// Upstream icon name: package-check-corner.
   static const CoolIconData packageCheckCorner =
       icon_package_check_corner.packageCheckCorner;
+
+  /// Upstream icon name: package-close.
+  static const CoolIconData packageClose = icon_package_close.packageClose;
+
+  /// Upstream icon name: package-close-corner.
+  static const CoolIconData packageCloseCorner =
+      icon_package_close_corner.packageCloseCorner;
 
   /// Upstream icon name: package-download.
   static const CoolIconData packageDownload =
@@ -5553,6 +6179,23 @@ abstract final class CoolIcons {
   static const CoolIconData packageDownloadCorner =
       icon_package_download_corner.packageDownloadCorner;
 
+  /// Upstream icon name: package-edit.
+  static const CoolIconData packageEdit = icon_package_edit.packageEdit;
+
+  /// Upstream icon name: package-edit-corner.
+  static const CoolIconData packageEditCorner =
+      icon_package_edit_corner.packageEditCorner;
+
+  /// Upstream icon name: package-minus.
+  static const CoolIconData packageMinus = icon_package_minus.packageMinus;
+
+  /// Upstream icon name: package-minus-corner.
+  static const CoolIconData packageMinusCorner =
+      icon_package_minus_corner.packageMinusCorner;
+
+  /// Upstream icon name: package-plus.
+  static const CoolIconData packagePlus = icon_package_plus.packagePlus;
+
   /// Upstream icon name: package-plus-corner.
   static const CoolIconData packagePlusCorner =
       icon_package_plus_corner.packagePlusCorner;
@@ -5560,6 +6203,13 @@ abstract final class CoolIcons {
   /// Upstream icon name: package-return-corner.
   static const CoolIconData packageReturnCorner =
       icon_package_return_corner.packageReturnCorner;
+
+  /// Upstream icon name: package-search.
+  static const CoolIconData packageSearch = icon_package_search.packageSearch;
+
+  /// Upstream icon name: package-search-corner.
+  static const CoolIconData packageSearchCorner =
+      icon_package_search_corner.packageSearchCorner;
 
   /// Upstream icon name: package-tracking-corner.
   static const CoolIconData packageTrackingCorner =
@@ -5571,6 +6221,14 @@ abstract final class CoolIcons {
   /// Upstream icon name: package-upload-corner.
   static const CoolIconData packageUploadCorner =
       icon_package_upload_corner.packageUploadCorner;
+
+  /// Upstream icon name: package-warning.
+  static const CoolIconData packageWarning =
+      icon_package_warning.packageWarning;
+
+  /// Upstream icon name: package-warning-corner.
+  static const CoolIconData packageWarningCorner =
+      icon_package_warning_corner.packageWarningCorner;
 
   /// Upstream icon name: packages.
   static const CoolIconData packages = icon_packages.packages;
@@ -5679,6 +6337,12 @@ abstract final class CoolIcons {
   /// Upstream icon name: pencil-line-alt.
   static const CoolIconData pencilLineAlt = icon_pencil_line_alt.pencilLineAlt;
 
+  /// Upstream icon name: pencil-minus.
+  static const CoolIconData pencilMinus = icon_pencil_minus.pencilMinus;
+
+  /// Upstream icon name: pencil-plus.
+  static const CoolIconData pencilPlus = icon_pencil_plus.pencilPlus;
+
   /// Upstream icon name: pencil-ruler.
   static const CoolIconData pencilRuler = icon_pencil_ruler.pencilRuler;
 
@@ -5691,14 +6355,39 @@ abstract final class CoolIcons {
   /// Upstream icon name: percent.
   static const CoolIconData percent = icon_percent.percent;
 
+  /// Upstream icon name: person-cane.
+  static const CoolIconData personCane = icon_person_cane.personCane;
+
   /// Upstream icon name: phone.
   static const CoolIconData phone = icon_phone.phone;
+
+  /// Upstream icon name: phone-arrow-left.
+  static const CoolIconData phoneArrowLeft =
+      icon_phone_arrow_left.phoneArrowLeft;
+
+  /// Upstream icon name: phone-arrow-right.
+  static const CoolIconData phoneArrowRight =
+      icon_phone_arrow_right.phoneArrowRight;
+
+  /// Upstream icon name: phone-arrow-u-turn-up-left.
+  static const CoolIconData phoneArrowUTurnUpLeft =
+      icon_phone_arrow_u_turn_up_left.phoneArrowUTurnUpLeft;
+
+  /// Upstream icon name: phone-arrow-u-turn-up-right.
+  static const CoolIconData phoneArrowUTurnUpRight =
+      icon_phone_arrow_u_turn_up_right.phoneArrowUTurnUpRight;
 
   /// Upstream icon name: phone-call.
   static const CoolIconData phoneCall = icon_phone_call.phoneCall;
 
+  /// Upstream icon name: phone-desk.
+  static const CoolIconData phoneDesk = icon_phone_desk.phoneDesk;
+
   /// Upstream icon name: phone-incoming.
   static const CoolIconData phoneIncoming = icon_phone_incoming.phoneIncoming;
+
+  /// Upstream icon name: phone-list.
+  static const CoolIconData phoneList = icon_phone_list.phoneList;
 
   /// Upstream icon name: phone-missed.
   static const CoolIconData phoneMissed = icon_phone_missed.phoneMissed;
@@ -5708,6 +6397,18 @@ abstract final class CoolIcons {
 
   /// Upstream icon name: phone-outgoing.
   static const CoolIconData phoneOutgoing = icon_phone_outgoing.phoneOutgoing;
+
+  /// Upstream icon name: phone-parking.
+  static const CoolIconData phoneParking = icon_phone_parking.phoneParking;
+
+  /// Upstream icon name: phone-pause.
+  static const CoolIconData phonePause = icon_phone_pause.phonePause;
+
+  /// Upstream icon name: phone-plus.
+  static const CoolIconData phonePlus = icon_phone_plus.phonePlus;
+
+  /// Upstream icon name: phone-record.
+  static const CoolIconData phoneRecord = icon_phone_record.phoneRecord;
 
   /// Upstream icon name: picture-in-picture.
   static const CoolIconData pictureInPicture =
@@ -5802,6 +6503,13 @@ abstract final class CoolIcons {
   /// Upstream icon name: police-car-side.
   static const CoolIconData policeCarSide = icon_police_car_side.policeCarSide;
 
+  /// Upstream icon name: police-station.
+  static const CoolIconData policeStation = icon_police_station.policeStation;
+
+  /// Upstream icon name: police-station-alt.
+  static const CoolIconData policeStationAlt =
+      icon_police_station_alt.policeStationAlt;
+
   /// Upstream icon name: poll.
   static const CoolIconData poll = icon_poll.poll;
 
@@ -5825,6 +6533,9 @@ abstract final class CoolIcons {
 
   /// Upstream icon name: puzzle.
   static const CoolIconData puzzle = icon_puzzle.puzzle;
+
+  /// Upstream icon name: pyramid.
+  static const CoolIconData pyramid = icon_pyramid.pyramid;
 
   /// Upstream icon name: qr-code.
   static const CoolIconData qrCode = icon_qr_code.qrCode;
@@ -5870,6 +6581,9 @@ abstract final class CoolIcons {
   /// Upstream icon name: radio-receiver.
   static const CoolIconData radioReceiver = icon_radio_receiver.radioReceiver;
 
+  /// Upstream icon name: radio-tower.
+  static const CoolIconData radioTower = icon_radio_tower.radioTower;
+
   /// Upstream icon name: rainbow.
   static const CoolIconData rainbow = icon_rainbow.rainbow;
 
@@ -5893,6 +6607,9 @@ abstract final class CoolIcons {
 
   /// Upstream icon name: receipt.
   static const CoolIconData receipt = icon_receipt.receipt;
+
+  /// Upstream icon name: receipt-plus.
+  static const CoolIconData receiptPlus = icon_receipt_plus.receiptPlus;
 
   /// Upstream icon name: recharge.
   static const CoolIconData recharge = icon_recharge.recharge;
@@ -6095,6 +6812,10 @@ abstract final class CoolIcons {
   static const CoolIconData serverCloseCorner =
       icon_server_close_corner.serverCloseCorner;
 
+  /// Upstream icon name: server-edit-corner.
+  static const CoolIconData serverEditCorner =
+      icon_server_edit_corner.serverEditCorner;
+
   /// Upstream icon name: server-lock-corner.
   static const CoolIconData serverLockCorner =
       icon_server_lock_corner.serverLockCorner;
@@ -6109,6 +6830,10 @@ abstract final class CoolIcons {
   /// Upstream icon name: server-plus-corner.
   static const CoolIconData serverPlusCorner =
       icon_server_plus_corner.serverPlusCorner;
+
+  /// Upstream icon name: server-search-corner.
+  static const CoolIconData serverSearchCorner =
+      icon_server_search_corner.serverSearchCorner;
 
   /// Upstream icon name: server-settings-corner.
   static const CoolIconData serverSettingsCorner =
@@ -6243,6 +6968,9 @@ abstract final class CoolIcons {
   /// Upstream icon name: signpost.
   static const CoolIconData signpost = icon_signpost.signpost;
 
+  /// Upstream icon name: silo.
+  static const CoolIconData silo = icon_silo.silo;
+
   /// Upstream icon name: sim-card.
   static const CoolIconData simCard = icon_sim_card.simCard;
 
@@ -6263,6 +6991,9 @@ abstract final class CoolIcons {
 
   /// Upstream icon name: skull.
   static const CoolIconData skull = icon_skull.skull;
+
+  /// Upstream icon name: skyscraper.
+  static const CoolIconData skyscraper = icon_skyscraper.skyscraper;
 
   /// Upstream icon name: slack.
   static const CoolIconData slack = icon_slack.slack;
@@ -6912,6 +7643,9 @@ abstract final class CoolIcons {
   /// Upstream icon name: touchpad.
   static const CoolIconData touchpad = icon_touchpad.touchpad;
 
+  /// Upstream icon name: town-hall.
+  static const CoolIconData townHall = icon_town_hall.townHall;
+
   /// Upstream icon name: traffic-cone.
   static const CoolIconData trafficCone = icon_traffic_cone.trafficCone;
 
@@ -7049,6 +7783,9 @@ abstract final class CoolIcons {
   /// Upstream icon name: ungroup.
   static const CoolIconData ungroup = icon_ungroup.ungroup;
 
+  /// Upstream icon name: university.
+  static const CoolIconData university = icon_university.university;
+
   /// Upstream icon name: upload.
   static const CoolIconData upload = icon_upload.upload;
 
@@ -7084,9 +7821,16 @@ abstract final class CoolIcons {
   static const CoolIconData userEditCorner =
       icon_user_edit_corner.userEditCorner;
 
+  /// Upstream icon name: user-headset.
+  static const CoolIconData userHeadset = icon_user_headset.userHeadset;
+
   /// Upstream icon name: user-help-corner.
   static const CoolIconData userHelpCorner =
       icon_user_help_corner.userHelpCorner;
+
+  /// Upstream icon name: user-info-corner.
+  static const CoolIconData userInfoCorner =
+      icon_user_info_corner.userInfoCorner;
 
   /// Upstream icon name: user-list.
   static const CoolIconData userList = icon_user_list.userList;
@@ -7331,6 +8075,9 @@ abstract final class CoolIcons {
   static const CoolIconData windTurbineSolarPanel =
       icon_wind_turbine_solar_panel.windTurbineSolarPanel;
 
+  /// Upstream icon name: windmill.
+  static const CoolIconData windmill = icon_windmill.windmill;
+
   /// Upstream icon name: window.
   static const CoolIconData window = icon_window.window;
 
@@ -7351,17 +8098,37 @@ abstract final class CoolIcons {
   /// Upstream icon name: window-code.
   static const CoolIconData windowCode = icon_window_code.windowCode;
 
+  /// Upstream icon name: window-edit.
+  static const CoolIconData windowEdit = icon_window_edit.windowEdit;
+
+  /// Upstream icon name: window-edit-corner.
+  static const CoolIconData windowEditCorner =
+      icon_window_edit_corner.windowEditCorner;
+
   /// Upstream icon name: window-lock-corner.
   static const CoolIconData windowLockCorner =
       icon_window_lock_corner.windowLockCorner;
+
+  /// Upstream icon name: window-minus.
+  static const CoolIconData windowMinus = icon_window_minus.windowMinus;
 
   /// Upstream icon name: window-minus-corner.
   static const CoolIconData windowMinusCorner =
       icon_window_minus_corner.windowMinusCorner;
 
+  /// Upstream icon name: window-plus.
+  static const CoolIconData windowPlus = icon_window_plus.windowPlus;
+
   /// Upstream icon name: window-plus-corner.
   static const CoolIconData windowPlusCorner =
       icon_window_plus_corner.windowPlusCorner;
+
+  /// Upstream icon name: window-search.
+  static const CoolIconData windowSearch = icon_window_search.windowSearch;
+
+  /// Upstream icon name: window-search-corner.
+  static const CoolIconData windowSearchCorner =
+      icon_window_search_corner.windowSearchCorner;
 
   /// Upstream icon name: window-sensor.
   static const CoolIconData windowSensor = icon_window_sensor.windowSensor;
@@ -7384,6 +8151,9 @@ abstract final class CoolIcons {
   /// Upstream icon name: window-terminal.
   static const CoolIconData windowTerminal =
       icon_window_terminal.windowTerminal;
+
+  /// Upstream icon name: window-warning.
+  static const CoolIconData windowWarning = icon_window_warning.windowWarning;
 
   /// Upstream icon name: window-warning-corner.
   static const CoolIconData windowWarningCorner =
@@ -7587,6 +8357,7 @@ abstract final class CoolIcons {
     "asterisk": asterisk,
     "atm": atm,
     "atom": atom,
+    "audio-description": audioDescription,
     "autoplay": autoplay,
     "award": award,
     "baby": baby,
@@ -7653,6 +8424,7 @@ abstract final class CoolIcons {
     "braces": braces,
     "brackets": brackets,
     "brackets-dots": bracketsDots,
+    "braille": braille,
     "brain": brain,
     "brick-wall": brickWall,
     "bridge": bridge,
@@ -7666,6 +8438,9 @@ abstract final class CoolIcons {
     "building-2": building2,
     "building-3": building3,
     "building-4": building4,
+    "building-apartment": buildingApartment,
+    "building-dome": buildingDome,
+    "building-office": buildingOffice,
     "bulb": bulb,
     "bulb-sparkle": bulbSparkle,
     "bulb-wifi": bulbWifi,
@@ -7703,6 +8478,7 @@ abstract final class CoolIcons {
     "calendar-sparkle-corner": calendarSparkleCorner,
     "calendar-sync-corner": calendarSyncCorner,
     "calendar-text": calendarText,
+    "calendar-warning": calendarWarning,
     "calendar-warning-corner": calendarWarningCorner,
     "calendar-week": calendarWeek,
     "camera": camera,
@@ -7759,40 +8535,66 @@ abstract final class CoolIcons {
     "chart-waterfall": chartWaterfall,
     "chat": chat,
     "chat-check": chatCheck,
+    "chat-check-corner": chatCheckCorner,
     "chat-circle": chatCircle,
     "chat-circle-angry": chatCircleAngry,
     "chat-circle-check": chatCircleCheck,
+    "chat-circle-check-corner": chatCircleCheckCorner,
     "chat-circle-close": chatCircleClose,
+    "chat-circle-close-corner": chatCircleCloseCorner,
     "chat-circle-dots": chatCircleDots,
+    "chat-circle-edit": chatCircleEdit,
+    "chat-circle-edit-corner": chatCircleEditCorner,
     "chat-circle-heart": chatCircleHeart,
+    "chat-circle-heart-corner": chatCircleHeartCorner,
     "chat-circle-help": chatCircleHelp,
+    "chat-circle-help-corner": chatCircleHelpCorner,
     "chat-circle-laugh": chatCircleLaugh,
     "chat-circle-minus": chatCircleMinus,
+    "chat-circle-minus-corner": chatCircleMinusCorner,
     "chat-circle-neutral": chatCircleNeutral,
     "chat-circle-off": chatCircleOff,
     "chat-circle-plus": chatCirclePlus,
+    "chat-circle-plus-corner": chatCirclePlusCorner,
     "chat-circle-quote": chatCircleQuote,
     "chat-circle-sad": chatCircleSad,
+    "chat-circle-search": chatCircleSearch,
+    "chat-circle-search-corner": chatCircleSearchCorner,
     "chat-circle-share": chatCircleShare,
+    "chat-circle-share-corner": chatCircleShareCorner,
     "chat-circle-smile": chatCircleSmile,
     "chat-circle-surprised": chatCircleSurprised,
     "chat-circle-text": chatCircleText,
     "chat-circle-warning": chatCircleWarning,
+    "chat-circle-warning-corner": chatCircleWarningCorner,
     "chat-circle-wink": chatCircleWink,
     "chat-close": chatClose,
+    "chat-close-corner": chatCloseCorner,
     "chat-conversation": chatConversation,
     "chat-conversation-circle": chatConversationCircle,
     "chat-dots": chatDots,
+    "chat-edit": chatEdit,
+    "chat-edit-corner": chatEditCorner,
     "chat-heart": chatHeart,
+    "chat-heart-corner": chatHeartCorner,
     "chat-help": chatHelp,
+    "chat-help-corner": chatHelpCorner,
     "chat-minus": chatMinus,
+    "chat-minus-corner": chatMinusCorner,
     "chat-off": chatOff,
     "chat-plus": chatPlus,
+    "chat-plus-corner": chatPlusCorner,
     "chat-quote": chatQuote,
+    "chat-search": chatSearch,
+    "chat-search-corner": chatSearchCorner,
+    "chat-settings-corner": chatSettingsCorner,
     "chat-share": chatShare,
+    "chat-share-corner": chatShareCorner,
     "chat-sparkle": chatSparkle,
+    "chat-sparkle-corner": chatSparkleCorner,
     "chat-text": chatText,
     "chat-warning": chatWarning,
+    "chat-warning-corner": chatWarningCorner,
     "check": check,
     "check-all": checkAll,
     "check-large": checkLarge,
@@ -7884,13 +8686,25 @@ abstract final class CoolIcons {
     "circle-user": circleUser,
     "circle-warning": circleWarning,
     "circuit-board": circuitBoard,
+    "circus-tent": circusTent,
+    "city": city,
     "clapperboard": clapperboard,
     "clipboard": clipboard,
     "clipboard-check": clipboardCheck,
+    "clipboard-check-corner": clipboardCheckCorner,
     "clipboard-close": clipboardClose,
+    "clipboard-close-corner": clipboardCloseCorner,
+    "clipboard-edit": clipboardEdit,
+    "clipboard-edit-corner": clipboardEditCorner,
     "clipboard-list": clipboardList,
     "clipboard-minus": clipboardMinus,
+    "clipboard-minus-corner": clipboardMinusCorner,
     "clipboard-plus": clipboardPlus,
+    "clipboard-plus-corner": clipboardPlusCorner,
+    "clipboard-search": clipboardSearch,
+    "clipboard-search-corner": clipboardSearchCorner,
+    "clipboard-warning": clipboardWarning,
+    "clipboard-warning-corner": clipboardWarningCorner,
     "clock": clock,
     "clock-1": clock1,
     "clock-10": clock10,
@@ -7904,25 +8718,44 @@ abstract final class CoolIcons {
     "clock-7": clock7,
     "clock-8": clock8,
     "clock-9": clock9,
+    "clock-check": clockCheck,
+    "clock-close": clockClose,
+    "clock-edit": clockEdit,
+    "clock-help": clockHelp,
     "clock-pause": clockPause,
+    "clock-search": clockSearch,
+    "clock-warning": clockWarning,
     "close": close,
     "close-large": closeLarge,
     "close-small": closeSmall,
     "cloud": cloud,
     "cloud-check": cloudCheck,
+    "cloud-check-corner": cloudCheckCorner,
     "cloud-close": cloudClose,
+    "cloud-close-corner": cloudCloseCorner,
     "cloud-download": cloudDownload,
+    "cloud-download-corner": cloudDownloadCorner,
+    "cloud-edit": cloudEdit,
+    "cloud-edit-corner": cloudEditCorner,
     "cloud-fog": cloudFog,
     "cloud-lightning": cloudLightning,
     "cloud-minus": cloudMinus,
+    "cloud-minus-corner": cloudMinusCorner,
     "cloud-moon": cloudMoon,
     "cloud-off": cloudOff,
     "cloud-plus": cloudPlus,
+    "cloud-plus-corner": cloudPlusCorner,
     "cloud-rain": cloudRain,
+    "cloud-search": cloudSearch,
+    "cloud-search-corner": cloudSearchCorner,
     "cloud-snow": cloudSnow,
     "cloud-sun": cloudSun,
     "cloud-sync-corner": cloudSyncCorner,
+    "cloud-sync-corner-alt": cloudSyncCornerAlt,
     "cloud-upload": cloudUpload,
+    "cloud-upload-corner": cloudUploadCorner,
+    "cloud-warning": cloudWarning,
+    "cloud-warning-corner": cloudWarningCorner,
     "clover": clover,
     "co2": co2,
     "coach": coach,
@@ -7947,10 +8780,12 @@ abstract final class CoolIcons {
     "container": container,
     "contrast": contrast,
     "control": control,
+    "control-tower": controlTower,
     "cookie": cookie,
     "cooking-pot": cookingPot,
     "cooktop": cooktop,
     "coolicons": coolicons,
+    "cooling-tower": coolingTower,
     "copy": copy,
     "copy-alt-1": copyAlt1,
     "copy-alt-2": copyAlt2,
@@ -7958,7 +8793,11 @@ abstract final class CoolIcons {
     "copy-minus": copyMinus,
     "copy-plus": copyPlus,
     "corner-radius": cornerRadius,
+    "corner-regular": cornerRegular,
+    "corner-round": cornerRound,
+    "corner-sharp": cornerSharp,
     "coupon": coupon,
+    "courthouse": courthouse,
     "cow": cow,
     "cpu": cpu,
     "cpu-sparkle": cpuSparkle,
@@ -7969,9 +8808,13 @@ abstract final class CoolIcons {
     "credit-card-clock-corner": creditCardClockCorner,
     "credit-card-close-corner": creditCardCloseCorner,
     "credit-card-contactless": creditCardContactless,
+    "credit-card-edit-corner": creditCardEditCorner,
+    "credit-card-minus-corner": creditCardMinusCorner,
     "credit-card-plus-corner": creditCardPlusCorner,
     "credit-card-return-corner": creditCardReturnCorner,
+    "credit-card-search-corner": creditCardSearchCorner,
     "credit-card-sync-corner": creditCardSyncCorner,
+    "credit-card-warning-corner": creditCardWarningCorner,
     "croissant": croissant,
     "crop": crop,
     "crown": crown,
@@ -7999,6 +8842,7 @@ abstract final class CoolIcons {
     "database-backup-corner": databaseBackupCorner,
     "database-check-corner": databaseCheckCorner,
     "database-close-corner": databaseCloseCorner,
+    "database-edit-corner": databaseEditCorner,
     "database-lock-corner": databaseLockCorner,
     "database-minus-corner": databaseMinusCorner,
     "database-plus-corner": databasePlusCorner,
@@ -8015,6 +8859,7 @@ abstract final class CoolIcons {
     "desktop-tower": desktopTower,
     "devices": devices,
     "devices-code-corner": devicesCodeCorner,
+    "dialpad": dialpad,
     "diamond": diamond,
     "diamond-check": diamondCheck,
     "diamond-close": diamondClose,
@@ -8094,6 +8939,7 @@ abstract final class CoolIcons {
     "faucet": faucet,
     "feather": feather,
     "fence": fence,
+    "ferris-wheel": ferrisWheel,
     "ferry": ferry,
     "figma": figma,
     "file": file,
@@ -8116,6 +8962,7 @@ abstract final class CoolIcons {
     "file-off": fileOff,
     "file-pause-corner": filePauseCorner,
     "file-percent": filePercent,
+    "file-percent-corner": filePercentCorner,
     "file-phone-corner": filePhoneCorner,
     "file-pin-corner": filePinCorner,
     "file-plus": filePlus,
@@ -8125,6 +8972,7 @@ abstract final class CoolIcons {
     "file-settings-corner": fileSettingsCorner,
     "file-share-corner": fileShareCorner,
     "file-shield": fileShield,
+    "file-shield-corner": fileShieldCorner,
     "file-signature": fileSignature,
     "file-sparkle-corner": fileSparkleCorner,
     "file-spreadsheet": fileSpreadsheet,
@@ -8134,6 +8982,7 @@ abstract final class CoolIcons {
     "file-type": fileType,
     "file-upload": fileUpload,
     "file-upload-corner": fileUploadCorner,
+    "file-warning": fileWarning,
     "file-warning-corner": fileWarningCorner,
     "file-zap-corner": fileZapCorner,
     "files": files,
@@ -8142,6 +8991,7 @@ abstract final class CoolIcons {
     "filter-off": filterOff,
     "fingerprint": fingerprint,
     "fire-extinguisher": fireExtinguisher,
+    "fire-station": fireStation,
     "fireplace": fireplace,
     "firewall": firewall,
     "firewood": firewood,
@@ -8174,6 +9024,7 @@ abstract final class CoolIcons {
     "folder-download-corner": folderDownloadCorner,
     "folder-edit": folderEdit,
     "folder-edit-corner": folderEditCorner,
+    "folder-help": folderHelp,
     "folder-help-corner": folderHelpCorner,
     "folder-lock-corner": folderLockCorner,
     "folder-minus": folderMinus,
@@ -8193,6 +9044,7 @@ abstract final class CoolIcons {
     "folder-text": folderText,
     "folder-upload": folderUpload,
     "folder-upload-corner": folderUploadCorner,
+    "folder-warning": folderWarning,
     "folder-warning-corner": folderWarningCorner,
     "folders": folders,
     "font": font,
@@ -8316,10 +9168,12 @@ abstract final class CoolIcons {
     "house-close": houseClose,
     "house-close-corner": houseCloseCorner,
     "house-connection": houseConnection,
+    "house-edit": houseEdit,
     "house-edit-corner": houseEditCorner,
     "house-garage": houseGarage,
     "house-garage-open": houseGarageOpen,
     "house-geothermal": houseGeothermal,
+    "house-help": houseHelp,
     "house-help-corner": houseHelpCorner,
     "house-leaf": houseLeaf,
     "house-leaf-corner": houseLeafCorner,
@@ -8340,10 +9194,14 @@ abstract final class CoolIcons {
     "house-solar-panel": houseSolarPanel,
     "house-solar-panel-corner": houseSolarPanelCorner,
     "house-star-corner": houseStarCorner,
+    "house-sun": houseSun,
+    "house-sun-corner": houseSunCorner,
     "house-sync-corner": houseSyncCorner,
     "house-thermometer": houseThermometer,
     "house-thermometer-corner": houseThermometerCorner,
     "house-user": houseUser,
+    "house-user-corner": houseUserCorner,
+    "house-warning": houseWarning,
     "house-warning-corner": houseWarningCorner,
     "house-wifi": houseWifi,
     "house-wifi-corner": houseWifiCorner,
@@ -8363,12 +9221,15 @@ abstract final class CoolIcons {
     "image-download-corner": imageDownloadCorner,
     "image-edit": imageEdit,
     "image-edit-corner": imageEditCorner,
+    "image-minus": imageMinus,
+    "image-minus-corner": imageMinusCorner,
     "image-off": imageOff,
     "image-plus": imagePlus,
     "image-plus-corner": imagePlusCorner,
     "image-search": imageSearch,
     "image-search-corner": imageSearchCorner,
     "image-sparkle": imageSparkle,
+    "image-sparkle-corner": imageSparkleCorner,
     "image-upload": imageUpload,
     "image-upload-corner": imageUploadCorner,
     "image-warning": imageWarning,
@@ -8438,6 +9299,7 @@ abstract final class CoolIcons {
     "library": libraryIcon,
     "life-buoy": lifeBuoy,
     "light-switch": lightSwitch,
+    "lighthouse": lighthouse,
     "line-height": lineHeight,
     "linear": linear,
     "link": link,
@@ -8466,9 +9328,22 @@ abstract final class CoolIcons {
     "locate": locate,
     "lock": lock,
     "lock-check": lockCheck,
+    "lock-check-corner": lockCheckCorner,
+    "lock-close": lockClose,
+    "lock-close-corner": lockCloseCorner,
+    "lock-edit": lockEdit,
+    "lock-edit-corner": lockEditCorner,
     "lock-keyhole": lockKeyhole,
+    "lock-minus": lockMinus,
+    "lock-minus-corner": lockMinusCorner,
     "lock-off": lockOff,
     "lock-open": lockOpen,
+    "lock-plus": lockPlus,
+    "lock-plus-corner": lockPlusCorner,
+    "lock-search": lockSearch,
+    "lock-search-corner": lockSearchCorner,
+    "lock-warning": lockWarning,
+    "lock-warning-corner": lockWarningCorner,
     "log-in": logIn,
     "log-out": logOut,
     "logs": logs,
@@ -8483,7 +9358,9 @@ abstract final class CoolIcons {
     "mail-close": mailClose,
     "mail-close-corner": mailCloseCorner,
     "mail-dot": mailDot,
+    "mail-edit-corner": mailEditCorner,
     "mail-help": mailHelp,
+    "mail-help-corner": mailHelpCorner,
     "mail-minus": mailMinus,
     "mail-minus-corner": mailMinusCorner,
     "mail-off": mailOff,
@@ -8493,25 +9370,39 @@ abstract final class CoolIcons {
     "mail-search": mailSearch,
     "mail-search-corner": mailSearchCorner,
     "mail-sparkle": mailSparkle,
+    "mail-sparkle-corner": mailSparkleCorner,
     "mail-warning": mailWarning,
+    "mail-warning-corner": mailWarningCorner,
     "mailbox": mailbox,
     "mails": mails,
     "map": map,
     "map-pin": mapPin,
     "map-pin-check": mapPinCheck,
+    "map-pin-check-corner": mapPinCheckCorner,
     "map-pin-close": mapPinClose,
+    "map-pin-close-corner": mapPinCloseCorner,
+    "map-pin-edit": mapPinEdit,
+    "map-pin-edit-corner": mapPinEditCorner,
     "map-pin-heart": mapPinHeart,
+    "map-pin-heart-corner": mapPinHeartCorner,
     "map-pin-minus": mapPinMinus,
+    "map-pin-minus-corner": mapPinMinusCorner,
     "map-pin-off": mapPinOff,
     "map-pin-plus": mapPinPlus,
+    "map-pin-plus-corner": mapPinPlusCorner,
     "map-pin-radius": mapPinRadius,
     "map-pin-radius-minus": mapPinRadiusMinus,
     "map-pin-radius-plus": mapPinRadiusPlus,
     "map-pin-search": mapPinSearch,
+    "map-pin-search-corner": mapPinSearchCorner,
+    "map-pin-warning": mapPinWarning,
+    "map-pin-warning-corner": mapPinWarningCorner,
     "map-pin-zap": mapPinZap,
+    "map-pin-zap-corner": mapPinZapCorner,
     "markdown": markdown,
     "mars": mars,
     "martini": martini,
+    "masks-theater": masksTheater,
     "mastodon": mastodon,
     "medal": medal,
     "medical-cross": medicalCross,
@@ -8640,14 +9531,26 @@ abstract final class CoolIcons {
     "owl": owl,
     "owl-head": owlHead,
     "package": package,
+    "package-check": packageCheck,
     "package-check-corner": packageCheckCorner,
+    "package-close": packageClose,
+    "package-close-corner": packageCloseCorner,
     "package-download": packageDownload,
     "package-download-corner": packageDownloadCorner,
+    "package-edit": packageEdit,
+    "package-edit-corner": packageEditCorner,
+    "package-minus": packageMinus,
+    "package-minus-corner": packageMinusCorner,
+    "package-plus": packagePlus,
     "package-plus-corner": packagePlusCorner,
     "package-return-corner": packageReturnCorner,
+    "package-search": packageSearch,
+    "package-search-corner": packageSearchCorner,
     "package-tracking-corner": packageTrackingCorner,
     "package-upload": packageUpload,
     "package-upload-corner": packageUploadCorner,
+    "package-warning": packageWarning,
+    "package-warning-corner": packageWarningCorner,
     "packages": packages,
     "page-margins": pageMargins,
     "paint-bucket": paintBucket,
@@ -8682,16 +9585,29 @@ abstract final class CoolIcons {
     "pencil-alt": pencilAlt,
     "pencil-line": pencilLine,
     "pencil-line-alt": pencilLineAlt,
+    "pencil-minus": pencilMinus,
+    "pencil-plus": pencilPlus,
     "pencil-ruler": pencilRuler,
     "pencil-sparkle": pencilSparkle,
     "penguin": penguin,
     "percent": percent,
+    "person-cane": personCane,
     "phone": phone,
+    "phone-arrow-left": phoneArrowLeft,
+    "phone-arrow-right": phoneArrowRight,
+    "phone-arrow-u-turn-up-left": phoneArrowUTurnUpLeft,
+    "phone-arrow-u-turn-up-right": phoneArrowUTurnUpRight,
     "phone-call": phoneCall,
+    "phone-desk": phoneDesk,
     "phone-incoming": phoneIncoming,
+    "phone-list": phoneList,
     "phone-missed": phoneMissed,
     "phone-off": phoneOff,
     "phone-outgoing": phoneOutgoing,
+    "phone-parking": phoneParking,
+    "phone-pause": phonePause,
+    "phone-plus": phonePlus,
+    "phone-record": phoneRecord,
     "picture-in-picture": pictureInPicture,
     "pig": pig,
     "piggy-bank": piggyBank,
@@ -8722,6 +9638,8 @@ abstract final class CoolIcons {
     "podium": podium,
     "police-car": policeCar,
     "police-car-side": policeCarSide,
+    "police-station": policeStation,
+    "police-station-alt": policeStationAlt,
     "poll": poll,
     "popover": popover,
     "potted-plant": pottedPlant,
@@ -8730,6 +9648,7 @@ abstract final class CoolIcons {
     "printer": printer,
     "prompt": prompt,
     "puzzle": puzzle,
+    "pyramid": pyramid,
     "qr-code": qrCode,
     "queue": queue,
     "quote-left": quoteLeft,
@@ -8744,6 +9663,7 @@ abstract final class CoolIcons {
     "radio": radio,
     "radio-checked": radioChecked,
     "radio-receiver": radioReceiver,
+    "radio-tower": radioTower,
     "rainbow": rainbow,
     "ratio-1-1": ratio11,
     "ratio-16-9": ratio169,
@@ -8752,6 +9672,7 @@ abstract final class CoolIcons {
     "ratio-4-3": ratio43,
     "ratio-9-16": ratio916,
     "receipt": receipt,
+    "receipt-plus": receiptPlus,
     "recharge": recharge,
     "rectangle-horizontal": rectangleHorizontal,
     "rectangle-vertical": rectangleVertical,
@@ -8817,10 +9738,12 @@ abstract final class CoolIcons {
     "server": server,
     "server-check-corner": serverCheckCorner,
     "server-close-corner": serverCloseCorner,
+    "server-edit-corner": serverEditCorner,
     "server-lock-corner": serverLockCorner,
     "server-minus-corner": serverMinusCorner,
     "server-off": serverOff,
     "server-plus-corner": serverPlusCorner,
+    "server-search-corner": serverSearchCorner,
     "server-settings-corner": serverSettingsCorner,
     "server-sync-corner": serverSyncCorner,
     "server-warning-corner": serverWarningCorner,
@@ -8863,6 +9786,7 @@ abstract final class CoolIcons {
     "signal-none": signalNone,
     "signature": signature,
     "signpost": signpost,
+    "silo": silo,
     "sim-card": simCard,
     "siren": siren,
     "skip-back": skipBack,
@@ -8870,6 +9794,7 @@ abstract final class CoolIcons {
     "skip-forward": skipForward,
     "skip-forward-15": skipForward15,
     "skull": skull,
+    "skyscraper": skyscraper,
     "slack": slack,
     "slider-1": slider1,
     "slider-1-sparkle": slider1Sparkle,
@@ -9067,6 +9992,7 @@ abstract final class CoolIcons {
     "tooth": tooth,
     "tornado": tornado,
     "touchpad": touchpad,
+    "town-hall": townHall,
     "traffic-cone": trafficCone,
     "traffic-light": trafficLight,
     "train": train,
@@ -9111,6 +10037,7 @@ abstract final class CoolIcons {
     "unfold-more": unfoldMore,
     "unfold-more-horizontal": unfoldMoreHorizontal,
     "ungroup": ungroup,
+    "university": university,
     "upload": upload,
     "upscale-sparkle": upscaleSparkle,
     "usb": usb,
@@ -9121,7 +10048,9 @@ abstract final class CoolIcons {
     "user-clock-corner": userClockCorner,
     "user-close-corner": userCloseCorner,
     "user-edit-corner": userEditCorner,
+    "user-headset": userHeadset,
     "user-help-corner": userHelpCorner,
+    "user-info-corner": userInfoCorner,
     "user-list": userList,
     "user-lock-corner": userLockCorner,
     "user-minus-corner": userMinusCorner,
@@ -9198,21 +10127,29 @@ abstract final class CoolIcons {
     "wind": wind,
     "wind-turbine": windTurbine,
     "wind-turbine-solar-panel": windTurbineSolarPanel,
+    "windmill": windmill,
     "window": window,
     "window-check": windowCheck,
     "window-check-corner": windowCheckCorner,
     "window-close": windowClose,
     "window-close-corner": windowCloseCorner,
     "window-code": windowCode,
+    "window-edit": windowEdit,
+    "window-edit-corner": windowEditCorner,
     "window-lock-corner": windowLockCorner,
+    "window-minus": windowMinus,
     "window-minus-corner": windowMinusCorner,
+    "window-plus": windowPlus,
     "window-plus-corner": windowPlusCorner,
+    "window-search": windowSearch,
+    "window-search-corner": windowSearchCorner,
     "window-sensor": windowSensor,
     "window-settings-corner": windowSettingsCorner,
     "window-sidebar": windowSidebar,
     "window-sidebar-right": windowSidebarRight,
     "window-sync-corner": windowSyncCorner,
     "window-terminal": windowTerminal,
+    "window-warning": windowWarning,
     "window-warning-corner": windowWarningCorner,
     "windows-logo": windowsLogo,
     "wine": wine,
@@ -9342,6 +10279,7 @@ abstract final class CoolIcons {
     "asterisk",
     "atm",
     "atom",
+    "audio-description",
     "autoplay",
     "award",
     "baby",
@@ -9408,6 +10346,7 @@ abstract final class CoolIcons {
     "braces",
     "brackets",
     "brackets-dots",
+    "braille",
     "brain",
     "brick-wall",
     "bridge",
@@ -9421,6 +10360,9 @@ abstract final class CoolIcons {
     "building-2",
     "building-3",
     "building-4",
+    "building-apartment",
+    "building-dome",
+    "building-office",
     "bulb",
     "bulb-sparkle",
     "bulb-wifi",
@@ -9458,6 +10400,7 @@ abstract final class CoolIcons {
     "calendar-sparkle-corner",
     "calendar-sync-corner",
     "calendar-text",
+    "calendar-warning",
     "calendar-warning-corner",
     "calendar-week",
     "camera",
@@ -9514,40 +10457,66 @@ abstract final class CoolIcons {
     "chart-waterfall",
     "chat",
     "chat-check",
+    "chat-check-corner",
     "chat-circle",
     "chat-circle-angry",
     "chat-circle-check",
+    "chat-circle-check-corner",
     "chat-circle-close",
+    "chat-circle-close-corner",
     "chat-circle-dots",
+    "chat-circle-edit",
+    "chat-circle-edit-corner",
     "chat-circle-heart",
+    "chat-circle-heart-corner",
     "chat-circle-help",
+    "chat-circle-help-corner",
     "chat-circle-laugh",
     "chat-circle-minus",
+    "chat-circle-minus-corner",
     "chat-circle-neutral",
     "chat-circle-off",
     "chat-circle-plus",
+    "chat-circle-plus-corner",
     "chat-circle-quote",
     "chat-circle-sad",
+    "chat-circle-search",
+    "chat-circle-search-corner",
     "chat-circle-share",
+    "chat-circle-share-corner",
     "chat-circle-smile",
     "chat-circle-surprised",
     "chat-circle-text",
     "chat-circle-warning",
+    "chat-circle-warning-corner",
     "chat-circle-wink",
     "chat-close",
+    "chat-close-corner",
     "chat-conversation",
     "chat-conversation-circle",
     "chat-dots",
+    "chat-edit",
+    "chat-edit-corner",
     "chat-heart",
+    "chat-heart-corner",
     "chat-help",
+    "chat-help-corner",
     "chat-minus",
+    "chat-minus-corner",
     "chat-off",
     "chat-plus",
+    "chat-plus-corner",
     "chat-quote",
+    "chat-search",
+    "chat-search-corner",
+    "chat-settings-corner",
     "chat-share",
+    "chat-share-corner",
     "chat-sparkle",
+    "chat-sparkle-corner",
     "chat-text",
     "chat-warning",
+    "chat-warning-corner",
     "check",
     "check-all",
     "check-large",
@@ -9639,13 +10608,25 @@ abstract final class CoolIcons {
     "circle-user",
     "circle-warning",
     "circuit-board",
+    "circus-tent",
+    "city",
     "clapperboard",
     "clipboard",
     "clipboard-check",
+    "clipboard-check-corner",
     "clipboard-close",
+    "clipboard-close-corner",
+    "clipboard-edit",
+    "clipboard-edit-corner",
     "clipboard-list",
     "clipboard-minus",
+    "clipboard-minus-corner",
     "clipboard-plus",
+    "clipboard-plus-corner",
+    "clipboard-search",
+    "clipboard-search-corner",
+    "clipboard-warning",
+    "clipboard-warning-corner",
     "clock",
     "clock-1",
     "clock-10",
@@ -9659,25 +10640,44 @@ abstract final class CoolIcons {
     "clock-7",
     "clock-8",
     "clock-9",
+    "clock-check",
+    "clock-close",
+    "clock-edit",
+    "clock-help",
     "clock-pause",
+    "clock-search",
+    "clock-warning",
     "close",
     "close-large",
     "close-small",
     "cloud",
     "cloud-check",
+    "cloud-check-corner",
     "cloud-close",
+    "cloud-close-corner",
     "cloud-download",
+    "cloud-download-corner",
+    "cloud-edit",
+    "cloud-edit-corner",
     "cloud-fog",
     "cloud-lightning",
     "cloud-minus",
+    "cloud-minus-corner",
     "cloud-moon",
     "cloud-off",
     "cloud-plus",
+    "cloud-plus-corner",
     "cloud-rain",
+    "cloud-search",
+    "cloud-search-corner",
     "cloud-snow",
     "cloud-sun",
     "cloud-sync-corner",
+    "cloud-sync-corner-alt",
     "cloud-upload",
+    "cloud-upload-corner",
+    "cloud-warning",
+    "cloud-warning-corner",
     "clover",
     "co2",
     "coach",
@@ -9702,10 +10702,12 @@ abstract final class CoolIcons {
     "container",
     "contrast",
     "control",
+    "control-tower",
     "cookie",
     "cooking-pot",
     "cooktop",
     "coolicons",
+    "cooling-tower",
     "copy",
     "copy-alt-1",
     "copy-alt-2",
@@ -9713,7 +10715,11 @@ abstract final class CoolIcons {
     "copy-minus",
     "copy-plus",
     "corner-radius",
+    "corner-regular",
+    "corner-round",
+    "corner-sharp",
     "coupon",
+    "courthouse",
     "cow",
     "cpu",
     "cpu-sparkle",
@@ -9724,9 +10730,13 @@ abstract final class CoolIcons {
     "credit-card-clock-corner",
     "credit-card-close-corner",
     "credit-card-contactless",
+    "credit-card-edit-corner",
+    "credit-card-minus-corner",
     "credit-card-plus-corner",
     "credit-card-return-corner",
+    "credit-card-search-corner",
     "credit-card-sync-corner",
+    "credit-card-warning-corner",
     "croissant",
     "crop",
     "crown",
@@ -9754,6 +10764,7 @@ abstract final class CoolIcons {
     "database-backup-corner",
     "database-check-corner",
     "database-close-corner",
+    "database-edit-corner",
     "database-lock-corner",
     "database-minus-corner",
     "database-plus-corner",
@@ -9770,6 +10781,7 @@ abstract final class CoolIcons {
     "desktop-tower",
     "devices",
     "devices-code-corner",
+    "dialpad",
     "diamond",
     "diamond-check",
     "diamond-close",
@@ -9849,6 +10861,7 @@ abstract final class CoolIcons {
     "faucet",
     "feather",
     "fence",
+    "ferris-wheel",
     "ferry",
     "figma",
     "file",
@@ -9871,6 +10884,7 @@ abstract final class CoolIcons {
     "file-off",
     "file-pause-corner",
     "file-percent",
+    "file-percent-corner",
     "file-phone-corner",
     "file-pin-corner",
     "file-plus",
@@ -9880,6 +10894,7 @@ abstract final class CoolIcons {
     "file-settings-corner",
     "file-share-corner",
     "file-shield",
+    "file-shield-corner",
     "file-signature",
     "file-sparkle-corner",
     "file-spreadsheet",
@@ -9889,6 +10904,7 @@ abstract final class CoolIcons {
     "file-type",
     "file-upload",
     "file-upload-corner",
+    "file-warning",
     "file-warning-corner",
     "file-zap-corner",
     "files",
@@ -9897,6 +10913,7 @@ abstract final class CoolIcons {
     "filter-off",
     "fingerprint",
     "fire-extinguisher",
+    "fire-station",
     "fireplace",
     "firewall",
     "firewood",
@@ -9929,6 +10946,7 @@ abstract final class CoolIcons {
     "folder-download-corner",
     "folder-edit",
     "folder-edit-corner",
+    "folder-help",
     "folder-help-corner",
     "folder-lock-corner",
     "folder-minus",
@@ -9948,6 +10966,7 @@ abstract final class CoolIcons {
     "folder-text",
     "folder-upload",
     "folder-upload-corner",
+    "folder-warning",
     "folder-warning-corner",
     "folders",
     "font",
@@ -10071,10 +11090,12 @@ abstract final class CoolIcons {
     "house-close",
     "house-close-corner",
     "house-connection",
+    "house-edit",
     "house-edit-corner",
     "house-garage",
     "house-garage-open",
     "house-geothermal",
+    "house-help",
     "house-help-corner",
     "house-leaf",
     "house-leaf-corner",
@@ -10095,10 +11116,14 @@ abstract final class CoolIcons {
     "house-solar-panel",
     "house-solar-panel-corner",
     "house-star-corner",
+    "house-sun",
+    "house-sun-corner",
     "house-sync-corner",
     "house-thermometer",
     "house-thermometer-corner",
     "house-user",
+    "house-user-corner",
+    "house-warning",
     "house-warning-corner",
     "house-wifi",
     "house-wifi-corner",
@@ -10118,12 +11143,15 @@ abstract final class CoolIcons {
     "image-download-corner",
     "image-edit",
     "image-edit-corner",
+    "image-minus",
+    "image-minus-corner",
     "image-off",
     "image-plus",
     "image-plus-corner",
     "image-search",
     "image-search-corner",
     "image-sparkle",
+    "image-sparkle-corner",
     "image-upload",
     "image-upload-corner",
     "image-warning",
@@ -10193,6 +11221,7 @@ abstract final class CoolIcons {
     "library",
     "life-buoy",
     "light-switch",
+    "lighthouse",
     "line-height",
     "linear",
     "link",
@@ -10221,9 +11250,22 @@ abstract final class CoolIcons {
     "locate",
     "lock",
     "lock-check",
+    "lock-check-corner",
+    "lock-close",
+    "lock-close-corner",
+    "lock-edit",
+    "lock-edit-corner",
     "lock-keyhole",
+    "lock-minus",
+    "lock-minus-corner",
     "lock-off",
     "lock-open",
+    "lock-plus",
+    "lock-plus-corner",
+    "lock-search",
+    "lock-search-corner",
+    "lock-warning",
+    "lock-warning-corner",
     "log-in",
     "log-out",
     "logs",
@@ -10238,7 +11280,9 @@ abstract final class CoolIcons {
     "mail-close",
     "mail-close-corner",
     "mail-dot",
+    "mail-edit-corner",
     "mail-help",
+    "mail-help-corner",
     "mail-minus",
     "mail-minus-corner",
     "mail-off",
@@ -10248,25 +11292,39 @@ abstract final class CoolIcons {
     "mail-search",
     "mail-search-corner",
     "mail-sparkle",
+    "mail-sparkle-corner",
     "mail-warning",
+    "mail-warning-corner",
     "mailbox",
     "mails",
     "map",
     "map-pin",
     "map-pin-check",
+    "map-pin-check-corner",
     "map-pin-close",
+    "map-pin-close-corner",
+    "map-pin-edit",
+    "map-pin-edit-corner",
     "map-pin-heart",
+    "map-pin-heart-corner",
     "map-pin-minus",
+    "map-pin-minus-corner",
     "map-pin-off",
     "map-pin-plus",
+    "map-pin-plus-corner",
     "map-pin-radius",
     "map-pin-radius-minus",
     "map-pin-radius-plus",
     "map-pin-search",
+    "map-pin-search-corner",
+    "map-pin-warning",
+    "map-pin-warning-corner",
     "map-pin-zap",
+    "map-pin-zap-corner",
     "markdown",
     "mars",
     "martini",
+    "masks-theater",
     "mastodon",
     "medal",
     "medical-cross",
@@ -10395,14 +11453,26 @@ abstract final class CoolIcons {
     "owl",
     "owl-head",
     "package",
+    "package-check",
     "package-check-corner",
+    "package-close",
+    "package-close-corner",
     "package-download",
     "package-download-corner",
+    "package-edit",
+    "package-edit-corner",
+    "package-minus",
+    "package-minus-corner",
+    "package-plus",
     "package-plus-corner",
     "package-return-corner",
+    "package-search",
+    "package-search-corner",
     "package-tracking-corner",
     "package-upload",
     "package-upload-corner",
+    "package-warning",
+    "package-warning-corner",
     "packages",
     "page-margins",
     "paint-bucket",
@@ -10437,16 +11507,29 @@ abstract final class CoolIcons {
     "pencil-alt",
     "pencil-line",
     "pencil-line-alt",
+    "pencil-minus",
+    "pencil-plus",
     "pencil-ruler",
     "pencil-sparkle",
     "penguin",
     "percent",
+    "person-cane",
     "phone",
+    "phone-arrow-left",
+    "phone-arrow-right",
+    "phone-arrow-u-turn-up-left",
+    "phone-arrow-u-turn-up-right",
     "phone-call",
+    "phone-desk",
     "phone-incoming",
+    "phone-list",
     "phone-missed",
     "phone-off",
     "phone-outgoing",
+    "phone-parking",
+    "phone-pause",
+    "phone-plus",
+    "phone-record",
     "picture-in-picture",
     "pig",
     "piggy-bank",
@@ -10477,6 +11560,8 @@ abstract final class CoolIcons {
     "podium",
     "police-car",
     "police-car-side",
+    "police-station",
+    "police-station-alt",
     "poll",
     "popover",
     "potted-plant",
@@ -10485,6 +11570,7 @@ abstract final class CoolIcons {
     "printer",
     "prompt",
     "puzzle",
+    "pyramid",
     "qr-code",
     "queue",
     "quote-left",
@@ -10499,6 +11585,7 @@ abstract final class CoolIcons {
     "radio",
     "radio-checked",
     "radio-receiver",
+    "radio-tower",
     "rainbow",
     "ratio-1-1",
     "ratio-16-9",
@@ -10507,6 +11594,7 @@ abstract final class CoolIcons {
     "ratio-4-3",
     "ratio-9-16",
     "receipt",
+    "receipt-plus",
     "recharge",
     "rectangle-horizontal",
     "rectangle-vertical",
@@ -10572,10 +11660,12 @@ abstract final class CoolIcons {
     "server",
     "server-check-corner",
     "server-close-corner",
+    "server-edit-corner",
     "server-lock-corner",
     "server-minus-corner",
     "server-off",
     "server-plus-corner",
+    "server-search-corner",
     "server-settings-corner",
     "server-sync-corner",
     "server-warning-corner",
@@ -10618,6 +11708,7 @@ abstract final class CoolIcons {
     "signal-none",
     "signature",
     "signpost",
+    "silo",
     "sim-card",
     "siren",
     "skip-back",
@@ -10625,6 +11716,7 @@ abstract final class CoolIcons {
     "skip-forward",
     "skip-forward-15",
     "skull",
+    "skyscraper",
     "slack",
     "slider-1",
     "slider-1-sparkle",
@@ -10822,6 +11914,7 @@ abstract final class CoolIcons {
     "tooth",
     "tornado",
     "touchpad",
+    "town-hall",
     "traffic-cone",
     "traffic-light",
     "train",
@@ -10866,6 +11959,7 @@ abstract final class CoolIcons {
     "unfold-more",
     "unfold-more-horizontal",
     "ungroup",
+    "university",
     "upload",
     "upscale-sparkle",
     "usb",
@@ -10876,7 +11970,9 @@ abstract final class CoolIcons {
     "user-clock-corner",
     "user-close-corner",
     "user-edit-corner",
+    "user-headset",
     "user-help-corner",
+    "user-info-corner",
     "user-list",
     "user-lock-corner",
     "user-minus-corner",
@@ -10953,21 +12049,29 @@ abstract final class CoolIcons {
     "wind",
     "wind-turbine",
     "wind-turbine-solar-panel",
+    "windmill",
     "window",
     "window-check",
     "window-check-corner",
     "window-close",
     "window-close-corner",
     "window-code",
+    "window-edit",
+    "window-edit-corner",
     "window-lock-corner",
+    "window-minus",
     "window-minus-corner",
+    "window-plus",
     "window-plus-corner",
+    "window-search",
+    "window-search-corner",
     "window-sensor",
     "window-settings-corner",
     "window-sidebar",
     "window-sidebar-right",
     "window-sync-corner",
     "window-terminal",
+    "window-warning",
     "window-warning-corner",
     "windows-logo",
     "wine",

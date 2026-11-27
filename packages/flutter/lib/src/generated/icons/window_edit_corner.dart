@@ -1,0 +1,43 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND.
+// Source: icons/svg/<style>/<radius>/window-edit-corner.svg
+// Upstream: https://github.com/krystonschwarze/coolicons
+// Regenerate with: node scripts/build-flutter.mjs
+
+import '../../cool_icon_data.dart';
+
+/// Icon data for the upstream window-edit-corner glyph.
+const CoolIconData windowEditCorner = CoolIconData(
+  name: "window-edit-corner",
+  variants: <String, String>{
+    "line/sharp":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 8V4H21V8M8 20H3V8M3 8H21M13 21V18L18 13L21 16L16 21Z\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "line/regular":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 8V6C3 4.89543 3.89543 4 5 4H19C20.10457 4 21 4.89543 21 6V8M8 20H5C3.89543 20 3 19.10457 3 18V8M3 8H21M13 21V18L18 13L21 16L16 21Z\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "line/round":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 8C3 5.79086 4.79086 4 7 4H17C19.20914 4 21 5.79086 21 8M8 20H7C4.79086 20 3 18.20914 3 16V8M3 8H21M13 21V18L18 13L21 16L16 21Z\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duocolor/sharp":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M13 21V18L18 13L21 16L16 21Z\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\"0.4\"/>\n<path d=\"M3 8V4H21V8M8 20H3V8M3 8H21\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duocolor/regular":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M13 21V18L18 13L21 16L16 21Z\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\"0.4\"/>\n<path d=\"M3 8V6C3 4.89543 3.89543 4 5 4H19C20.10457 4 21 4.89543 21 6V8M8 20H5C3.89543 20 3 19.10457 3 18V8M3 8H21\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duocolor/round":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M13 21V18L18 13L21 16L16 21Z\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\"0.4\"/>\n<path d=\"M3 8C3 5.79086 4.79086 4 7 4H17C19.20914 4 21 5.79086 21 8M8 20H7C4.79086 20 3 18.20914 3 16V8M3 8H21\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duotone/sharp":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 4V8H3V4ZM13 21V18L18 13L21 16L16 21Z\" fill=\"currentColor\" fill-opacity=\"0.2\"/>\n<path d=\"M3 8V4H21V8M8 20H3V8M3 8H21M13 21V18L18 13L21 16L16 21Z\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duotone/regular":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 8V6C3 4.895 3.895 4 5 4H19C20.105 4 21 4.895 21 6V8ZM13 21V18L18 13L21 16L16 21Z\" fill=\"currentColor\" fill-opacity=\"0.2\"/>\n<path d=\"M3 8V6C3 4.89543 3.89543 4 5 4H19C20.10457 4 21 4.89543 21 6V8M8 20H5C3.89543 20 3 19.10457 3 18V8M3 8H21M13 21V18L18 13L21 16L16 21Z\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duotone/round":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 8C3 5.791 4.791 4 7 4H17C19.209 4 21 5.791 21 8ZM13 21V18L18 13L21 16L16 21Z\" fill=\"currentColor\" fill-opacity=\"0.2\"/>\n<path d=\"M3 8C3 5.79086 4.79086 4 7 4H17C19.20914 4 21 5.79086 21 8M8 20H7C4.79086 20 3 18.20914 3 16V8M3 8H21M13 21V18L18 13L21 16L16 21Z\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "fill/sharp":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2 4C2 3.448 2.448 3 3 3H21C21.552 3 22 3.448 22 4V8C22 8.552 21.552 9 21 9H4V19H8C8.552 19 9 19.448 9 20C9 20.552 8.552 21 8 21H3C2.448 21 2 20.552 2 20ZM12 21V18C12 17.735 12.105 17.48 12.293 17.293L17.293 12.293C17.683 11.902 18.317 11.902 18.707 12.293L21.707 15.293C22.098 15.683 22.098 16.317 21.707 16.707L16.707 21.707C16.52 21.895 16.265 22 16 22H13C12.448 22 12 21.552 12 21Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "fill/regular":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M4 9V18C4 18.552 4.448 19 5 19H8C8.552 19 9 19.448 9 20C9 20.552 8.552 21 8 21H5C3.343 21 2 19.657 2 18V6C2 4.343 3.343 3 5 3H19C20.657 3 22 4.343 22 6V8C22 8.552 21.552 9 21 9ZM12 21V18C12 17.735 12.105 17.48 12.293 17.293L17.293 12.293C17.683 11.902 18.317 11.902 18.707 12.293L21.707 15.293C22.098 15.683 22.098 16.317 21.707 16.707L16.707 21.707C16.52 21.895 16.265 22 16 22H13C12.448 22 12 21.552 12 21Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "fill/round":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M4 9V16C4 16.797 4.317 17.56 4.88 18.123C5.444 18.686 6.203 19.001 7 19H8C8.552 19 9 19.448 9 20C9 20.552 8.552 21 8 21H7C4.239 21 2 18.761 2 16V8C2 5.239 4.239 3 7 3H17C18.33 3 19.597 3.522 20.536 4.464C20.992 4.919 21.356 5.459 21.607 6.053C21.868 6.669 22.002 7.331 22 8C22 8.552 21.552 9 21 9ZM12 21V18C12 17.735 12.105 17.48 12.293 17.293L17.293 12.293C17.683 11.902 18.317 11.902 18.707 12.293L21.707 15.293C22.098 15.683 22.098 16.317 21.707 16.707L16.707 21.707C16.52 21.895 16.265 22 16 22H13C12.448 22 12 21.552 12 21Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "bulk/sharp":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 3H21C21.552 3 22 3.448 22 4V8C22 8.552 21.552 9 21 9H9V20C9 20.552 8.552 21 8 21H3C2.448 21 2 20.552 2 20V4C2 3.448 2.448 3 3 3Z\" fill=\"currentColor\" fill-opacity=\"0.4\"/>\n<path d=\"M3 7H21C21.552 7 22 7.448 22 8C22 8.552 21.552 9 21 9H3C2.448 9 2 8.552 2 8C2 7.448 2.448 7 3 7ZM12 21V18C12 17.735 12.105 17.48 12.293 17.293L17.293 12.293C17.683 11.902 18.317 11.902 18.707 12.293L21.707 15.293C22.098 15.683 22.098 16.317 21.707 16.707L16.707 21.707C16.52 21.895 16.265 22 16 22H13C12.448 22 12 21.552 12 21Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "bulk/regular":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 9H10C9.735 9 9.48 9.105 9.293 9.293C9.105 9.48 9 9.735 9 10V20C9 20.552 8.552 21 8 21H5C3.343 21 2 19.657 2 18V6C2 4.343 3.343 3 5 3H19C20.657 3 22 4.343 22 6V8C22 8.552 21.552 9 21 9Z\" fill=\"currentColor\" fill-opacity=\"0.4\"/>\n<path d=\"M3 7H21C21.552 7 22 7.448 22 8C22 8.552 21.552 9 21 9H3C2.448 9 2 8.552 2 8C2 7.448 2.448 7 3 7ZM12 21V18C12 17.735 12.105 17.48 12.293 17.293L17.293 12.293C17.683 11.902 18.317 11.902 18.707 12.293L21.707 15.293C22.098 15.683 22.098 16.317 21.707 16.707L16.707 21.707C16.52 21.895 16.265 22 16 22H13C12.448 22 12 21.552 12 21Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "bulk/round":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21 9H12C10.343 9 9 10.343 9 12V20C9 20.552 8.552 21 8 21H7C4.239 21 2 18.761 2 16V8C2 5.239 4.239 3 7 3H17C18.33 3 19.597 3.522 20.536 4.464C20.992 4.919 21.356 5.459 21.607 6.053C21.868 6.669 22.002 7.331 22 8C22 8.552 21.552 9 21 9Z\" fill=\"currentColor\" fill-opacity=\"0.4\"/>\n<path d=\"M3 7H21C21.552 7 22 7.448 22 8C22 8.552 21.552 9 21 9H3C2.448 9 2 8.552 2 8C2 7.448 2.448 7 3 7ZM12 21V18C12 17.735 12.105 17.48 12.293 17.293L17.293 12.293C17.683 11.902 18.317 11.902 18.707 12.293L21.707 15.293C22.098 15.683 22.098 16.317 21.707 16.707L16.707 21.707C16.52 21.895 16.265 22 16 22H13C12.448 22 12 21.552 12 21Z\" fill=\"currentColor\"/>\n</svg>\n",
+  },
+);
