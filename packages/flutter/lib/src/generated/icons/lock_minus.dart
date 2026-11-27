@@ -1,0 +1,43 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND.
+// Source: icons/svg/<style>/<radius>/lock-minus.svg
+// Upstream: https://github.com/krystonschwarze/coolicons
+// Regenerate with: node scripts/build-flutter.mjs
+
+import '../../cool_icon_data.dart';
+
+/// Icon data for the upstream lock-minus glyph.
+const CoolIconData lockMinus = CoolIconData(
+  name: "lock-minus",
+  variants: <String, String>{
+    "line/sharp":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M4 9H20V21H4ZM8 9V7C8 4.79086 9.79086 3 12 3C14.20914 3 16 4.79086 16 7V9M9 15H15\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "line/regular":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M4 11C4 9.89543 4.89543 9 6 9H18C19.10457 9 20 9.89543 20 11V19C20 20.10457 19.10457 21 18 21H6C4.89543 21 4 20.10457 4 19ZM8 9V7C8 4.79086 9.79086 3 12 3C14.20914 3 16 4.79086 16 7V9M9 15H15\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "line/round":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M4 13C4 10.79086 5.79086 9 8 9H16C18.20914 9 20 10.79086 20 13V17C20 19.20914 18.20914 21 16 21H8C5.79086 21 4 19.20914 4 17ZM8 9V7C8 4.79086 9.79086 3 12 3C14.20914 3 16 4.79086 16 7V9M9 15H15\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duocolor/sharp":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 15H15\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\"0.4\"/>\n<path d=\"M4 9H20V21H4ZM8 9V7C8 4.79086 9.79086 3 12 3C14.20914 3 16 4.79086 16 7V9\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duocolor/regular":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 15H15\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\"0.4\"/>\n<path d=\"M4 11C4 9.89543 4.89543 9 6 9H18C19.10457 9 20 9.89543 20 11V19C20 20.10457 19.10457 21 18 21H6C4.89543 21 4 20.10457 4 19ZM8 9V7C8 4.79086 9.79086 3 12 3C14.20914 3 16 4.79086 16 7V9\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duocolor/round":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 15H15\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-opacity=\"0.4\"/>\n<path d=\"M4 13C4 10.79086 5.79086 9 8 9H16C18.20914 9 20 10.79086 20 13V17C20 19.20914 18.20914 21 16 21H8C5.79086 21 4 19.20914 4 17ZM8 9V7C8 4.79086 9.79086 3 12 3C14.20914 3 16 4.79086 16 7V9\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duotone/sharp":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M4 9H20V21H4Z\" fill=\"currentColor\" fill-opacity=\"0.2\"/>\n<path d=\"M4 9H20V21H4ZM8 9V7C8 4.79086 9.79086 3 12 3C14.20914 3 16 4.79086 16 7V9M9 15H15\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duotone/regular":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 9H18C19.105 9 20 9.895 20 11V19C20 20.105 19.105 21 18 21H6C4.895 21 4 20.105 4 19V11C4 9.895 4.895 9 6 9Z\" fill=\"currentColor\" fill-opacity=\"0.2\"/>\n<path d=\"M4 11C4 9.89543 4.89543 9 6 9H18C19.10457 9 20 9.89543 20 11V19C20 20.10457 19.10457 21 18 21H6C4.89543 21 4 20.10457 4 19ZM8 9V7C8 4.79086 9.79086 3 12 3C14.20914 3 16 4.79086 16 7V9M9 15H15\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "duotone/round":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8 9H16C18.209 9 20 10.791 20 13V17C20 19.209 18.209 21 16 21H8C5.791 21 4 19.209 4 17V13C4 10.791 5.791 9 8 9Z\" fill=\"currentColor\" fill-opacity=\"0.2\"/>\n<path d=\"M4 13C4 10.79086 5.79086 9 8 9H16C18.20914 9 20 10.79086 20 13V17C20 19.20914 18.20914 21 16 21H8C5.79086 21 4 19.20914 4 17ZM8 9V7C8 4.79086 9.79086 3 12 3C14.20914 3 16 4.79086 16 7V9M9 15H15\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n",
+    "fill/sharp":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M7 8V7C7 4.239 9.239 2 12 2C14.761 2 17 4.239 17 7V8H20C20.552 8 21 8.448 21 9V21C21 21.552 20.552 22 20 22H4C3.448 22 3 21.552 3 21V9C3 8.448 3.448 8 4 8ZM15 7C15 5.343 13.657 4 12 4C10.343 4 9 5.343 9 7V8H15ZM9 16H15C15.552 16 16 15.552 16 15C16 14.448 15.552 14 15 14H9C8.448 14 8 14.448 8 15C8 15.552 8.448 16 9 16Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "fill/regular":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M7 8V7C7 4.239 9.239 2 12 2C14.761 2 17 4.239 17 7V8H18C19.657 8 21 9.343 21 11V19C21 20.657 19.657 22 18 22H6C4.343 22 3 20.657 3 19V11C3 9.343 4.343 8 6 8ZM15 7C15 5.343 13.657 4 12 4C10.343 4 9 5.343 9 7V8H15ZM9 16H15C15.552 16 16 15.552 16 15C16 14.448 15.552 14 15 14H9C8.448 14 8 14.448 8 15C8 15.552 8.448 16 9 16Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "fill/round":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M7 8.099V7C7 4.239 9.239 2 12 2C14.761 2 17 4.239 17 7V8.099C19.326 8.574 20.997 10.626 21 13V17C21 18.326 20.473 19.598 19.536 20.536C18.598 21.473 17.326 22 16 22H8C5.239 22 3 19.761 3 17V13C3 10.626 4.674 8.577 7 8.099ZM15 7C15 5.343 13.657 4 12 4C10.343 4 9 5.343 9 7V8H15ZM9 16H15C15.552 16 16 15.552 16 15C16 14.448 15.552 14 15 14H9C8.448 14 8 14.448 8 15C8 15.552 8.448 16 9 16Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "bulk/sharp":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M4 8H20C20.552 8 21 8.448 21 9V21C21 21.552 20.552 22 20 22H4C3.448 22 3 21.552 3 21V9C3 8.448 3.448 8 4 8Z\" fill=\"currentColor\" fill-opacity=\"0.4\"/>\n<path d=\"M17 7V9C17 9.552 16.552 10 16 10C15.448 10 15 9.552 15 9V7C15 5.343 13.657 4 12 4C10.343 4 9 5.343 9 7V9C9 9.552 8.552 10 8 10C7.448 10 7 9.552 7 9V7C7 4.239 9.239 2 12 2C14.761 2 17 4.239 17 7ZM15 14C15.552 14 16 14.448 16 15C16 15.552 15.552 16 15 16H9C8.448 16 8 15.552 8 15C8 14.448 8.448 14 9 14Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "bulk/regular":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 11C3 9.343 4.343 8 6 8H18C19.657 8 21 9.343 21 11V19C21 20.657 19.657 22 18 22H6C4.343 22 3 20.657 3 19Z\" fill=\"currentColor\" fill-opacity=\"0.4\"/>\n<path d=\"M17 7V9C17 9.552 16.552 10 16 10C15.448 10 15 9.552 15 9V7C15 5.343 13.657 4 12 4C10.343 4 9 5.343 9 7V9C9 9.552 8.552 10 8 10C7.448 10 7 9.552 7 9V7C7 4.239 9.239 2 12 2C14.761 2 17 4.239 17 7ZM15 14C15.552 14 16 14.448 16 15C16 15.552 15.552 16 15 16H9C8.448 16 8 15.552 8 15C8 14.448 8.448 14 9 14Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "bulk/round":
+        "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 13C3 10.239 5.239 8 8 8H16C18.761 8 21 10.239 21 13V17C21 18.326 20.473 19.598 19.536 20.536C18.598 21.473 17.326 22 16 22H8C5.239 22 3 19.761 3 17Z\" fill=\"currentColor\" fill-opacity=\"0.4\"/>\n<path d=\"M17 7V9C17 9.552 16.552 10 16 10C15.448 10 15 9.552 15 9V7C15 5.343 13.657 4 12 4C10.343 4 9 5.343 9 7V9C9 9.552 8.552 10 8 10C7.448 10 7 9.552 7 9V7C7 4.239 9.239 2 12 2C14.761 2 17 4.239 17 7ZM15 14C15.552 14 16 14.448 16 15C16 15.552 15.552 16 15 16H9C8.448 16 8 15.552 8 15C8 14.448 8.448 14 9 14Z\" fill=\"currentColor\"/>\n</svg>\n",
+  },
+);
