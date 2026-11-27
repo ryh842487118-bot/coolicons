@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "23 3 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/sync-upstream.yml"
+      - "scripts/sync-flutter-release.mjs"
 
 permissions:
   contents: write
@@ -55,7 +60,10 @@ jobs:
             exit 0
           fi
 
+          # Keep the root README and icon resources upstream-owned. Fork-specific
+          # Flutter documentation lives in packages/flutter/README.md.
           git merge --no-edit upstream/main
+          git diff --exit-code upstream/main -- README.md icons/
           node scripts/sync-flutter-release.mjs
           node scripts/build-flutter.mjs
           dart format packages/flutter/lib packages/flutter/test packages/flutter/example/lib
