@@ -66,8 +66,10 @@ jobs:
           git diff --exit-code upstream/main -- README.md icons/
           node scripts/sync-flutter-release.mjs
           node scripts/build-flutter.mjs
+          # Resolve the package language version before formatting generated Dart.
+          (cd packages/flutter && flutter pub get --no-example)
           dart format packages/flutter/lib packages/flutter/test packages/flutter/example/lib
-          git add packages/flutter/lib packages/flutter/test packages/flutter/example packages/flutter/analysis_options.yaml packages/flutter/pubspec.yaml packages/flutter/CHANGELOG.md
+          git add packages/flutter/lib packages/flutter/test packages/flutter/example/lib packages/flutter/analysis_options.yaml packages/flutter/pubspec.yaml packages/flutter/CHANGELOG.md
           if ! git diff --cached --quiet; then
             git commit -m "build(flutter): sync generated catalog with upstream"
           fi
