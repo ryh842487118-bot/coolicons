@@ -13,13 +13,15 @@ if (!/^\d+\.\d+\.\d+(?:-beta\.\d+)?$/.test(version)) {
 }
 
 const pubspec = readFileSync(pubspecFile, "utf8");
-if (!/^version:\s*[^\n]+/m.test(pubspec)) {
+const versionField = /^version:[ \t]*([^\s#]+)/m;
+const currentVersion = pubspec.match(versionField)?.[1];
+if (!currentVersion) {
   throw new Error("packages/flutter/pubspec.yaml has no version field");
 }
-writeFileSync(
-  pubspecFile,
-  pubspec.replace(/^version:\s*[^\n]+/m, "version: " + version),
-);
+// An upstream docs-only follow-up must not undo a Flutter-only +build release.
+if (!currentVersion.startsWith(version + "+")) {
+  writeFileSync(pubspecFile, pubspec.replace(versionField, "version: " + version));
+}
 
 const rootChangelog = readFileSync(rootChangelogFile, "utf8");
 const heading = `\n## ${version}\n`;
