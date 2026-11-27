@@ -50,7 +50,7 @@ jobs:
         run: node scripts/build-flutter.mjs
       - name: Install Flutter package dependencies
         working-directory: packages/flutter
-        run: flutter pub get
+        run: flutter pub get --no-example
       - name: Format Dart files
         working-directory: packages/flutter
         run: dart format lib test example/lib
@@ -59,7 +59,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add packages/flutter/lib packages/flutter/test packages/flutter/example packages/flutter/analysis_options.yaml
+          git add packages/flutter/lib packages/flutter/test packages/flutter/example/lib packages/flutter/analysis_options.yaml
           if git diff --cached --quiet; then
             echo "Generated catalog and formatted sources are already up to date."
           else
